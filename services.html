@@ -1,0 +1,1413 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+<title>Our Services – Air Conditioning | للتبريد والتكييف · Riyadh, KSA</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,700;0,900;1,700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Tajawal:wght@300;400;500;700;800&display=swap" rel="stylesheet"/>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html,body{overflow-x:hidden;max-width:100%;width:100%}
+:root{
+  --teal:#00c6b2;--teal2:#00a396;--teal3:#007d70;
+  --tealgl:rgba(0,198,178,.12);
+  --amber:#f5a623;--navy:#08141f;--navy2:#0d1e2d;--navy3:#122436;
+  --off:#f3f6f8;--gray:#64748b;--light:#94a3b8;--border:#e2e8f0;
+  --r:6px;
+}
+html{scroll-behavior:smooth}
+body{font-family:"Plus Jakarta Sans",sans-serif;color:#1e293b;background:#fff;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{text-decoration:none;color:inherit}
+ul{list-style:none}
+::selection{background:var(--teal);color:#fff}
+::-webkit-scrollbar{width:5px}
+::-webkit-scrollbar-track{background:#08141f}
+::-webkit-scrollbar-thumb{background:var(--teal);border-radius:3px}
+.ar{font-family:"Tajawal",sans-serif;direction:rtl;display:block;font-size:1em;color:var(--teal);font-weight:700;margin-top:6px;letter-spacing:0;line-height:1.5}
+.ar-white{color:rgba(255,255,255,.65)}
+
+/* ══ TOPBAR ══ */
+.topbar{background:var(--navy);padding:9px 40px;display:flex;align-items:center;justify-content:center;gap:22px;flex-wrap:wrap;overflow:visible}
+.topbar-row2{display:contents}
+.ti{display:flex;align-items:center;gap:6px;font-size:12.5px;color:rgba(255,255,255,.6);font-weight:500;white-space:nowrap;flex-shrink:0}
+.ti svg{width:13px;height:13px;fill:var(--teal);flex-shrink:0}
+.ti a{color:rgba(255,255,255,.8);transition:color .2s}
+.ti a:hover{color:var(--teal)}
+.tdiv{width:1px;height:14px;background:rgba(255,255,255,.15);flex-shrink:0}
+
+/* ══ HEADER / NAV ══ */
+header{position:sticky;top:0;z-index:999;background:rgba(255,255,255,.97);backdrop-filter:blur(20px);border-bottom:1px solid var(--border);transition:box-shadow .3s;width:100%}
+header.scrolled{box-shadow:0 2px 30px rgba(0,0,0,.1)}
+nav{max-width:1280px;margin:0 auto;padding:0 40px;height:84px;display:flex;align-items:center;justify-content:space-between;gap:16px;width:100%}
+
+.logo-wrap{display:flex;align-items:center;gap:12px;flex-shrink:0;text-decoration:none}
+.logo-wrap img{height:60px;width:auto;object-fit:contain}
+.logo-text-block{display:flex;flex-direction:column;line-height:1.25}
+.logo-company{font-family:"Fraunces",serif;font-size:21px;font-weight:900;color:var(--navy);white-space:nowrap;letter-spacing:-.3px}
+.logo-company span{color:var(--teal)}
+.logo-sub{font-family:"Tajawal",sans-serif;font-size:16px;color:var(--gray);direction:rtl;margin-top:2px;font-weight:600}
+
+.nav-links{display:flex;align-items:center;gap:2px}
+.nav-links a{font-size:13.5px;font-weight:600;color:#475569;padding:7px 13px;border-radius:var(--r);transition:all .2s;white-space:nowrap}
+.nav-links a:hover,.nav-links a.active{color:var(--teal);background:var(--tealgl)}
+.nav-right{display:flex;align-items:center;gap:12px;flex-shrink:0}
+/* ══ HAMBURGER ══ */
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:8px;border:none;background:transparent;border-radius:var(--r);transition:background .2s;flex-shrink:0}
+.hamburger:hover{background:var(--tealgl)}
+.hamburger span{display:block;width:22px;height:2.5px;background:var(--navy);border-radius:2px;transition:all .3s}
+.hamburger.open span:nth-child(1){transform:translateY(7.5px) rotate(45deg)}
+.hamburger.open span:nth-child(2){opacity:0;transform:scaleX(0)}
+.hamburger.open span:nth-child(3){transform:translateY(-7.5px) rotate(-45deg)}
+
+/* ══ MOBILE DRAWER ══ */
+.mob-menu{display:none;position:fixed;inset:0;background:rgba(8,20,31,.97);z-index:9999;flex-direction:column;padding:72px 28px 36px;overflow-y:auto;backdrop-filter:blur(16px)}
+.mob-menu.open{display:flex}
+.mob-menu a.mob-link{font-size:20px;font-weight:800;color:#fff;padding:18px 0;border-bottom:1px solid rgba(255,255,255,.08);transition:color .2s;display:flex;align-items:center;justify-content:space-between}
+.mob-menu a.mob-link:hover{color:var(--teal)}
+.mob-menu a.mob-link::after{content:"→";opacity:.3;font-size:16px}
+.mob-close{position:absolute;top:18px;right:18px;background:rgba(255,255,255,.08);border:none;color:#fff;width:42px;height:42px;border-radius:10px;font-size:20px;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:background .2s}
+.mob-close:hover{background:rgba(255,255,255,.18)}
+.mob-actions{display:flex;flex-direction:column;gap:12px;margin-top:28px;padding-top:28px;border-top:1px solid rgba(255,255,255,.1)}
+.mob-actions .btn{justify-content:center;padding:15px 20px;font-size:15px;border-radius:10px;text-decoration:none}
+
+/* ══ BUTTONS ══ */
+/* ══ BUTTONS ══ */
+.btn{
+display:inline-flex;
+align-items:center;
+gap:8px;
+padding:12px 24px;
+font-size:14px;
+font-weight:700;
+border-radius:8px; /* var(--r) replace with fixed radius */
+cursor:pointer;
+transition:all .25s ease;
+border:none;
+font-family:"Plus Jakarta Sans",sans-serif;
+white-space:nowrap;
+text-decoration:none;
+box-shadow:0 2px 8px rgba(0,0,0,.1);
+}
+
+.btn svg{
+width:16px;
+height:16px;
+fill:currentColor;
+flex-shrink:0
+}
+
+/* Teal Button */
+.btn-teal{
+background:linear-gradient(135deg,#00c6b2,#007d70); /* original teal gradient */
+color:#fff;
+box-shadow:0 4px 14px rgba(0,198,178,.3)
+}
+
+.btn-teal:hover{
+transform:translateY(-2px);
+box-shadow:0 8px 24px rgba(0,198,178,.4)
+}
+
+/* Ghost Button */
+.btn-ghost{
+background:rgba(255,255,255,.1);
+border:1.5px solid rgba(255,255,255,.28);
+color:#fff
+}
+
+.btn-ghost:hover{
+background:rgba(255,255,255,.2)
+}
+
+/* WhatsApp Button - Same color as first style (#25D366) */
+.btn-wa{
+background:#25D366;
+color:#fff;
+border:2px solid #25D366;
+box-shadow:0 4px 14px rgba(37,211,102,.3)
+}
+
+.btn-wa:hover{
+background:transparent;
+color:#25D366;
+border:2px solid #25D366;
+box-shadow:0 6px 20px rgba(18,140,126,.35);
+transform:translateY(-3px)
+}
+
+.btn-wa svg{
+width:18px;
+height:18px;
+fill:currentColor
+}
+
+/* Navbar WhatsApp Button */
+.btn-wa-nav{
+background:#25D366;
+color:#fff;
+border:2px solid #25D366;
+border-radius:8px;
+box-shadow:0 3px 10px rgba(37,211,102,.3);
+padding:12px 20px;
+font-size:13.5px
+}
+
+.btn-wa-nav:hover{
+background:transparent;
+color:#25D366;
+border:2px solid #25D366;
+transform:translateY(-2px);
+box-shadow:0 5px 16px rgba(18,140,126,.2)
+}
+
+.btn-wa-nav svg{
+width:16px;
+height:16px;
+fill:currentColor
+}
+
+/* Outline Button */
+.btn-outline{
+background:transparent;
+border:2px solid #10b981;
+color:#10b981
+}
+
+.btn-outline:hover{
+background:#10b981;
+color:#fff
+}
+
+/* Sizes */
+.btn-lg{
+padding:14px 30px;
+font-size:15px;
+border-radius:8px
+}
+
+.btn-xl{
+padding:16px 34px;
+font-size:16px;
+border-radius:8px
+}
+/* ══ BREADCRUMB HERO ══ */
+.page-hero{background:linear-gradient(135deg,var(--navy) 0%,var(--navy2) 60%,var(--navy3) 100%);position:relative;overflow:hidden;padding:70px 40px 80px}
+.page-hero::before{content:"";position:absolute;inset:0;background:url("https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=1920&q=80") center/cover;opacity:.1}
+.ph-orb{position:absolute;border-radius:50%;filter:blur(80px);pointer-events:none}
+.ph-orb1{width:600px;height:600px;background:rgba(0,198,178,.1);top:-100px;right:-80px}
+.ph-orb2{width:400px;height:400px;background:rgba(245,166,35,.06);bottom:-100px;left:10%}
+.ph-inner{position:relative;z-index:2;max-width:1280px;margin:0 auto}
+.breadcrumb{display:flex;align-items:center;gap:8px;font-size:12.5px;color:rgba(255,255,255,.4);margin-bottom:24px;flex-wrap:wrap}
+.breadcrumb a{color:rgba(255,255,255,.55);transition:color .2s}
+.breadcrumb a:hover{color:var(--teal)}
+.breadcrumb span{color:rgba(255,255,255,.25)}
+.page-hero h1{font-family:"Fraunces",serif;font-size:clamp(28px,4.5vw,58px);color:#fff;font-weight:900;line-height:1.1;margin-bottom:8px}
+.page-hero h1 em{color:var(--teal);font-style:italic}
+.page-hero-sub{font-family:"Tajawal",sans-serif;direction:rtl;font-size:clamp(16px,2.5vw,26px);color:rgba(255,255,255,.45);font-weight:700;margin-bottom:20px;line-height:1.4}
+.page-hero p{font-size:15.5px;color:rgba(255,255,255,.5);max-width:580px;line-height:1.85;margin-bottom:32px;font-weight:300}
+.ph-badges{display:flex;gap:14px;flex-wrap:wrap}
+.ph-badge{display:flex;align-items:center;gap:7px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);padding:8px 16px;border-radius:100px;font-size:12px;font-weight:700;color:rgba(255,255,255,.65)}
+.ph-badge svg{width:13px;height:13px;fill:var(--teal)}
+
+/* ══ SERVICES NAV TABS ══ */
+.srv-tabs-wrap{background:#fff;border-bottom:2px solid var(--border);position:sticky;top:84px;z-index:90}
+.srv-tabs{max-width:1280px;margin:0 auto;padding:0 40px;display:flex;gap:0;overflow-x:auto;scrollbar-width:none;justify-content:center;overflow-x:auto;}
+.srv-tabs::-webkit-scrollbar{display:none}
+.srv-tab{flex-shrink:0;display:flex;align-items:center;gap:8px;padding:18px 20px;font-size:13px;font-weight:700;color:var(--gray);border-bottom:3px solid transparent;margin-bottom:-2px;cursor:pointer;transition:all .2s;white-space:nowrap;text-decoration:none}
+.srv-tab svg{width:16px;height:16px;fill:var(--gray);transition:fill .2s}
+.srv-tab:hover{color:var(--teal)}
+.srv-tab:hover svg{fill:var(--teal)}
+.srv-tab.active{color:var(--teal);border-bottom-color:var(--teal)}
+.srv-tab.active svg{fill:var(--teal)}
+@media (max-width:460px) {
+    .srv-tabs {
+        flex-wrap:wrap; /* allow wrapping */
+        justify-content:center;
+        gap:6px; /* spacing between tabs */
+        overflow-x:visible;
+    }
+
+    .srv-tab {
+        flex: 1 1 calc(33.33% - 8px); /* 3 tabs per row, minus gap */
+        text-align:center;
+        padding:10px 6px; /* adjust padding for small width */
+        font-size:11px;    /* smaller font for compact view */
+        box-sizing:border-box; /* include padding in width */
+        margin-bottom:6px; /* spacing between rows */
+    }
+}
+
+/* ══ LAYOUT ══ */
+.wrap{max-width:1280px;margin:0 auto}
+.section{padding:90px 40px}
+.bg-off{background:var(--off)}
+.bg-dark{background:linear-gradient(160deg,var(--navy),var(--navy2))}
+.sec-eyebrow{font-size:11.5px;font-weight:800;text-transform:uppercase;letter-spacing:2.5px;color:var(--teal);margin-bottom:10px}
+.sec-title{font-family:"Fraunces",serif;font-size:clamp(24px,3.8vw,46px);color:var(--navy);line-height:1.15;font-weight:700}
+.sec-title em{color:var(--teal);font-style:italic}
+.sec-sub{font-size:15.5px;color:var(--gray);line-height:1.8;max-width:560px;margin-top:12px;font-weight:300}
+
+/* ══ SERVICE DETAIL BLOCK ══ */
+.srv-detail{padding:90px 40px;scroll-margin-top:140px}
+.srv-detail:nth-child(even){background:var(--off)}
+.srv-detail-inner{max-width:1280px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:start}
+.srv-detail-inner.reverse{direction:rtl}
+.srv-detail-inner.reverse > *{direction:ltr}
+.srv-detail-img{position:static;padding:0;display:block}
+.srv-detail-img img{width:100%;height:420px;object-fit:cover;border-radius:16px 16px 0 0;display:block}
+.srv-img-wrap{position:relative;margin-top:20px;border-radius:16px;display:block}
+.srv-img-overlay{position:absolute;bottom:18px;left:18px;background:rgba(255,255,255,.98);border-radius:12px;padding:12px 16px;border:1.5px solid var(--border);display:flex;align-items:center;gap:11px}
+.sio-ico{width:42px;height:42px;background:var(--tealgl);border-radius:10px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.sio-ico svg{width:20px;height:20px;fill:var(--teal)}
+.sio-num{font-family:"Fraunces",serif;font-size:22px;font-weight:900;color:var(--navy);line-height:1}
+.sio-lbl{font-size:11.5px;color:var(--gray);margin-top:2px}
+.srv-num-badge{position:absolute;top:-18px;right:22px;z-index:3;width:58px;height:58px;background:linear-gradient(135deg,var(--teal),var(--teal3));border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:"Fraunces",serif;font-size:22px;font-weight:900;color:#fff;box-shadow:0 8px 24px rgba(0,198,178,.4)}
+
+/* ══ SERVICE CONTENT ══ */
+.srv-content .srv-eyebrow{font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:2px;color:var(--teal);margin-bottom:10px;display:flex;align-items:center;gap:8px}
+.srv-content .srv-eyebrow::before{content:"";width:20px;height:2px;background:var(--teal)}
+.srv-content h2{font-family:"Fraunces",serif;font-size:clamp(22px,3vw,38px);color:var(--navy);font-weight:900;line-height:1.18;margin-bottom:6px}
+.srv-content h2 em{color:var(--teal);font-style:italic}
+.srv-content .ar-heading{font-family:"Tajawal",sans-serif;direction:rtl;font-size:clamp(16px,2.2vw,22px);color:var(--teal);font-weight:700;margin-bottom:18px;line-height:1.4}
+.srv-content .desc{font-size:15px;color:var(--gray);line-height:1.85;margin-bottom:26px;font-weight:300}
+
+/* ══ INCLUDES LIST ══ */
+.includes-head{font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:1.5px;color:var(--navy);margin-bottom:14px}
+.includes-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:28px}
+.inc-item{display:flex;align-items:flex-start;gap:9px;font-size:13.5px;color:#334155;line-height:1.45}
+.inc-dot{width:20px;height:20px;border-radius:50%;background:linear-gradient(135deg,var(--teal),var(--teal3));display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px}
+.inc-dot svg{width:11px;height:11px;fill:#fff}
+
+/* ══ PROCESS STEPS ══ */
+.srv-process{margin-bottom:28px}
+.sp-head{font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:1.5px;color:var(--navy);margin-bottom:14px}
+.sp-steps{display:flex;flex-direction:column;gap:10px}
+.sp-step{display:flex;align-items:flex-start;gap:12px;padding:14px 16px;background:#fff;border:1.5px solid var(--border);border-radius:12px;transition:all .3s}
+.sp-step:hover{border-color:rgba(0,198,178,.3);box-shadow:0 4px 16px rgba(0,0,0,.06)}
+.sp-n{width:28px;height:28px;background:linear-gradient(135deg,var(--teal),var(--teal3));border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:900;color:#fff;flex-shrink:0;font-family:"Fraunces",serif}
+.sp-txt strong{font-size:13.5px;font-weight:800;color:var(--navy);display:block;margin-bottom:2px}
+.sp-txt span{font-size:12.5px;color:var(--gray);line-height:1.55}
+
+/* pricing removed */
+
+/* ══ TAGS ══ */
+.srv-tags{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:26px}
+.srv-tag{font-size:11px;font-weight:700;background:var(--tealgl);color:var(--teal);padding:5px 12px;border-radius:100px;border:1px solid rgba(0,198,178,.2)}
+
+/* ══ CTA BTNS ══ */
+.srv-cta{display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+.srv-cta .btn{min-width:160px;justify-content:center}
+
+/* ══ BRANDS SUPPORTED ══ */
+.brands-section{padding:60px 40px;background:var(--off);border-top:1px solid var(--border)}
+.brands-inner{max-width:1280px;margin:0 auto;text-align:center}
+.brands-title{font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:2px;color:var(--gray);margin-bottom:28px}
+.brands-grid{display:flex;flex-wrap:wrap;gap:14px;justify-content:center}
+.brand-pill{background:#fff;border:1.5px solid var(--border);border-radius:100px;padding:10px 22px;font-size:13px;font-weight:700;color:var(--navy);transition:all .25s;cursor:default}
+.brand-pill:hover{border-color:var(--teal);color:var(--teal);background:var(--tealgl)}
+
+/* ══ FAQ ══ */
+.faq-section{padding:90px 40px}
+.faq-inner{max-width:820px;margin:0 auto}
+.faq-head{text-align:center;margin-bottom:50px}
+.faq-item{border:1.5px solid var(--border);border-radius:14px;margin-bottom:12px;overflow:hidden;transition:border-color .3s}
+.faq-item.open{border-color:rgba(0,198,178,.3)}
+.faq-q{display:flex;align-items:center;justify-content:space-between;padding:20px 24px;cursor:pointer;gap:16px;transition:background .2s}
+.faq-q:hover{background:var(--tealgl)}
+.faq-q-text{font-size:15px;font-weight:700;color:var(--navy);line-height:1.4;flex:1}
+.faq-icon{width:32px;height:32px;border-radius:50%;background:var(--off);display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:all .3s}
+.faq-item.open .faq-icon{background:linear-gradient(135deg,var(--teal),var(--teal3));transform:rotate(45deg)}
+.faq-icon svg{width:14px;height:14px;fill:var(--gray);transition:fill .3s}
+.faq-item.open .faq-icon svg{fill:#fff}
+.faq-a{display:none;padding:0 24px 22px;font-size:14px;color:var(--gray);line-height:1.85}
+.faq-item.open .faq-a{display:block}
+
+/* ══ WHY BANNER ══ */
+.why-banner{background:linear-gradient(135deg,var(--navy),var(--navy2));padding:80px 40px;position:relative;overflow:hidden}
+.why-banner::before{content:"";position:absolute;inset:0;background:url("https://images.unsplash.com/photo-1621905252507-b35492cc74b4?auto=format&fit=crop&w=1400&q=80") center/cover;opacity:.08}
+.wb-glow{position:absolute;width:500px;height:500px;border-radius:50%;background:rgba(0,198,178,.08);filter:blur(80px);top:-100px;right:-60px;pointer-events:none}
+.wb-inner{position:relative;z-index:1;max-width:1280px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.wb-left h2{font-family:"Fraunces",serif;font-size:clamp(24px,3.5vw,42px);color:#fff;font-weight:700;line-height:1.18;margin-bottom:8px}
+.wb-left h2 em{color:var(--teal);font-style:italic}
+.wb-left p{font-size:15px;color:rgba(255,255,255,.5);line-height:1.8;margin-top:12px;font-weight:300}
+.wb-right{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.wb-card{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:14px;padding:22px 18px;transition:all .3s}
+.wb-card:hover{background:rgba(0,198,178,.07);border-color:rgba(0,198,178,.25);transform:translateY(-4px)}
+.wb-ico{width:44px;height:44px;background:rgba(0,198,178,.12);border-radius:11px;display:flex;align-items:center;justify-content:center;margin-bottom:12px}
+.wb-ico svg{width:21px;height:21px;fill:var(--teal)}
+.wb-card h4{font-size:14px;font-weight:800;color:#fff;margin-bottom:5px}
+.wb-card p{font-size:12.5px;color:rgba(255,255,255,.45);line-height:1.65}
+
+/* ══ CONTACT BAR ══ */
+.cbar{background:linear-gradient(135deg,var(--teal),var(--teal3));padding:0 40px}
+.cbar-inner{max-width:1280px;margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr)}
+.ci{display:flex;align-items:center;gap:16px;padding:30px 24px;border-right:1px solid rgba(255,255,255,.18)}
+.ci:last-child{border-right:none}
+.ci-ico{width:46px;height:46px;background:rgba(255,255,255,.2);border-radius:12px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.ci-ico svg{width:21px;height:21px;fill:#fff}
+.ci-lbl{font-size:11px;text-transform:uppercase;letter-spacing:1px;color:rgba(255,255,255,.7);font-weight:700;margin-bottom:3px}
+.ci-val{font-size:14px;font-weight:800;color:#fff;line-height:1.4}
+
+/* ══ FOOTER ══ */
+.footer{background:var(--navy);padding:76px 40px 0}
+.footer-wrap{max-width:1280px;margin:0 auto}
+.footer-grid{display:grid;grid-template-columns:2.2fr 1fr 1fr 1fr;gap:50px;padding-bottom:60px}
+.footer-brand{display:flex;align-items:center;gap:10px;margin-bottom:16px}
+.footer-brand img{height:56px;width:auto;object-fit:contain;filter:brightness(0) invert(1)}
+.footer-brand-text .fn{font-family:"Fraunces",serif;font-size:16px;font-weight:900;color:#fff;white-space:nowrap}
+.footer-brand-text .fn span{color:var(--teal)}
+.footer-brand-text .far-sub{font-family:"Tajawal",sans-serif;font-size:13px;color:rgba(255,255,255,.45);direction:rtl;margin-top:2px}
+.footer-about p{font-size:13px;color:rgba(255,255,255,.4);line-height:1.85;max-width:280px}
+.footer-contact-info{margin-top:20px;display:flex;flex-direction:column;gap:10px}
+.fci{display:flex;align-items:flex-start;gap:8px;font-size:13px;color:rgba(255,255,255,.5)}
+.fci svg{width:14px;height:14px;fill:var(--teal);flex-shrink:0;margin-top:2px}
+.fci a{color:rgba(255,255,255,.7);transition:color .2s}
+.fci a:hover{color:var(--teal)}
+.nl-wrap{margin-top:20px}
+.nl-wrap p{font-size:12px;color:rgba(255,255,255,.45);margin-bottom:8px;font-weight:500}
+.nl-row{display:flex;gap:8px}
+.nl-input{flex:1;min-width:0;background:rgba(255,255,255,.06);border:1.5px solid rgba(255,255,255,.1);border-radius:var(--r);padding:10px 13px;color:#fff;font-size:13px;font-family:"Plus Jakarta Sans",sans-serif;outline:none;transition:border-color .2s}
+.nl-input::placeholder{color:rgba(255,255,255,.25)}
+.nl-input:focus{border-color:var(--teal)}
+.nl-btn{background:var(--teal);color:#fff;border:none;padding:10px 14px;border-radius:var(--r);cursor:pointer;font-weight:700;font-size:13px;white-space:nowrap;transition:background .2s}
+.nl-btn:hover{background:var(--teal2)}
+.socials{display:flex;gap:8px;margin-top:18px}
+.soc{width:35px;height:35px;border:1.5px solid rgba(255,255,255,.1);border-radius:8px;display:flex;align-items:center;justify-content:center;transition:all .2s;cursor:pointer}
+.soc:hover{background:var(--teal);border-color:var(--teal);transform:translateY(-2px)}
+.soc svg{width:14px;height:14px;fill:rgba(255,255,255,.45)}
+.soc:hover svg{fill:#fff}
+.fcol h4{font-size:12px;font-weight:800;color:#fff;margin-bottom:18px;text-transform:uppercase;letter-spacing:1px}
+.fcol li{margin-bottom:10px}
+.fcol li a{font-size:13px;color:rgba(255,255,255,.4);transition:color .2s}
+.fcol li a:hover{color:var(--teal)}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.07);padding:22px 0;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px}
+.footer-bottom p{font-size:12px;color:rgba(255,255,255,.24)}
+.ftm-links{display:flex;gap:20px}
+.ftm-links a{font-size:12px;color:rgba(255,255,255,.24);transition:color .2s}
+.ftm-links a:hover{color:var(--teal)}
+.ftm-badges{display:flex;gap:8px}
+.fbd{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.07);border-radius:5px;padding:4px 10px;font-size:10px;font-weight:700;color:rgba(255,255,255,.3);text-transform:uppercase;letter-spacing:.4px}
+
+
+/* ══ FLOATERS ══ */
+.back-top{position:fixed;bottom:28px;right:28px;width:44px;height:44px;background:linear-gradient(135deg,var(--teal),var(--teal3));border-radius:12px;display:flex;align-items:center;justify-content:center;cursor:pointer;box-shadow:0 6px 20px rgba(0,198,178,.35);opacity:0;transform:translateY(20px);transition:all .3s;z-index:900;border:none}
+.back-top.show{opacity:1;transform:translateY(0)}
+.back-top:hover{transform:translateY(-3px)}
+.back-top svg{width:20px;height:20px;fill:#fff}
+.float-cta{position:fixed;bottom:28px;left:28px;z-index:900;background:linear-gradient(135deg,#25D366,#128C7E);color:#fff;border-radius:100px;padding:12px 20px;display:flex;align-items:center;gap:8px;font-size:13.5px;font-weight:800;box-shadow:0 8px 28px rgba(37,211,102,.4);cursor:pointer;transition:all .3s;opacity:0;transform:translateY(20px);text-decoration:none}
+.float-cta.show{opacity:1;transform:translateY(0)}
+.float-cta:hover{transform:translateY(-3px)}
+.float-cta svg{width:15px;height:15px;fill:#fff}
+
+/* ══ ANIMATIONS ══ */
+.fade{opacity:0;transform:translateY(26px);transition:opacity .7s cubic-bezier(.25,.46,.45,.94),transform .7s}
+.fade.in{opacity:1;transform:none}
+.fade-l{opacity:0;transform:translateX(-26px);transition:opacity .7s,transform .7s}
+.fade-l.in{opacity:1;transform:none}
+.fade-r{opacity:0;transform:translateX(26px);transition:opacity .7s,transform .7s}
+.fade-r.in{opacity:1;transform:none}
+
+/* ══════════════════ RESPONSIVE ══════════════════ */
+@media(max-width:1100px){
+  .footer-grid{grid-template-columns:1fr 1fr;gap:36px}
+  .wb-inner{grid-template-columns:1fr}
+  .wb-right{grid-template-columns:repeat(4,1fr)}
+}
+@media(max-width:900px){
+  .topbar{padding:7px 14px;flex-direction:column;align-items:center;gap:5px;overflow:visible}
+  .topbar-row2{display:flex;flex-direction:row;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap}
+  .topbar-row2 .tdiv{display:flex}
+  .topbar > .tdiv{display:none}
+  .topbar-emergency{display:none}
+  .ti{font-size:11px;gap:5px}
+  .topbar-addr{justify-content:center;text-align:center;font-size:10.5px;white-space:normal;line-height:1.4}
+
+  nav{padding:0 16px;height:70px}
+  .nav-links{display:none}
+  .nav-phone{display:none}
+  .nav-right .btn{display:none}
+  .hamburger{display:flex}
+  .logo-wrap img{height:54px}
+  .logo-company{font-size:16px}
+
+  .page-hero{padding:50px 20px 60px}
+  .ph-badges{flex-wrap:wrap}
+  .srv-tabs-wrap{top:70px}
+  .srv-tabs{padding:0 16px}
+  .srv-tab{padding:16px 14px;font-size:12px}
+
+  .section,.faq-section,.brands-section,.why-banner{padding:60px 20px}
+  .srv-detail{padding:60px 20px;scroll-margin-top:125px}
+  .srv-detail-inner{grid-template-columns:1fr;gap:36px}
+  .srv-detail-inner.reverse{direction:ltr}
+  .srv-detail-img img{height:260px}
+  .srv-img-wrap{margin-top:16px}
+  .includes-grid{grid-template-columns:1fr}
+  .wb-right{grid-template-columns:1fr 1fr;gap:12px}
+  .emerg-strip{padding:20px}
+  .emerg-inner{flex-direction:column;align-items:flex-start;gap:16px}
+  .cbar{padding:0 20px}
+  .cbar-inner{grid-template-columns:1fr}
+  .ci{border-right:none;border-bottom:1px solid rgba(255,255,255,.15);padding:18px 14px}
+  .ci:last-child{border-bottom:none}
+  .footer{padding:48px 20px 0}
+  .footer-grid{grid-template-columns:1fr 1fr}
+  .footer-grid>:first-child{grid-column:1 / -1}
+  .footer-about p{max-width:100%}
+  .footer-bottom{flex-direction:column;text-align:center;gap:10px}
+  .ftm-links,.ftm-badges{justify-content:center}
+  .back-top{bottom:14px;right:14px;width:40px;height:40px}
+  .float-cta{bottom:14px;left:14px;font-size:12.5px;padding:10px 16px}
+}
+@media(max-width:600px){
+  .topbar{padding:7px 10px;gap:4px}
+  .topbar-addr{font-size:10px}
+  .topbar-row2{gap:10px}
+  nav{height:60px}
+  .logo-wrap img{height:44px}
+  .logo-company{font-size:14px}
+  .srv-detail-img img{height:210px}
+  .srv-img-wrap{margin-top:14px}
+  .wb-right{grid-template-columns:1fr 1fr}
+  .footer-grid{grid-template-columns:1fr}
+  .srv-cta{flex-direction:column}
+  .srv-cta .btn{width:100%}
+}
+
+/* ══ WARN BOX ══ */
+.warn-box{background:rgba(245,166,35,.07);border:1.5px solid rgba(245,166,35,.22);border-radius:14px;padding:18px 20px;margin-bottom:26px}
+.warn-head{display:flex;align-items:center;gap:8px;font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:1.5px;color:#b97c00;margin-bottom:14px}
+.warn-head svg{width:15px;height:15px;fill:#b97c00;flex-shrink:0}
+.warn-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.warn-item{font-size:13px;color:#64748b;font-weight:500;padding:6px 10px;background:rgba(255,255,255,.6);border-radius:8px;line-height:1.35}
+
+/* ══ BENEFIT CALLOUT ══ */
+.benefit-box{display:flex;align-items:flex-start;gap:14px;background:var(--tealgl);border:1.5px solid rgba(0,198,178,.22);border-radius:14px;padding:18px 20px;margin-bottom:26px;font-size:13.5px;color:#334155;line-height:1.75}
+.bb-ico{width:38px;height:38px;background:linear-gradient(135deg,var(--teal),var(--teal3));border-radius:10px;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px}
+.bb-ico svg{width:18px;height:18px;fill:#fff}
+.benefit-box strong{color:var(--navy)}
+
+/* ══ STATS ROW (below image) ══ */
+.srv-stats-row{display:grid;grid-template-columns:repeat(3,1fr);gap:0;background:#fff;border:1.5px solid var(--border);border-top:none;border-radius:0 0 14px 14px;overflow:hidden}
+.srv-stat{padding:14px 10px;text-align:center;border-right:1px solid var(--border)}
+.srv-stat:last-child{border-right:none}
+.srv-stat-n{display:block;font-family:"Fraunces",serif;font-size:18px;font-weight:900;color:var(--teal);line-height:1.1}
+.srv-stat-l{display:block;font-size:10.5px;color:var(--gray);font-weight:600;margin-top:3px;line-height:1.3}
+
+/* ══ PLAN CARDS ══ */
+.plan-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:26px}
+.plan-card{background:var(--off);border:2px solid var(--border);border-radius:16px;padding:20px 16px;text-align:center;transition:all .3s;position:relative}
+.plan-card:hover{border-color:rgba(0,198,178,.4);transform:translateY(-3px);box-shadow:0 12px 32px rgba(0,0,0,.08)}
+.plan-card-featured{background:linear-gradient(160deg,var(--navy),var(--navy2));border-color:var(--teal)}
+.plan-popular{position:absolute;top:-11px;left:50%;transform:translateX(-50%);background:linear-gradient(135deg,var(--teal),var(--teal3));color:#fff;font-size:10px;font-weight:800;padding:4px 12px;border-radius:100px;white-space:nowrap;letter-spacing:.5px}
+.plan-badge{font-size:26px;margin-bottom:8px}
+.plan-name{font-family:"Fraunces",serif;font-size:20px;font-weight:900;color:var(--navy);margin-bottom:4px}
+.plan-card-featured .plan-name{color:#fff}
+.plan-cover{font-size:11.5px;color:var(--gray);font-weight:600;margin-bottom:14px;padding-bottom:12px;border-bottom:1px solid var(--border)}
+.plan-card-featured .plan-cover{color:rgba(255,255,255,.5);border-bottom-color:rgba(255,255,255,.1)}
+.plan-list{text-align:left;display:flex;flex-direction:column;gap:7px;margin-bottom:16px}
+.plan-list li{font-size:12px;color:#475569;display:flex;align-items:flex-start;gap:7px;line-height:1.4}
+.plan-card-featured .plan-list li{color:rgba(255,255,255,.6)}
+.plan-list li::before{content:"✓";color:var(--teal);font-weight:900;font-size:11px;flex-shrink:0;margin-top:1px}
+.plan-cta{display:block;background:var(--tealgl);color:var(--teal);border:1.5px solid rgba(0,198,178,.3);border-radius:8px;padding:9px 14px;font-size:12px;font-weight:800;transition:all .2s;text-decoration:none}
+.plan-card-featured .plan-cta{background:rgba(0,198,178,.15);border-color:rgba(0,198,178,.4);color:var(--teal)}
+.plan-cta:hover{background:var(--teal);color:#fff;border-color:var(--teal)}
+
+/* ══ RESPONSIVE ADDITIONS ══ */
+@media(max-width:900px){
+  .warn-grid{grid-template-columns:1fr 1fr}
+  .plan-cards{grid-template-columns:1fr}
+  .plan-card-featured{order:-1}
+  .srv-stats-row{border-radius:0 0 12px 12px}
+}
+@media(max-width:600px){
+  .warn-grid{grid-template-columns:1fr}
+  .srv-stats-row{grid-template-columns:repeat(3,1fr)}
+  .includes-grid{grid-template-columns:1fr}
+}
+
+
+/* ══ IMG-SIDE EXTRA BLOCKS ══ */
+.img-side-block{margin-top:18px;display:flex;flex-direction:column;gap:14px}
+.img-side-block .srv-process{margin-bottom:0}
+.img-side-block .sp-step{background:#fff}
+.img-side-block .benefit-box{margin-bottom:0}
+.srv-detail:nth-child(even) .img-side-block .sp-step{background:var(--off)}
+</style>
+</head>
+<body>
+
+<!-- ══ TOPBAR ══ -->
+<div class="topbar">
+  <div class="ti topbar-addr">
+    <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+    Al Quds District, Muhammad bin Faisal bin Turkey, Riyadh, Saudi Arabia
+  </div>
+  <div class="tdiv"></div>
+  <div class="topbar-row2">
+    <div class="ti"><svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg><a href="tel:+966507884372">+966 50 788 4372</a></div>
+    <div class="tdiv"></div>
+    <div class="ti"><svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg><a href="mailto:info@airconditioningsa.com">info@airconditioningsa.com</a></div>
+    <div class="tdiv"></div>
+    <div class="ti topbar-emergency"><svg viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23L13 11.33V7z"/></svg>Emergency 24/7</div>
+  </div>
+</div>
+
+<!-- ══ NAV ══ -->
+<header id="hdr">
+  <nav>
+    <a href="heating-ac-website.html" class="logo-wrap">
+      <img src="Removal-849.png" alt="Air Conditioning" onerror="this.style.display='none'"/>
+      <div class="logo-text-block">
+        <div class="logo-company">Air <span>Conditioning</span></div>
+        <div class="logo-sub">للتبريد والتكييف</div>
+      </div>
+    </a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="services.html" class="active">Services</a>
+      <a href="aboutus.html">About Us</a>
+      <a href="contactus.html">Contact Us</a>
+    </div>
+    <div class="nav-right">
+      <a href="https://wa.me/966591136834" target="_blank" class="btn btn-wa">Book Service</a>
+    </div>
+    <button class="hamburger" id="hambBtn" onclick="toggleMenu()"><span></span><span></span><span></span></button>
+  </nav>
+</header>
+
+<!-- ══ MOBILE DRAWER ══ -->
+<div class="mob-menu" id="mobMenu">
+  <button class="mob-close" onclick="toggleMenu()">✕</button>
+  <a href="index.html" class="mob-link" onclick="toggleMenu()">Home</a>
+  <a href="services.html" class="mob-link" onclick="toggleMenu()">Services</a>
+  <a href="aboutus.html" class="mob-link" onclick="toggleMenu()">About Us</a>
+  <a href="contactus.html" class="mob-link" onclick="toggleMenu()">Contact Us</a>
+  <div class="mob-actions">
+    <a href="https://wa.me/966591136834" target="_blank" class="btn btn-wa">WhatsApp – Book Service</a>
+  </div>
+</div>
+
+<!-- ══ PAGE HERO ══ -->
+<section class="page-hero">
+  <div class="ph-orb ph-orb1"></div>
+  <div class="ph-orb ph-orb2"></div>
+  <div class="ph-inner fade">
+    <div class="breadcrumb">
+      <a href="heating-ac-website.html">Home</a>
+      <span>›</span>
+      <span style="color:rgba(255,255,255,.75);font-weight:700">Services</span>
+    </div>
+    <h1>Our Expert <em>Services</em></h1>
+    <div class="page-hero-sub">خدماتنا المتخصصة في التكييف والأجهزة المنزلية</div>
+    <p>From air conditioning installation and deep cleaning to washing machine repair and refrigerator maintenance — certified technicians, transparent pricing, and a 2-year warranty on every job across Riyadh.</p>
+    <div class="ph-badges">
+      <div class="ph-badge"><svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg>Licensed &amp; Insured</div>
+      <div class="ph-badge"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>2-Year Warranty</div>
+      <div class="ph-badge"><svg viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23L13 11.33V7z"/></svg>24/7 Emergency</div>
+      <div class="ph-badge"><svg viewBox="0 0 24 24"><path d="M17 12h-5v5h5v-5zM16 1v2H8V1H6v2H5C3.89 3 3.01 3.9 3.01 5L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2h-1V1h-2zm3 18H5V8h14v11z"/></svg>Same-Day Available</div>
+      <div class="ph-badge"><svg viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zm4.24 16L12 15.45 7.77 18l1.12-4.81-3.73-3.23 4.92-.42L12 5l1.92 4.53 4.92.42-3.73 3.23L16.23 18z"/></svg>4.9★ Rated Service</div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ SERVICE QUICK-NAV TABS ══ -->
+<div class="srv-tabs-wrap">
+  <div class="srv-tabs">
+    <a class="srv-tab active" href="#ac-services">
+      <svg viewBox="0 0 24 24"><path d="M17 11H7V4a1 1 0 00-1-1H3a1 1 0 000 2h2v8H3a1 1 0 000 2h2v4h2v-4h10v4h2v-4h2a1 1 0 000-2h-2V7h2a1 1 0 000-2h-3a1 1 0 00-1 1v5z"/></svg>
+      AC Services
+    </a>
+    <a class="srv-tab" href="#washing-machine">
+      <svg viewBox="0 0 24 24"><path d="M18 2.01L6 2c-1.1 0-2 .89-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.11-.9-1.99-2-1.99zM18 20H6V4h12v16zm-7-1c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm0-8c1.65 0 3 1.35 3 3s-1.35 3-3 3-3-1.35-3-3 1.35-3 3-3z"/></svg>
+      Washing Machine
+    </a>
+    <a class="srv-tab" href="#refrigerator">
+      <svg viewBox="0 0 24 24"><path d="M18 2.01L6 2c-1.1 0-2 .89-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.11-.9-1.99-2-1.99zM18 13H6v-2h12v2zm0-4H6V4h12v5z"/></svg>
+      Refrigerator
+    </a>
+    <a class="srv-tab" href="#microwave">
+      <svg viewBox="0 0 24 24"><path d="M20 5H4c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm-2 10h-2V9h2v6zm-4 0H4V9h10v6z"/></svg>
+      Microwave Oven
+    </a>
+    <a class="srv-tab" href="#maintenance">
+      <svg viewBox="0 0 24 24"><path d="M22.7 19l-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L9 6 6 9 1.6 4.7C.4 7.1.9 10.1 2.9 12.1c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.5-.4.5-1.1.1-1.4z"/></svg>
+      Maintenance Plans
+    </a>
+    <a class="srv-tab" href="#emergency">
+      <svg viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23L13 11.33V7z"/></svg>
+      Emergency
+    </a>
+  </div>
+</div>
+
+<!-- ══ SERVICE 1: AC SERVICES ══ -->
+<div class="srv-detail" id="ac-services">
+  <div class="srv-detail-inner">
+
+    <!-- IMAGE SIDE -->
+    <div class="srv-detail-img fade-l">
+      <div class="srv-img-wrap">
+<div class="srv-num-badge">01</div>
+      <img src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4?auto=format&fit=crop&w=900&q=88" alt="AC Cleaning Service Riyadh"/>
+      <div class="srv-img-overlay">
+        <div class="sio-ico"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></div>
+        <div><div class="sio-num">2,000+</div><div class="sio-lbl">AC Units Serviced</div></div>
+      </div>
+      </div>
+      <!-- mini stats row -->
+      <div class="srv-stats-row">
+        <div class="srv-stat"><span class="srv-stat-n">18+</span><span class="srv-stat-l">Years Experience</span></div>
+        <div class="srv-stat"><span class="srv-stat-n">2yr</span><span class="srv-stat-l">Workmanship Warranty</span></div>
+        <div class="srv-stat"><span class="srv-stat-n">4.9★</span><span class="srv-stat-l">Customer Rating</span></div>
+      </div>
+      <div class="img-side-block">
+        <div class="srv-process">
+                <div class="sp-head">Our 4-Step Process · طريقة عملنا</div>
+                <div class="sp-steps">
+                  <div class="sp-step"><div class="sp-n">1</div><div class="sp-txt"><strong>Full System Inspection</strong><span>Every component — indoor unit, outdoor unit, wiring and refrigerant pressure — checked before anything else</span></div></div>
+                  <div class="sp-step"><div class="sp-n">2</div><div class="sp-txt"><strong>Deep Clean &amp; Sanitise</strong><span>High-pressure foam cleaning, coil treatment, drain flush and antibacterial filter sterilisation</span></div></div>
+                  <div class="sp-step"><div class="sp-n">3</div><div class="sp-txt"><strong>Repair &amp; Replace</strong><span>Any faulty parts replaced with OEM components — we always show you the old part before fitting the new one</span></div></div>
+                  <div class="sp-step"><div class="sp-n">4</div><div class="sp-txt"><strong>Test, Certify &amp; Warranty</strong><span>Cooling performance verified, written job report issued, 2-year warranty certificate handed over</span></div></div>
+                </div>
+              </div>
+        <div class="benefit-box">
+                <div class="bb-ico"><svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg></div>
+                <div><strong>Regular cleaning saves up to 30% on electricity bills</strong> and extends your AC's lifespan by 5–7 years. Riyadh's dusty climate means your unit collects debris 3× faster than temperate climates — we recommend a professional deep clean every 6 months.</div>
+              </div>
+      </div>
+    </div>
+
+    <!-- CONTENT SIDE -->
+    <div class="srv-content fade-r">
+      <div class="srv-eyebrow">Service 01 · خدمة التكييف</div>
+      <h2>Air Conditioning <em>Services</em></h2>
+      <div class="ar-heading">تركيب، تنظيف عميق، وإصلاح أجهزة التكييف</div>
+      <p class="desc">Riyadh's extreme heat demands a perfectly working AC system. Whether your unit needs a deep clean before summer, a refrigerant recharge, a full new installation or an emergency repair — our HVAC-certified technicians arrive fully equipped and complete the job the same day.</p>
+
+      <!-- warning signs -->
+      <div class="warn-box">
+        <div class="warn-head"><svg viewBox="0 0 24 24"><path d="M1 21h22L12 2 1 21zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z"/></svg> Signs Your AC Needs Attention</div>
+        <div class="warn-grid">
+          <div class="warn-item">🌡️ Blowing warm or hot air</div>
+          <div class="warn-item">💧 Water leaking from unit</div>
+          <div class="warn-item">🔊 Unusual rattling or banging noise</div>
+          <div class="warn-item">😷 Musty or mouldy smell</div>
+          <div class="warn-item">📈 Electricity bills rising</div>
+          <div class="warn-item">❄️ Weak or uneven airflow</div>
+        </div>
+      </div>
+
+      <!-- what's included -->
+      <div class="includes-head">What's Included · ما يشمله الخدمة</div>
+      <div class="includes-grid">
+        <div class="inc-item"><div class="inc-dot"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></div><div><strong>Deep Indoor &amp; Outdoor Clean</strong><br>High-pressure wash of all coils, fins and housing</div></div>
+        <div class="inc-item"><div class="inc-dot"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></div><div><strong>Filter Wash &amp; Sterilisation</strong><br>Antibacterial treatment to eliminate bacteria &amp; allergens</div></div>
+        <div class="inc-item"><div class="inc-dot"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></div><div><strong>Refrigerant Level Check</strong><br>Gas pressure test and recharge if needed</div></div>
+        <div class="inc-item"><div class="inc-dot"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></div><div><strong>Drain Line Flush</strong><br>Full drain pan clean to prevent leaking and blockages</div></div>
+        <div class="inc-item"><div class="inc-dot"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></div><div><strong>Compressor Diagnosis</strong><br>Full electrical &amp; mechanical compressor health check</div></div>
+        <div class="inc-item"><div class="inc-dot"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></div><div><strong>PCB &amp; Wiring Inspection</strong><br>Control board, capacitors and wiring safety check</div></div>
+        <div class="inc-item"><div class="inc-dot"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></div><div><strong>Installation &amp; Commissioning</strong><br>New units fitted, tested and certified in a single visit</div></div>
+        <div class="inc-item"><div class="inc-dot"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></div><div><strong>Performance Test &amp; Report</strong><br>Temperature delta verified before sign-off</div></div>
+      </div>
+
+      <!-- process -->
+
+<!-- benefit callout -->
+
+<div class="srv-tags"><span class="srv-tag">Split AC</span><span class="srv-tag">Central AC</span><span class="srv-tag">Cassette Unit</span><span class="srv-tag">Window AC</span><span class="srv-tag">Ducted Systems</span><span class="srv-tag">VRF / VRV</span><span class="srv-tag">Ceiling Concealed</span><span class="srv-tag">All Brands</span></div>
+      <div class="srv-cta">
+        <a href="https://wa.me/966591136834" target="_blank" class="btn btn-wa btn-lg"> Book AC Service</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══ SERVICE 2: WASHING MACHINE ══ -->
+<div class="srv-detail" id="washing-machine">
+  <div class="srv-detail-inner reverse">
+
+    <div class="srv-detail-img fade-r">
+      <div class="srv-img-wrap">
+<div class="srv-num-badge">02</div>
+      <img src="https://images.unsplash.com/photo-1626806787461-102c1a9e8ef3?auto=format&fit=crop&w=900&q=88" alt="Washing Machine Repair Riyadh"/>
+      <div class="srv-img-overlay">
+        <div class="sio-ico"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></div>
+        <div><div class="sio-num">1,200+</div><div class="sio-lbl">Machines Repaired</div></div>
+      </div>
+      </div>
+      <div class="srv-stats-row">
+        <div class="srv-stat"><span class="srv-stat-n">Same</span><span class="srv-stat-l">Day Fix</span></div>
+        <div class="srv-stat"><span class="srv-stat-n">Free</span><span class="srv-stat-l">Diagnosis Visit</span></div>
+        <div class="srv-stat"><span class="srv-stat-n">OEM</span><span class="srv-stat-l">Parts Only</span></div>
+      </div>
+      <div class="img-side-block">
+        <div class="srv-process">
+                <div class="sp-head">How We Fix It · خطوات الإصلاح</div>
+                <div class="sp-steps">
+                  <div class="sp-step"><div class="sp-n">1</div><div class="sp-txt"><strong>Electronic Scan + Manual Inspection</strong><span>We connect diagnostic tools and manually inspect the drum, motor, PCB and all wiring before quoting</span></div></div>
+                  <div class="sp-step"><div class="sp-n">2</div><div class="sp-txt"><strong>Transparent Written Quote</strong><span>You receive a clear breakdown of parts and labour before a single bolt is turned — no surprises, no hidden fees</span></div></div>
+                  <div class="sp-step"><div class="sp-n">3</div><div class="sp-txt"><strong>OEM Part Repair On-Site</strong><span>We fit genuine parts from our fully stocked van — no waiting, no factory collection, no return visits in most cases</span></div></div>
+                  <div class="sp-step"><div class="sp-n">4</div><div class="sp-txt"><strong>Full Cycle Test Run</strong><span>A complete wash cycle is run before we leave. We only close the job when the machine performs perfectly</span></div></div>
+                </div>
+              </div>
+        <div class="benefit-box">
+                <div class="bb-ico"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></div>
+                <div><strong>No Fix, No Fee — Guaranteed.</strong> If our technician cannot repair your washing machine, you pay absolutely nothing for the visit. We're confident in our diagnosis and repair record: 94% of faults are resolved on the first visit.</div>
+              </div>
+      </div>
+    </div>
+
+    <div class="srv-content fade-l">
+      <div class="srv-eyebrow">Service 02 · خدمة الغسالة</div>
+      <h2>Washing Machine <em>Repair &amp; Service</em></h2>
+      <div class="ar-heading">إصلاح وصيانة الغسالات – جميع الأنواع والماركات</div>
+      <p class="desc">A broken washing machine disrupts your entire household. Our specialists repair all types — front-load, top-load, twin-tub and fully automatic — from every major brand. We carry a fully stocked parts van so most faults are diagnosed and fixed on the first home visit, with no need to take the machine away.</p>
+
+      <div class="warn-box">
+        <div class="warn-head"><svg viewBox="0 0 24 24"><path d="M1 21h22L12 2 1 21zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z"/></svg> Warning Signs to Watch For</div>
+        <div class="warn-grid">
+          <div class="warn-item">💦 Water leaking from door or base</div>
+          <div class="warn-item">🔄 Drum not spinning or draining</div>
+          <div class="warn-item">📟 Error code on display panel</div>
+          <div class="warn-item">🔊 Loud banging or vibration noise</div>
+          <div class="warn-item">🚫 Machine won't turn on at all</div>
+          <div class="warn-item">👕 Clothes coming out still wet</div>
+        </div>
+      </div>
+
+      <div class="includes-head">Faults &amp; Services We Cover</div>
+      <div class="includes-grid">
+        <div class="inc-item"><div class="inc-dot"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></div><div><strong>Motor &amp; Belt Replacement</strong><br>All drive motor types and transmission belts in stock</div></div>
+        <div class="inc-item"><div class="inc-dot"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></div><div><strong>PCB &amp; Control Board</strong><br>Electronic diagnosis, component-level repair or board replacement</div></div>
+        <div class="inc-item"><div class="inc-dot"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></div><div><strong>Door Lock &amp; Rubber Seal</strong><br>All front-loader seals and latch mechanisms replaced same day</div></div>
+        <div class="inc-item"><div class="inc-dot"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></div><div><strong>Water Inlet Valve &amp; Pump</strong><br>Cold/hot inlet valves and drain pumps diagnosed and replaced</div></div>
+        <div class="inc-item"><div class="inc-dot"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></div><div><strong>Drum Bearing &amp; Suspension</strong><br>Noisy drum? Bearing and spider arm replacement available</div></div>
+        <div class="inc-item"><div class="inc-dot"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></div><div><strong>Heating Element</strong><br>Faulty heater causing cold wash? Replaced with OEM part</div></div>
+        <div class="inc-item"><div class="inc-dot"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></div><div><strong>Error Code Diagnosis</strong><br>All brands' fault codes decoded and resolved electronically</div></div>
+        <div class="inc-item"><div class="inc-dot"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></div><div><strong>Full Service Clean</strong><br>Drum descale, gasket clean, dispenser tray and filter flush</div></div>
+      </div>
+
+<div class="srv-tags"><span class="srv-tag">Front Load</span><span class="srv-tag">Top Load</span><span class="srv-tag">Twin Tub</span><span class="srv-tag">Fully Automatic</span><span class="srv-tag">Samsung</span><span class="srv-tag">LG</span><span class="srv-tag">Bosch</span><span class="srv-tag">Miele</span><span class="srv-tag">Siemens</span><span class="srv-tag">Electrolux</span></div>
+      <div class="srv-cta">
+        <a href="https://wa.me/966591136834" target="_blank" class="btn btn-wa btn-lg">Book Washing Machine Repair</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══ SERVICE 3: REFRIGERATOR ══ -->
+<div class="srv-detail" id="refrigerator">
+  <div class="srv-detail-inner">
+
+    <div class="srv-detail-img fade-l">
+      <div class="srv-img-wrap">
+<div class="srv-num-badge">03</div>
+      <img src="https://images.unsplash.com/photo-1584568694244-14fbdf83bd30?auto=format&fit=crop&w=900&q=88" alt="Refrigerator Repair Riyadh"/>
+      <div class="srv-img-overlay">
+        <div class="sio-ico"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></div>
+        <div><div class="sio-num">900+</div><div class="sio-lbl">Fridges Repaired</div></div>
+      </div>
+      </div>
+      <div class="srv-stats-row">
+        <div class="srv-stat"><span class="srv-stat-n">2hr</span><span class="srv-stat-l">Emergency Response</span></div>
+        <div class="srv-stat"><span class="srv-stat-n">All</span><span class="srv-stat-l">Gas Types Stocked</span></div>
+        <div class="srv-stat"><span class="srv-stat-n">2yr</span><span class="srv-stat-l">Warranty</span></div>
+      </div>
+      <div class="img-side-block">
+        <div class="srv-process">
+                <div class="sp-head">Diagnosis to Fix — Same Day · من التشخيص للإصلاح في يوم واحد</div>
+                <div class="sp-steps">
+                  <div class="sp-step"><div class="sp-n">1</div><div class="sp-txt"><strong>Temperature &amp; Gas Pressure Test</strong><span>We measure cooling temperature and refrigerant pressure levels as the first diagnostic step</span></div></div>
+                  <div class="sp-step"><div class="sp-n">2</div><div class="sp-txt"><strong>Full Component Inspection</strong><span>Compressor, thermostat, both fan motors, start relay, wiring and PCB board all individually tested</span></div></div>
+                  <div class="sp-step"><div class="sp-n">3</div><div class="sp-txt"><strong>Repair, Replace &amp; Gas Recharge</strong><span>Faulty parts replaced with OEM components; refrigerant recharged to manufacturer's exact specification</span></div></div>
+                  <div class="sp-step"><div class="sp-n">4</div><div class="sp-txt"><strong>Temperature Stability Verification</strong><span>We monitor the fridge reaching its correct operating temperature before handing it back to you</span></div></div>
+                </div>
+              </div>
+        <div class="benefit-box">
+                <div class="bb-ico"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg></div>
+                <div><strong>Emergency fridge repair in under 2 hours.</strong> When your refrigerator stops cooling, every hour matters. Our rapid-response team operates 24/7 — we stock R-134a, R-600a and R-410A refrigerant gases on every van so there is never a delay waiting for parts.</div>
+              </div>
+      </div>
+    </div>
+
+    <div class="srv-content fade-r">
+      <div class="srv-eyebrow">Service 03 · خدمة الثلاجة</div>
+      <h2>Refrigerator <em>Repair &amp; Maintenance</em></h2>
+      <div class="ar-heading">إصلاح وصيانة الثلاجات بجميع أنواعها وماركاتها</div>
+      <p class="desc">A faulty refrigerator puts your food — and your family's health — at immediate risk. We carry full refrigerant gas stocks (R-134a, R-600a, R-410A), a complete compressor library and all electronic components to repair any fridge, any brand, the same day you call us.</p>
+
+      <div class="warn-box">
+        <div class="warn-head"><svg viewBox="0 0 24 24"><path d="M1 21h22L12 2 1 21zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z"/></svg> Signs Your Fridge Needs a Technician</div>
+        <div class="warn-grid">
+          <div class="warn-item">🌡️ Fridge not cooling properly</div>
+          <div class="warn-item">🧊 Excessive ice / frost buildup</div>
+          <div class="warn-item">💧 Water pooling on the floor</div>
+          <div class="warn-item">🔊 Loud compressor humming or clicking</div>
+          <div class="warn-item">💡 Interior light not working</div>
+          <div class="warn-item">⚡ Compressor running constantly</div>
+        </div>
+      </div>
+
+      <div class="includes-head">What We Repair &amp; Service · ما نصلحه</div>
+      <div class="includes-grid">
+        <div class="inc-item"><div class="inc-dot"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></div><div><strong>Compressor Replacement</strong><br>Full compressor supply and fit with gas recharge included</div></div>
+        <div class="inc-item"><div class="inc-dot"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></div><div><strong>Refrigerant Leak &amp; Recharge</strong><br>Gas leak detection, pipe repair and exact-spec recharge</div></div>
+        <div class="inc-item"><div class="inc-dot"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></div><div><strong>Thermostat Calibration</strong><br>Digital and mechanical thermostat repair or replacement</div></div>
+        <div class="inc-item"><div class="inc-dot"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></div><div><strong>Evaporator &amp; Condenser Coils</strong><br>Coil cleaning, defrost heater repair and fan motor replacement</div></div>
+        <div class="inc-item"><div class="inc-dot"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></div><div><strong>Door Seal / Gasket</strong><br>Worn door seals replaced to restore cooling efficiency</div></div>
+        <div class="inc-item"><div class="inc-dot"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></div><div><strong>PCB &amp; Control Board</strong><br>Full electronic diagnosis and board-level component repair</div></div>
+        <div class="inc-item"><div class="inc-dot"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></div><div><strong>Defrost System Repair</strong><br>Defrost timer, heater and sensor faults all resolved</div></div>
+        <div class="inc-item"><div class="inc-dot"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></div><div><strong>Ice Maker &amp; Water Dispenser</strong><br>All dispenser valve, tube and mechanism faults repaired</div></div>
+      </div>
+
+<div class="srv-tags"><span class="srv-tag">Single Door</span><span class="srv-tag">Double Door</span><span class="srv-tag">French Door</span><span class="srv-tag">Side-by-Side</span><span class="srv-tag">Built-In</span><span class="srv-tag">Samsung</span><span class="srv-tag">LG</span><span class="srv-tag">Whirlpool</span><span class="srv-tag">Haier</span><span class="srv-tag">Hisense</span></div>
+      <div class="srv-cta">
+        <a href="https://wa.me/966591136834" target="_blank" class="btn btn-wa btn-lg"> Book Refrigerator Repair</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══ SERVICE 4: MICROWAVE OVEN ══ -->
+<div class="srv-detail" id="microwave">
+  <div class="srv-detail-inner reverse">
+
+    <div class="srv-detail-img fade-r">
+      <div class="srv-img-wrap">
+<div class="srv-num-badge">04</div>
+      <img src="https://images.unsplash.com/photo-1574269909862-7e1d70bb8078?auto=format&fit=crop&w=900&q=88" alt="Microwave Oven Repair Riyadh"/>
+      <div class="srv-img-overlay">
+        <div class="sio-ico"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></div>
+        <div><div class="sio-num">600+</div><div class="sio-lbl">Ovens Repaired</div></div>
+      </div>
+      </div>
+      <div class="srv-stats-row">
+        <div class="srv-stat"><span class="srv-stat-n">1st</span><span class="srv-stat-l">Visit Fix Rate 91%</span></div>
+        <div class="srv-stat"><span class="srv-stat-n">Safe</span><span class="srv-stat-l">HV Discharge First</span></div>
+        <div class="srv-stat"><span class="srv-stat-n">All</span><span class="srv-stat-l">Brands Covered</span></div>
+      </div>
+      <div class="img-side-block">
+        <div class="srv-process">
+                <div class="sp-head">Our Safe Repair Process · عملية الإصلاح الآمنة</div>
+                <div class="sp-steps">
+                  <div class="sp-step"><div class="sp-n">1</div><div class="sp-txt"><strong>Safety HV Discharge</strong><span>Before opening the unit, the high-voltage capacitor is fully discharged using calibrated safety equipment — essential to prevent serious injury</span></div></div>
+                  <div class="sp-step"><div class="sp-n">2</div><div class="sp-txt"><strong>Full Component Test</strong><span>Magnetron output, HV diode, capacitor charge, door switches, control board and transformer are all individually tested with professional instruments</span></div></div>
+                  <div class="sp-step"><div class="sp-n">3</div><div class="sp-txt"><strong>Replace &amp; Solder</strong><span>Faulty components replaced with genuine or certified-equivalent parts by our qualified electronics technician, soldered to professional standard</span></div></div>
+                  <div class="sp-step"><div class="sp-n">4</div><div class="sp-txt"><strong>Heating Output Verification</strong><span>We test heating performance using a calibrated water-load test before declaring the job complete and issuing your warranty</span></div></div>
+                </div>
+              </div>
+        <div class="benefit-box">
+                <div class="bb-ico"><svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg></div>
+                <div><strong>Never attempt to repair a microwave yourself.</strong> The high-voltage capacitor inside stores enough charge to kill even when the appliance is unplugged. Our technicians are trained in HV safety procedures and use calibrated discharge equipment on every single visit — your safety is our first priority.</div>
+              </div>
+      </div>
+    </div>
+
+    <div class="srv-content fade-l">
+      <div class="srv-eyebrow">Service 04 · خدمة الميكروويف</div>
+      <h2>Microwave Oven <em>Repair &amp; Service</em></h2>
+      <div class="ar-heading">إصلاح أفران الميكروويف بجميع أنواعها وماركاتها</div>
+      <p class="desc">Microwave ovens are deceptively complex and genuinely dangerous to repair without proper training — high-voltage capacitors retain lethal charge even when unplugged. Our electronics-certified technicians follow strict safety discharge protocols on every visit, then use professional diagnostic equipment to pinpoint the exact fault and fix it on-site.</p>
+
+      <div class="warn-box">
+        <div class="warn-head"><svg viewBox="0 0 24 24"><path d="M1 21h22L12 2 1 21zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z"/></svg> Common Symptoms We See</div>
+        <div class="warn-grid">
+          <div class="warn-item">🚫 Food not heating or heating unevenly</div>
+          <div class="warn-item">⚡ Sparking or arcing inside cavity</div>
+          <div class="warn-item">🔄 Turntable plate not rotating</div>
+          <div class="warn-item">🔇 Running but completely silent</div>
+          <div class="warn-item">🚪 Door not latching or sealing</div>
+          <div class="warn-item">📺 Display blank or unresponsive</div>
+        </div>
+      </div>
+
+      <div class="includes-head">Faults We Diagnose &amp; Fix · الأعطال التي نصلحها</div>
+      <div class="includes-grid">
+        <div class="inc-item"><div class="inc-dot"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></div><div><strong>Magnetron Replacement</strong><br>The core heating component — we stock magnetrons for all major brands</div></div>
+        <div class="inc-item"><div class="inc-dot"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></div><div><strong>High-Voltage Capacitor</strong><br>Tested with professional HV meter, replaced if faulty</div></div>
+        <div class="inc-item"><div class="inc-dot"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></div><div><strong>HV Diode &amp; Transformer</strong><span></span><br>Full high-voltage circuit diagnosis and replacement</div></div>
+        <div class="inc-item"><div class="inc-dot"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></div><div><strong>Door Switch &amp; Latch</strong><br>All three door interlock switches tested and replaced as needed</div></div>
+        <div class="inc-item"><div class="inc-dot"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></div><div><strong>Control Board &amp; Membrane</strong><br>PCB fault diagnosis, component repair or full board swap</div></div>
+        <div class="inc-item"><div class="inc-dot"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></div><div><strong>Turntable Motor</strong><br>Coupler, ring and motor assembly replaced where faulty</div></div>
+        <div class="inc-item"><div class="inc-dot"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></div><div><strong>Thermal Fuse &amp; Cutout</strong><br>Safety fuses tested and replaced to restore power</div></div>
+        <div class="inc-item"><div class="inc-dot"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></div><div><strong>Display &amp; LED Panel</strong><br>Faulty displays replaced; button and touchpad faults resolved</div></div>
+      </div>
+
+<div class="srv-tags"><span class="srv-tag">Countertop</span><span class="srv-tag">Built-In</span><span class="srv-tag">Over-the-Range</span><span class="srv-tag">Microwave + Grill</span><span class="srv-tag">Combination Oven</span><span class="srv-tag">Samsung</span><span class="srv-tag">Panasonic</span><span class="srv-tag">LG</span><span class="srv-tag">Sharp</span><span class="srv-tag">Midea</span></div>
+      <div class="srv-cta">
+        <a href="https://wa.me/966591136834" target="_blank" class="btn btn-wa btn-lg"> Book Microwave Repair</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══ SERVICE 5: MAINTENANCE PLANS ══ -->
+<div class="srv-detail" id="maintenance">
+  <div class="srv-detail-inner">
+
+    <div class="srv-detail-img fade-l">
+      <div class="srv-img-wrap">
+<div class="srv-num-badge">05</div>
+      <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?auto=format&fit=crop&w=900&q=88" alt="Home Appliance Maintenance Plan Riyadh"/>
+      <div class="srv-img-overlay">
+        <div class="sio-ico"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></div>
+        <div><div class="sio-num">500+</div><div class="sio-lbl">Active Plan Clients</div></div>
+      </div>
+      </div>
+      <div class="srv-stats-row">
+        <div class="srv-stat"><span class="srv-stat-n">2×</span><span class="srv-stat-l">Visits Per Year</span></div>
+        <div class="srv-stat"><span class="srv-stat-n">20%</span><span class="srv-stat-l">Parts Discount</span></div>
+        <div class="srv-stat"><span class="srv-stat-n">1hr</span><span class="srv-stat-l">Priority Response</span></div>
+      </div>
+      <div class="img-side-block">
+        <div class="benefit-box">
+                <div class="bb-ico"><svg viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg></div>
+                <div><strong>Plan clients save an average of SAR 1,400/year</strong> in emergency call-outs and unplanned repairs. Preventive servicing catches 80% of faults before they become breakdowns — protecting your appliances, your comfort, and your budget. Ideal for villas, apartments, offices and commercial properties.</div>
+              </div>
+      </div>
+    </div>
+
+    <div class="srv-content fade-r">
+      <div class="srv-eyebrow">Service 05 · خطط الصيانة</div>
+      <h2>Annual Maintenance <em>Plans</em></h2>
+      <div class="ar-heading">خطط الصيانة السنوية لمنزلك بالكامل</div>
+      <p class="desc">The smartest investment you can make in your home. Our annual maintenance contracts cover all your major appliances — AC units, refrigerators, washing machines and more — for a single annual fee. Scheduled servicing, priority emergency response, discounted repairs and dedicated account management, all year round.</p>
+
+      <!-- plan tiers visual -->
+      <div class="plan-cards">
+        <div class="plan-card">
+          <div class="plan-badge">🥈</div>
+          <div class="plan-name">Silver</div>
+          <div class="plan-cover">1 AC + 1 Appliance</div>
+          <ul class="plan-list">
+            <li>2 scheduled visits/year</li>
+            <li>Priority emergency response</li>
+            <li>15% off repair parts</li>
+            <li>Free filter replacement (AC)</li>
+          </ul>
+          <a href="https://wa.me/966591136834" class="plan-cta">Get Quote →</a>
+        </div>
+        <div class="plan-card plan-card-featured">
+          <div class="plan-popular">Most Popular</div>
+          <div class="plan-badge">🥇</div>
+          <div class="plan-name">Gold</div>
+          <div class="plan-cover">3 AC Units + 3 Appliances</div>
+          <ul class="plan-list">
+            <li>4 scheduled visits/year</li>
+            <li>1-hour priority response</li>
+            <li>20% off repair parts</li>
+            <li>Free filters + full report</li>
+            <li>Dedicated account manager</li>
+          </ul>
+          <a href="https://wa.me/966591136834" class="plan-cta">Get Quote →</a>
+        </div>
+        <div class="plan-card">
+          <div class="plan-badge">💎</div>
+          <div class="plan-name">Platinum</div>
+          <div class="plan-cover">Unlimited — Full Home</div>
+          <ul class="plan-list">
+            <li>Quarterly visits (4/year)</li>
+            <li>30% off all repair parts</li>
+            <li>Zero call-out fees</li>
+            <li>Energy efficiency audit</li>
+            <li>24/7 hotline access</li>
+          </ul>
+          <a href="https://wa.me/966591136834" class="plan-cta">Get Quote →</a>
+        </div>
+      </div>
+
+      <div class="includes-head">Every Plan Includes · ما يشمله كل خطة</div>
+      <div class="includes-grid">
+        <div class="inc-item"><div class="inc-dot"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></div><div><strong>Scheduled Servicing</strong><br>Pre-planned visits keep your appliances in peak condition year-round</div></div>
+        <div class="inc-item"><div class="inc-dot"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></div><div><strong>Priority Emergency Response</strong><br>Contract clients jump the queue — faster response, guaranteed</div></div>
+        <div class="inc-item"><div class="inc-dot"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></div><div><strong>Discounted Repair Parts</strong><br>15–30% off all OEM spare parts depending on plan tier</div></div>
+        <div class="inc-item"><div class="inc-dot"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></div><div><strong>Appliance Health Reports</strong><br>Written condition report after each visit so you know exactly where things stand</div></div>
+        <div class="inc-item"><div class="inc-dot"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></div><div><strong>No Hidden Call-Out Fees</strong><br>Contract clients never pay call-out charges — unlimited visits within scope</div></div>
+        <div class="inc-item"><div class="inc-dot"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></div><div><strong>Free AC Filter Replacements</strong><br>New filters fitted at every scheduled AC visit, included in the plan</div></div>
+      </div>
+
+<div class="srv-tags"><span class="srv-tag">Residential</span><span class="srv-tag">Commercial</span><span class="srv-tag">Villas</span><span class="srv-tag">Apartments</span><span class="srv-tag">Offices</span><span class="srv-tag">All Appliances</span><span class="srv-tag">Flexible Payment</span></div>
+      <div class="srv-cta">
+        <a href="https://wa.me/966591136834" target="_blank" class="btn btn-wa btn-lg"> Get a Plan Quote</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══ SERVICE 6: EMERGENCY ══ -->
+<div class="srv-detail" id="emergency" style="background:linear-gradient(160deg,var(--navy),var(--navy2))">
+  <div class="srv-detail-inner reverse">
+
+    <div class="srv-detail-img fade-r">
+      <div class="srv-img-wrap">
+<div class="srv-num-badge" style="background:linear-gradient(135deg,#f5a623,#e07b0f)">06</div>
+      <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=900&q=88" alt="Emergency Repair Riyadh 24/7"/>
+      <div class="srv-img-overlay">
+        <div class="sio-ico"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></div>
+        <div><div class="sio-num">2hr</div><div class="sio-lbl">Guaranteed Arrival</div></div>
+      </div>
+      </div>
+      <div class="srv-stats-row" style="background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08)">
+        <div class="srv-stat"><span class="srv-stat-n" style="color:var(--amber)">24/7</span><span class="srv-stat-l" style="color:rgba(255,255,255,.5)">Every Day</span></div>
+        <div class="srv-stat"><span class="srv-stat-n" style="color:var(--amber)">2hr</span><span class="srv-stat-l" style="color:rgba(255,255,255,.5)">Max Response</span></div>
+        <div class="srv-stat"><span class="srv-stat-n" style="color:var(--amber)">1st</span><span class="srv-stat-l" style="color:rgba(255,255,255,.5)">Visit Fix 92%</span></div>
+      </div>
+      <div class="img-side-block">
+        <div class="srv-process" style="--step-bg:rgba(255,255,255,.05);--step-border:rgba(255,255,255,.1)">
+                <div class="sp-head" style="color:#fff">How Emergency Response Works · كيف تعمل خدمة الطوارئ</div>
+                <div class="sp-steps">
+                  <div class="sp-step" style="background:rgba(255,255,255,.05);border-color:rgba(255,255,255,.1)"><div class="sp-n" style="background:linear-gradient(135deg,#f5a623,#e07b0f)">1</div><div class="sp-txt"><strong style="color:#fff">WhatsApp or Call — Answered Immediately</strong><span style="color:rgba(255,255,255,.5)">Our emergency line is staffed 24/7 — you speak to a live dispatcher, not a voicemail</span></div></div>
+                  <div class="sp-step" style="background:rgba(255,255,255,.05);border-color:rgba(255,255,255,.1)"><div class="sp-n" style="background:linear-gradient(135deg,#f5a623,#e07b0f)">2</div><div class="sp-txt"><strong style="color:#fff">Nearest Technician Dispatched</strong><span style="color:rgba(255,255,255,.5)">We identify the closest available certified technician and dispatch them to your address immediately</span></div></div>
+                  <div class="sp-step" style="background:rgba(255,255,255,.05);border-color:rgba(255,255,255,.1)"><div class="sp-n" style="background:linear-gradient(135deg,#f5a623,#e07b0f)">3</div><div class="sp-txt"><strong style="color:#fff">At Your Door Within 2 Hours</strong><span style="color:rgba(255,255,255,.5)">We guarantee arrival within 2 hours anywhere in Riyadh — this is a contractual commitment, not a target</span></div></div>
+                  <div class="sp-step" style="background:rgba(255,255,255,.05);border-color:rgba(255,255,255,.1)"><div class="sp-n" style="background:linear-gradient(135deg,#f5a623,#e07b0f)">4</div><div class="sp-txt"><strong style="color:#fff">Fixed That Night — 92% First-Visit Rate</strong><span style="color:rgba(255,255,255,.5)">Our emergency vans carry parts for the most common faults — 92% of emergency jobs are completed on the first visit</span></div></div>
+                </div>
+              </div>
+        <div class="benefit-box" style="background:rgba(245,166,35,.08);border-color:rgba(245,166,35,.3)">
+                <div class="bb-ico" style="background:rgba(245,166,35,.15)"><svg viewBox="0 0 24 24" style="fill:var(--amber)"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23L13 11.33V7z"/></svg></div>
+                <div style="color:rgba(255,255,255,.65)"><strong style="color:#fff">2-Hour Arrival Guarantee — or the Call-Out is Free.</strong> We are so confident in our emergency response network across Riyadh that if we arrive more than 2 hours after your call, we waive the entire call-out fee. Zero risk for you. Total accountability for us.</div>
+              </div>
+      </div>
+    </div>
+
+    <div class="srv-content fade-l">
+      <div class="srv-eyebrow" style="color:var(--amber)">Service 06 · خدمة الطوارئ</div>
+      <h2 style="color:#fff">24/7 Emergency <em>Response</em></h2>
+      <div class="ar-heading" style="color:rgba(255,255,255,.5)">استجابة طوارئ على مدار الساعة في الرياض</div>
+      <p class="desc" style="color:rgba(255,255,255,.5)">Breakdowns don't keep office hours. Our dedicated 24/7 emergency team operates every single day — including Fridays, Eid, Ramadan and all public holidays. From the moment you call or WhatsApp us, a certified technician is dispatched immediately. We guarantee arrival at your door within 2 hours, anywhere in Riyadh.</p>
+
+      <div class="warn-box" style="background:rgba(245,166,35,.07);border-color:rgba(245,166,35,.25)">
+        <div class="warn-head" style="color:var(--amber)"><svg viewBox="0 0 24 24" style="fill:var(--amber)"><path d="M1 21h22L12 2 1 21zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z"/></svg> Call Us Immediately If You Have</div>
+        <div class="warn-grid">
+          <div class="warn-item" style="color:rgba(255,255,255,.65)">❄️ Complete AC failure in extreme heat</div>
+          <div class="warn-item" style="color:rgba(255,255,255,.65)">💦 Washing machine flooding your home</div>
+          <div class="warn-item" style="color:rgba(255,255,255,.65)">🌡️ Fridge stopped cooling overnight</div>
+          <div class="warn-item" style="color:rgba(255,255,255,.65)">🔥 Burning smell from any appliance</div>
+          <div class="warn-item" style="color:rgba(255,255,255,.65)">⚡ Refrigerant gas leak (AC or fridge)</div>
+          <div class="warn-item" style="color:rgba(255,255,255,.65)">💥 Electrical fault or sparking appliance</div>
+        </div>
+      </div>
+
+      <div class="includes-head" style="color:#fff">Emergency Services Covered · ما نغطيه في الطوارئ</div>
+      <div class="includes-grid">
+        <div class="inc-item" style="color:rgba(255,255,255,.7)"><div class="inc-dot" style="background:linear-gradient(135deg,#f5a623,#e07b0f)"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></div><div><strong style="color:#fff">AC Complete Failure</strong><br>Full system restore — split, central, VRF and window units</div></div>
+        <div class="inc-item" style="color:rgba(255,255,255,.7)"><div class="inc-dot" style="background:linear-gradient(135deg,#f5a623,#e07b0f)"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></div><div><strong style="color:#fff">Appliance Flooding</strong><br>Washing machine or dishwasher water emergencies</div></div>
+        <div class="inc-item" style="color:rgba(255,255,255,.7)"><div class="inc-dot" style="background:linear-gradient(135deg,#f5a623,#e07b0f)"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></div><div><strong style="color:#fff">Refrigerator Failure</strong><br>Emergency same-night fridge repair to protect your food</div></div>
+        <div class="inc-item" style="color:rgba(255,255,255,.7)"><div class="inc-dot" style="background:linear-gradient(135deg,#f5a623,#e07b0f)"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></div><div><strong style="color:#fff">Gas Refrigerant Leak</strong><br>Immediate gas leak detection, containment and recharge</div></div>
+        <div class="inc-item" style="color:rgba(255,255,255,.7)"><div class="inc-dot" style="background:linear-gradient(135deg,#f5a623,#e07b0f)"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></div><div><strong style="color:#fff">Electrical Burning Smell</strong><br>Immediate safety shutdown, fault isolation and repair</div></div>
+        <div class="inc-item" style="color:rgba(255,255,255,.7)"><div class="inc-dot" style="background:linear-gradient(135deg,#f5a623,#e07b0f)"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></div><div><strong style="color:#fff">Any Appliance Fault</strong><br>If it's urgent and it's an appliance — we come, day or night</div></div>
+      </div>
+
+<div class="srv-cta" style="margin-top:8px">
+        <a href="https://wa.me/966591136834" target="_blank" class="btn btn-wa btn-xl"> Emergency WhatsApp Now</a>
+        <a href="tel:+966507884372" style="background:linear-gradient(135deg,#f5a623,#e07b0f);color:#fff;box-shadow:0 4px 18px rgba(245,166,35,.4)" class="btn btn-xl">☎ Emergency Call Line</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══ BRANDS ══ -->
+<div class="brands-section fade">
+  <div class="brands-inner">
+    <div class="brands-title">Brands We Service · الأجهزة التي نصلحها</div>
+    <div class="brands-grid">
+      <div class="brand-pill">Samsung</div>
+      <div class="brand-pill">LG</div>
+      <div class="brand-pill">Daikin</div>
+      <div class="brand-pill">Mitsubishi</div>
+      <div class="brand-pill">Hitachi</div>
+      <div class="brand-pill">Gree</div>
+      <div class="brand-pill">Carrier</div>
+      <div class="brand-pill">Toshiba</div>
+      <div class="brand-pill">Panasonic</div>
+      <div class="brand-pill">Whirlpool</div>
+      <div class="brand-pill">Bosch</div>
+      <div class="brand-pill">Siemens</div>
+      <div class="brand-pill">Miele</div>
+      <div class="brand-pill">Haier</div>
+      <div class="brand-pill">Sharp</div>
+      <div class="brand-pill">Hisense</div>
+      <div class="brand-pill">Electrolux</div>
+      <div class="brand-pill">Ariston</div>
+      <div class="brand-pill">Indesit</div>
+      <div class="brand-pill">AEG</div>
+      <div class="brand-pill">Zanussi</div>
+      <div class="brand-pill">Beko</div>
+      <div class="brand-pill">TCL</div>
+      <div class="brand-pill">Midea</div>
+      <div class="brand-pill">+ All Brands</div>
+    </div>
+  </div>
+</div>
+
+<!-- ══ WHY CHOOSE US BANNER ══ -->
+<div class="why-banner">
+  <div class="wb-glow"></div>
+  <div class="wb-inner">
+    <div class="wb-left fade-l">
+      <div class="sec-eyebrow" style="color:var(--teal)">Why Choose Us · لماذا تختارنا</div>
+      <h2>Riyadh's Most <em>Trusted</em> Appliance Service</h2>
+      <div class="ar" style="font-size:1em;margin-top:8px;color:rgba(255,255,255,.5)">الأكثر ثقة في خدمات الأجهزة المنزلية في الرياض</div>
+      <p>We've built our reputation one job at a time. 18 years in the field, 3,500+ satisfied customers, and a strict no-fix-no-fee policy ensures you never pay for a repair that doesn't work.</p>
+    </div>
+    <div class="wb-right fade-r">
+      <div class="wb-card"><div class="wb-ico"><svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg></div><h4>Licensed &amp; Insured</h4><p>Fully licensed by Saudi authorities. All work insured and covered.</p></div>
+      <div class="wb-card"><div class="wb-ico"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></div><h4>2-Year Warranty</h4><p>Every repair backed by a 2-year workmanship warranty, no exceptions.</p></div>
+      <div class="wb-card"><div class="wb-ico"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg></div><h4>Certified Technicians</h4><p>Every tech is factory-trained, certified, and background-checked.</p></div>
+      <div class="wb-card"><div class="wb-ico"><svg viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23L13 11.33V7z"/></svg></div><h4>No Fix, No Fee</h4><p>If we can't fix it, you pay nothing. Zero risk, complete transparency.</p></div>
+    </div>
+  </div>
+</div>
+
+<!-- ══ FAQ ══ -->
+<section class="faq-section" id="faq">
+  <div class="faq-inner">
+    <div class="faq-head fade">
+      <div class="sec-eyebrow">FAQ · الأسئلة الشائعة</div>
+      <h2 class="sec-title">Common <em>Questions</em></h2>
+      <div class="ar" style="text-align:center;margin:8px auto 0">أسئلة يطرحها عملاؤنا</div>
+      <p class="sec-sub" style="text-align:center;margin:12px auto 0">Everything you need to know before booking a service.</p>
+    </div>
+
+    <div class="faq-item fade">
+      <div class="faq-q" onclick="toggleFaq(this)">
+        <span class="faq-q-text">How quickly can you come for an emergency repair?</span>
+        <div class="faq-icon"><svg viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg></div>
+      </div>
+      <div class="faq-a">We guarantee a technician at your door within 2 hours for emergency calls anywhere in Riyadh — 24 hours a day, 7 days a week including Fridays and public holidays. For non-urgent bookings, same-day and next-morning slots are usually available.</div>
+    </div>
+
+    <div class="faq-item fade" style="transition-delay:.06s">
+      <div class="faq-q" onclick="toggleFaq(this)">
+        <span class="faq-q-text">Do you charge for the initial diagnosis visit?</span>
+        <div class="faq-icon"><svg viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg></div>
+      </div>
+      <div class="faq-a">No — our initial in-home assessment is completely free of charge. Our technician will visit, inspect your appliance, and give you a clear written quote before any work begins. There is no obligation to proceed.</div>
+    </div>
+
+    <div class="faq-item fade" style="transition-delay:.09s">
+      <div class="faq-q" onclick="toggleFaq(this)">
+        <span class="faq-q-text">What warranty do you provide on repairs?</span>
+        <div class="faq-icon"><svg viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg></div>
+      </div>
+      <div class="faq-a">All repairs are backed by our 2-year workmanship warranty. If the same fault reoccurs within 2 years of a repair, we fix it free of charge. Replacement parts also carry the manufacturer's standard warranty on top of ours.</div>
+    </div>
+
+    <div class="faq-item fade" style="transition-delay:.12s">
+      <div class="faq-q" onclick="toggleFaq(this)">
+        <span class="faq-q-text">Do you use genuine / original parts?</span>
+        <div class="faq-icon"><svg viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg></div>
+      </div>
+      <div class="faq-a">Yes. We only use OEM (Original Equipment Manufacturer) parts or certified equivalent parts for every repair. Before fitting any part, we will show you the part number and price — you always know exactly what is being replaced and why.</div>
+    </div>
+
+    <div class="faq-item fade" style="transition-delay:.15s">
+      <div class="faq-q" onclick="toggleFaq(this)">
+        <span class="faq-q-text">How often should I clean my AC unit in Riyadh?</span>
+        <div class="faq-icon"><svg viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg></div>
+      </div>
+      <div class="faq-a">Due to Riyadh's dusty environment and heavy AC usage (often 10–12 months per year), we recommend a professional deep clean every 6 months — ideally once before summer (April) and once before winter (October). Regular cleaning cuts electricity bills by up to 30% and prevents costly compressor failure.</div>
+    </div>
+
+    <div class="faq-item fade" style="transition-delay:.18s">
+      <div class="faq-q" onclick="toggleFaq(this)">
+        <span class="faq-q-text">Can you service my AC if it's a brand you haven't listed?</span>
+        <div class="faq-icon"><svg viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg></div>
+      </div>
+      <div class="faq-a">Yes. Our technicians are trained on over 40 brands and can service virtually any make or model of air conditioner, washing machine, refrigerator or microwave oven. If you're unsure, just WhatsApp us the brand name — we'll confirm availability before you book.</div>
+    </div>
+
+    <div class="faq-item fade" style="transition-delay:.21s">
+      <div class="faq-q" onclick="toggleFaq(this)">
+        <span class="faq-q-text">What areas in Riyadh do you cover?</span>
+        <div class="faq-icon"><svg viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg></div>
+      </div>
+      <div class="faq-a">We cover all districts of Riyadh including Al Quds, Al Olaya, Al Malaz, Al Muruj, Al Nakheel, Al Rawdah, Al Yasmin, Al Sahafa, Al Aqiq, Al Rabwah, Hittin, Al Wurud, and all surrounding areas. We also serve Jeddah and Dammam for contracted clients.</div>
+    </div>
+
+    <div class="faq-item fade" style="transition-delay:.24s">
+      <div class="faq-q" onclick="toggleFaq(this)">
+        <span class="faq-q-text">هل تقدمون خدمات لعملاء يتحدثون العربية فقط؟</span>
+        <div class="faq-icon"><svg viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg></div>
+      </div>
+      <div class="faq-a" style="font-family:'Tajawal',sans-serif;direction:rtl;text-align:right;font-size:15px;line-height:2">نعم، بالطبع! فريقنا بالكامل يتحدث العربية. جميع تقنيينا ومنسقي الخدمة يتواصلون باللغة العربية بطلاقة. يمكنك التواصل معنا عبر واتساب أو الهاتف باللغة العربية وسنكون سعداء بخدمتك.</div>
+    </div>
+  </div>
+</section>
+<!-- ══ CONTACT BAR ══ -->
+<div class="cbar">
+  <div class="cbar-inner">
+    <div class="ci">
+      <div class="ci-ico"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></div>
+      <div><div class="ci-lbl">Our Location</div><div class="ci-val">Al Quds District, Muhammad bin Faisal bin Turkey, Riyadh, Saudi Arabia</div></div>
+    </div>
+    <div class="ci">
+      <div class="ci-ico"><svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg></div>
+      <div><div class="ci-lbl">Call Anytime</div><div class="ci-val">+966 50 788 4372</div></div>
+    </div>
+    <div class="ci">
+      <div class="ci-ico"><svg viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23L13 11.33V7z"/></svg></div>
+      <div><div class="ci-lbl">Working Hours</div><div class="ci-val">Sun–Thu 8am–10pm · Emergency 24/7</div></div>
+    </div>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="footer-wrap">
+    <div class="footer-grid">
+
+      <!-- Col 1: About + contact info -->
+      <div class="footer-about">
+        <div class="footer-brand">
+          <img src="Removal-849.png" alt="Air Conditioning" onerror="this.style.display='none'"/>
+          <div class="footer-brand-text">
+            <div class="fn">Air <span>Conditioning</span></div>
+            <div class="far-sub">للتبريد والتكييف</div>
+          </div>
+        </div>
+        <p>Professional AC cleaning and home appliance service company serving Riyadh and Saudi Arabia. Fast, honest, high-quality work — licensed, insured, and available 365 days a year.<br><br>شركة متخصصة في خدمات التكييف والأجهزة المنزلية في الرياض والمملكة العربية السعودية.</p>
+
+        <div class="footer-contact-info">
+          <div class="fci">
+            <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+            Al Quds District, Muhammad bin Faisal bin Turkey, Riyadh, Saudi Arabia
+          </div>
+          <div class="fci">
+            <svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
+            <a href="tel:+966507884372">+966 50 788 4372</a>
+          </div>
+          <div class="fci">
+            <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.121 1.532 5.853L0 24l6.335-1.51A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.774 9.774 0 01-5.02-1.38l-.36-.214-3.762.897.937-3.668-.235-.375A9.778 9.778 0 012.182 12C2.182 6.579 6.579 2.182 12 2.182S21.818 6.579 21.818 12 17.421 21.818 12 21.818z"/></svg>
+            <a href="https://wa.me/966591136834" target="_blank">+966 59 113 6834 (WhatsApp)</a>
+          </div>
+          <div class="fci">
+            <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            <a href="mailto:info@airconditioningsa.com">info@airconditioningsa.com</a>
+          </div>
+        </div>
+
+        <div class="nl-wrap">
+          <p>Get seasonal tips &amp; exclusive deals:</p>
+          <div class="nl-row">
+            <input class="nl-input" type="email" placeholder="Your email address"/>
+            <button class="nl-btn">Subscribe</button>
+          </div>
+        </div>
+        <div class="socials">
+          <a href="#" class="soc"><svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+          <a href="https://www.instagram.com/ac_repairing_center00?igsh=dGZ6dHY2a2h6bTVm" target="_blank" class="soc"><svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a>
+          <a href="https://wa.me/966591136834" target="_blank" class="soc"><svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.121 1.532 5.853L0 24l6.335-1.51A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.774 9.774 0 01-5.02-1.38l-.36-.214-3.762.897.937-3.668-.235-.375A9.778 9.778 0 012.182 12C2.182 6.579 6.579 2.182 12 2.182S21.818 6.579 21.818 12 17.421 21.818 12 21.818z"/></svg></a>
+          <a href="https://vm.tiktok.com/ZS9dnbXLP8cP6-6bfP0/" target="_blank" class="soc"><svg viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.27 8.27 0 004.84 1.56V6.79a4.85 4.85 0 01-1.07-.1z"/></svg></a>
+        </div>
+      </div>
+
+      <!-- Col 2: Services -->
+      <div class="fcol">
+        <h4>Our Services</h4>
+        <ul>
+          <li><a href="#services">AC Services</a></li>
+          <li><a href="#services">Washing Machine Repair</a></li>
+          <li><a href="#services">Refrigerator Services</a></li>
+          <li><a href="#services">Microwave Oven Repair</a></li>
+          <li><a href="#services">Appliance Maintenance</a></li>
+          <li><a href="#services">Emergency Service 24/7</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 3: Company -->
+      <div class="fcol">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="#emergency">Emergency</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+      </div>
+
+      <!-- Col 4: Service Areas (Saudi – Riyadh Districts) -->
+      <div class="fcol">
+        <h4>Service Areas · مناطق الخدمة</h4>
+        <ul>
+          <li><a href="#">Al Quds District · حي القدس</a></li>
+          <li><a href="#">North Riyadh · شمال الرياض</a></li>
+          <li><a href="#">South Riyadh · جنوب الرياض</a></li>
+          <li><a href="#">East Riyadh · شرق الرياض</a></li>
+          <li><a href="#">Al Olaya · العليا</a></li>
+          <li><a href="#">Al Malaz · الملز</a></li>
+          <li><a href="#">Jeddah · جدة</a></li>
+          <li><a href="#">Dammam · الدمام</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2024 Air Conditioning · للتبريد والتكييف · Al Quds District, Riyadh, Saudi Arabia</p>
+      <div class="ftm-badges"><span class="fbd">Licensed</span><span class="fbd">Insured</span><span class="fbd">Certified</span></div>
+      <div class="ftm-links"><a href="#">Privacy</a><a href="#">Terms</a><a href="#">Sitemap</a></div>
+    </div>
+  </div>
+</footer>
+
+<!-- ══ FLOATING WHATSAPP ══ -->
+<a href="https://wa.me/966591136834" target="_blank" class="float-cta" id="floatQ">
+  <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.121 1.532 5.853L0 24l6.335-1.51A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.774 9.774 0 01-5.02-1.38l-.36-.214-3.762.897.937-3.668-.235-.375A9.778 9.778 0 012.182 12C2.182 6.579 6.579 2.182 12 2.182S21.818 6.579 21.818 12 17.421 21.818 12 21.818z"/></svg>
+  WhatsApp Us
+</a>
+
+<script>
+// ── Scroll events
+var hdr = document.getElementById('hdr');
+var bt  = document.getElementById('backTop');
+var fq  = document.getElementById('floatQ');
+window.addEventListener('scroll', function() {
+  hdr.classList.toggle('scrolled', scrollY > 20);
+  bt.classList.toggle('show', scrollY > 400);
+  fq.classList.toggle('show', scrollY > 400);
+  updateActiveTabs();
+});
+
+// ── Fade-in on scroll
+var io = new IntersectionObserver(function(entries) {
+  entries.forEach(function(e) { if (e.isIntersecting) e.target.classList.add('in'); });
+}, { threshold: 0.08 });
+document.querySelectorAll('.fade,.fade-l,.fade-r').forEach(function(el) { io.observe(el); });
+
+// ── Hamburger
+function toggleMenu() {
+  var menu = document.getElementById('mobMenu');
+  var btn  = document.getElementById('hambBtn');
+  menu.classList.toggle('open');
+  btn.classList.toggle('open');
+  document.body.style.overflow = menu.classList.contains('open') ? 'hidden' : '';
+}
+
+// ── FAQ accordion
+function toggleFaq(btn) {
+  var item = btn.parentElement;
+  var isOpen = item.classList.contains('open');
+  document.querySelectorAll('.faq-item.open').forEach(function(i) { i.classList.remove('open'); });
+  if (!isOpen) item.classList.add('open');
+}
+
+// ── Active tab highlight on scroll
+var sections = ['ac-services','washing-machine','refrigerator','microwave','maintenance','emergency'];
+var tabs = document.querySelectorAll('.srv-tab');
+function updateActiveTabs() {
+  var current = '';
+  sections.forEach(function(id) {
+    var el = document.getElementById(id);
+    if (el && scrollY >= el.offsetTop - 160) current = id;
+  });
+  tabs.forEach(function(tab) {
+    tab.classList.remove('active');
+    if (tab.getAttribute('href') === '#' + current) tab.classList.add('active');
+  });
+}
+</script>
+</body>
+</html>

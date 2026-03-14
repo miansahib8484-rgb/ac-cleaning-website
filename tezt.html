@@ -1,0 +1,46 @@
+
+<!-- FLOATERS -->
+<button class="back-top" id="backTop" onclick="window.scrollTo({top:0,behavior:'smooth'})"><svg viewBox="0 0 24 24"><path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"/></svg></button>
+<a href="https://wa.me/966591136834" target="_blank" class="float-cta" id="floatCta"><svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a9.12 9.12 0 00-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zM12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.121 1.532 5.853L0 24l6.335-1.51A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.774 9.774 0 01-5.02-1.38l-.36-.214-3.762.897.937-3.668-.235-.375A9.778 9.778 0 012.182 12C2.182 6.579 6.579 2.182 12 2.182S21.818 6.579 21.818 12 17.421 21.818 12 21.818z"/></svg>WhatsApp Us</a>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+function toggleMenu(){
+  var m=document.getElementById('mobMenu'),b=document.getElementById('hambBtn');
+  m.classList.toggle('open');b.classList.toggle('open');
+  document.body.style.overflow=m.classList.contains('open')?'hidden':'';
+}
+window.addEventListener('scroll',function(){
+  var s=window.scrollY;
+  document.getElementById('hdr').classList.toggle('scrolled',s>10);
+  document.getElementById('backTop').classList.toggle('show',s>400);
+  document.getElementById('floatCta').classList.toggle('show',s>300);
+});
+var obs=new IntersectionObserver(function(entries){entries.forEach(function(e){if(e.isIntersecting)e.target.classList.add('in')})},{threshold:.1});
+document.querySelectorAll('.fade,.fade-l,.fade-r').forEach(function(el){obs.observe(el)});
+function toggleFaq(btn){
+  var item=btn.parentElement;
+  document.querySelectorAll('.faq-item').forEach(function(i){if(i!==item)i.classList.remove('open')});
+  item.classList.toggle('open');
+}
+function submitForm(){
+  var name=document.getElementById('f_name').value.trim();
+  var phone=document.getElementById('f_phone').value.trim();
+  var service=document.getElementById('f_service').value;
+  var city=document.getElementById('f_city').value.trim();
+  var time=document.getElementById('f_time').value.trim();
+  var msg=document.getElementById('f_
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  make this img to adjust accc to nav size with disturbing another and in navbar pgs link add index.html, services.html,about Us  contact us and the  btns are looking like fake so make them relaististic btns with green    in section why choose video size should be tiktok size and reviews are in line and make small the reviews only 2 to 3 lines only  and and cta should not have white from left and right and in mob responsive remove the uper and loer space from hero and aslo make size greater of img acc to nav bcz it is very small and also adjust reviews in mob responsive review cards should be same all and in final round remove left right white colour and in menu remove extra option like call and wtsp cal and add exact links of pagess

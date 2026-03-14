@@ -1,0 +1,1366 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+<title>Air Conditioning Services – للتبريد والتكييف</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,700;0,900;1,700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Tajawal:wght@300;400;500;700;800&display=swap" rel="stylesheet"/>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html,body{overflow-x:hidden;max-width:100%;width:100%}
+:root{
+  --teal:#00c6b2;--teal2:#00a396;--teal3:#007d70;
+  --tealgl:rgba(0,198,178,.12);
+  --green:#10b981;--green2:#059669;--green3:#047857;
+  --amber:#f5a623;--navy:#08141f;--navy2:#0d1e2d;--navy3:#122436;
+  --off:#f3f6f8;--gray:#64748b;--light:#94a3b8;--border:#e2e8f0;
+  --r:6px;
+}
+html{scroll-behavior:smooth}
+body{font-family:"Plus Jakarta Sans",sans-serif;color:#1e293b;background:#fff;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{text-decoration:none;color:inherit}
+ul{list-style:none}
+::selection{background:var(--teal);color:#fff}
+::-webkit-scrollbar{width:5px}
+::-webkit-scrollbar-track{background:#08141f}
+::-webkit-scrollbar-thumb{background:var(--teal);border-radius:3px}
+.ar{font-family:"Tajawal",sans-serif;direction:rtl;display:block;font-size:1.15em;color:var(--teal);font-weight:700;margin-top:8px;letter-spacing:0;line-height:1.5}
+.ar-white{color:rgba(255,255,255,.65)}
+
+/* ══ TOPBAR ══ */
+.topbar{background:var(--navy);padding:9px 40px;display:flex;align-items:center;justify-content:center;gap:22px;flex-wrap:wrap;overflow:visible}
+.topbar-row2{display:contents}
+.ti{display:flex;align-items:center;gap:6px;font-size:12.5px;color:rgba(255,255,255,.6);font-weight:500;white-space:nowrap;flex-shrink:0}
+.ti svg{width:13px;height:13px;fill:var(--teal);flex-shrink:0}
+.ti a{color:rgba(255,255,255,.8);transition:color .2s}
+.ti a:hover{color:var(--teal)}
+.tdiv{width:1px;height:14px;background:rgba(255,255,255,.15);flex-shrink:0}
+
+/* ══ HEADER / NAV ══ */
+header{position:sticky;top:0;z-index:999;background:rgba(255,255,255,.97);backdrop-filter:blur(20px);border-bottom:1px solid var(--border);transition:box-shadow .3s;width:100%}
+header.scrolled{box-shadow:0 2px 30px rgba(0,0,0,.1)}
+nav{max-width:1280px;margin:0 auto;padding:0 40px;height:84px;display:flex;align-items:center;justify-content:space-between;gap:16px;width:100%}
+
+.logo-wrap{display:flex;align-items:center;gap:12px;flex-shrink:0;text-decoration:none}
+.logo-wrap img{height:60px;width:auto;object-fit:contain}
+.logo-text-block{display:flex;flex-direction:column;line-height:1.25}
+.logo-company{font-family:"Fraunces",serif;font-size:21px;font-weight:900;color:var(--navy);white-space:nowrap;letter-spacing:-.3px}
+.logo-company span{color:var(--teal)}
+.logo-sub{font-family:"Tajawal",sans-serif;font-size:16px;color:var(--gray);direction:rtl;margin-top:2px;font-weight:600}
+
+.nav-links{display:flex;align-items:center;gap:2px}
+.nav-links a{font-size:13.5px;font-weight:600;color:#475569;padding:7px 13px;border-radius:var(--r);transition:all .2s;white-space:nowrap}
+.nav-links a:hover,.nav-links a.active{color:var(--teal);background:var(--tealgl)}
+.nav-right{display:flex;align-items:center;gap:12px;flex-shrink:0}
+
+/* ══ HAMBURGER ══ */
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:8px;border:none;background:transparent;border-radius:var(--r);transition:background .2s;flex-shrink:0}
+.hamburger:hover{background:var(--tealgl)}
+.hamburger span{display:block;width:22px;height:2.5px;background:var(--navy);border-radius:2px;transition:all .3s}
+.hamburger.open span:nth-child(1){transform:translateY(7.5px) rotate(45deg)}
+.hamburger.open span:nth-child(2){opacity:0;transform:scaleX(0)}
+.hamburger.open span:nth-child(3){transform:translateY(-7.5px) rotate(-45deg)}
+
+/* ══ MOBILE DRAWER ══ */
+.mob-menu{display:none;position:fixed;inset:0;background:rgba(8,20,31,.97);z-index:9999;flex-direction:column;padding:72px 28px 36px;overflow-y:auto;backdrop-filter:blur(16px)}
+.mob-menu.open{display:flex}
+.mob-menu a.mob-link{font-size:20px;font-weight:800;color:#fff;padding:18px 0;border-bottom:1px solid rgba(255,255,255,.08);transition:color .2s;display:flex;align-items:center;justify-content:space-between}
+.mob-menu a.mob-link:hover{color:var(--teal)}
+.mob-menu a.mob-link::after{content:"→";opacity:.3;font-size:16px}
+.mob-close{position:absolute;top:18px;right:18px;background:rgba(255,255,255,.08);border:none;color:#fff;width:42px;height:42px;border-radius:10px;font-size:20px;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:background .2s}
+.mob-close:hover{background:rgba(255,255,255,.18)}
+.mob-wa-btn{background:#25D366;color:#fff;border:none;border-radius:8px;padding:16px 24px;font-size:16px;font-weight:800;display:flex;align-items:center;justify-content:center;gap:10px;margin-top:24px;box-shadow:0 4px 16px rgba(37,211,102,.4);transition:all .3s;text-decoration:none}
+.mob-wa-btn:hover{background:#128C7E;transform:translateY(-2px);box-shadow:0 6px 20px rgba(18,140,126,.5)}
+.mob-wa-btn svg{width:20px;height:20px;fill:#fff;flex-shrink:0}
+
+/* ══ BUTTONS ══ */
+.btn{
+display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:12px 24px;
+font-size:14px;
+font-weight:700;
+border-radius:8px;
+cursor:pointer;
+transition:all .25s ease;
+border:2px solid transparent;
+font-family:"Plus Jakarta Sans",sans-serif;
+white-space:nowrap;
+box-shadow:0 2px 8px rgba(0,0,0,.1);
+text-decoration:none
+}
+.btn svg{width:16px;height:16px;fill:currentColor;flex-shrink:0}
+.btn-green{background:#25D366;color:#fff;border:2px solid #25D366;border-radius:8px;box-shadow:0 4px 14px rgba(16,185,129,.3)}
+.btn-green:hover{background:transparent;color:#25D366;border:2px solid #25D366;;box-shadow:0 6px 20px rgba(16,185,129,.2)}
+.btn-green svg{width:18px;height:18px;fill:currentColor}
+.btn-outline{
+background:transparent;
+border:2px solid #25D366;
+color:#25D366;
+box-shadow:0 2px 8px rgba(16,185,129,.15)
+}
+.btn-outline:hover{
+background:#25D366;
+color:#fff;
+box-shadow:0 4px 16px rgba(16,185,129,.35)
+}
+.btn-ghost{
+background:rgba(255,255,255,.1);
+border:2px solid rgba(255,255,255,.28);
+color:#fff;
+backdrop-filter:blur(8px)
+}
+.btn-ghost:hover{
+background:rgba(255,255,255,.2);
+border-color:rgba(255,255,255,.4)
+}
+.btn-ghost svg{
+fill:#fff
+}
+.btn-wa{
+background:#25D366;
+color:#fff;
+border:2px solid #25D366;
+border-radius:8px;
+box-shadow:0 4px 16px rgba(37,211,102,.35);
+padding:12px 24px;
+font-size:14px
+}
+.btn-wa:hover{
+background:transparent;
+color:#25D366;
+border:2px solid #25D366;
+transform:translateY(-3px);
+box-shadow:0 8px 24px rgba(18,140,126,.2)
+}
+.btn-wa svg{
+width:18px;
+height:18px;
+fill:currentColor
+}
+.btn-wa-nav{
+background:#25D366;
+color:#fff;
+border:2px solid #25D366;
+border-radius:8px;
+box-shadow:0 3px 10px rgba(37,211,102,.3);
+padding:12px 20px;
+font-size:13.5px
+}
+.btn-wa-nav:hover{
+background:transparent;
+color:#25D366;
+border:2px solid #25D366;
+transform:translateY(-2px);
+box-shadow:0 5px 16px rgba(18,140,126,.2)
+}
+.btn-wa-nav svg{
+width:16px;
+height:16px;
+fill:currentColor
+}
+.btn-lg{
+padding:14px 30px;
+font-size:15px;
+border-radius:10px
+}
+.btn-lg svg{
+width:18px;
+height:18px
+}
+.btn-lg.btn-wa,
+.btn-lg.btn-green{
+border-radius:8px
+}
+.btn-lg.btn-wa svg,
+.btn-lg.btn-green svg{
+width:20px;
+height:20px
+}
+.btn-xl{
+padding:16px 34px;
+font-size:16px;
+border-radius:10px
+}
+
+.btn-xl svg{
+width:18px;
+height:18px
+}
+
+.btn-xl.btn-wa,
+.btn-xl.btn-green{
+border-radius:8px
+}
+
+.btn-xl.btn-wa svg,
+.btn-xl.btn-green svg{
+width:20px;
+height:20px
+}
+/* ══ HERO ══ */
+.hero{position:relative;min-height:100vh;display:flex;align-items:center;overflow:hidden;background:var(--navy)}
+.hero-bg{position:absolute;inset:0;background:url("https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=1920&q=90") center/cover no-repeat;opacity:.22}
+.hero-grad{position:absolute;inset:0;background:linear-gradient(110deg,rgba(8,20,31,.97) 50%,rgba(8,20,31,.65) 75%,rgba(8,20,31,.3) 100%)}
+.hero-orb1{position:absolute;width:600px;height:600px;border-radius:50%;background:rgba(0,198,178,.08);filter:blur(90px);top:-100px;right:0;pointer-events:none;animation:orbF 9s ease-in-out infinite}
+.hero-orb2{position:absolute;width:400px;height:400px;border-radius:50%;background:rgba(245,166,35,.06);filter:blur(70px);bottom:-60px;right:35%;pointer-events:none;animation:orbF 13s ease-in-out infinite reverse}
+@keyframes orbF{0%,100%{transform:translateY(0)}50%{transform:translateY(-28px)}}
+.hero-inner{position:relative;z-index:2;max-width:1280px;margin:0 auto;padding:0 40px;display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;width:100%;min-height:100vh}
+.hero-left{display:flex;flex-direction:column;justify-content:center;padding:80px 0}
+.hero-pill{display:inline-flex;align-items:center;gap:9px;background:rgba(0,198,178,.1);border:1px solid rgba(0,198,178,.25);padding:8px 18px;border-radius:100px;margin-bottom:26px;font-size:11.5px;font-weight:700;color:var(--teal);text-transform:uppercase;letter-spacing:1px;width:fit-content}
+.hero-pill-dot{width:7px;height:7px;background:var(--teal);border-radius:50%;animation:ping 2s infinite}
+@keyframes ping{0%,100%{box-shadow:0 0 0 0 rgba(0,198,178,.5)}50%{box-shadow:0 0 0 5px rgba(0,198,178,.08)}}
+.hero h1{font-family:"Fraunces",serif;font-size:clamp(30px,4.5vw,62px);color:#fff;line-height:1.08;margin-bottom:6px;font-weight:900}
+.hero h1 .accent{color:var(--teal);font-style:italic}
+.hero-ar-title{font-family:"Tajawal",sans-serif;direction:rtl;font-size:clamp(20px,3.2vw,36px);color:rgba(255,255,255,.55);font-weight:700;margin-bottom:22px;line-height:1.4}
+.hero-desc{font-size:15.5px;color:rgba(255,255,255,.58);line-height:1.82;margin-bottom:34px;max-width:520px;font-weight:300}
+.hero-btns{display:flex;gap:14px;align-items:center;flex-wrap:wrap;margin-bottom:40px}
+.hero-trust{display:flex;align-items:center;gap:16px;padding-top:34px;border-top:1px solid rgba(255,255,255,.09)}
+.hero-avatars{display:flex}
+.hero-avatars img{width:36px;height:36px;border-radius:50%;border:2.5px solid rgba(255,255,255,.2);object-fit:cover;margin-left:-8px}
+.hero-avatars img:first-child{margin-left:0}
+.trust-stars{color:#f5a623;font-size:12.5px;letter-spacing:1px}
+.trust-lbl{font-size:11.5px;color:rgba(255,255,255,.42);margin-top:2px}
+.hero-badges{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
+.hbadge{display:flex;align-items:center;gap:6px;font-size:11.5px;color:rgba(255,255,255,.48);font-weight:500}
+.hbadge svg{width:13px;height:13px;fill:var(--teal)}
+.hero-right{display:flex;align-items:center;justify-content:center;position:relative;padding:60px 0}
+.hero-img-wrap{position:relative;width:100%;max-width:500px}
+.hero-main-img{width:100%;height:auto;min-height:480px;object-fit:cover;border-radius:24px;box-shadow:0 40px 100px rgba(0,0,0,.5)}
+.hero-fc{position:absolute;background:rgba(255,255,255,.95);backdrop-filter:blur(12px);border-radius:14px;padding:14px 18px;box-shadow:0 12px 40px rgba(0,0,0,.18);display:flex;align-items:center;gap:12px}
+.hero-fc1{bottom:32px;left:-24px}
+.hero-fc2{top:40px;right:-20px}
+.hero-fc .hf-ico{width:40px;height:40px;border-radius:10px;background:var(--tealgl);display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.hero-fc .hf-ico svg{width:20px;height:20px;fill:var(--teal)}
+.hf-val{font-size:18px;font-weight:900;color:var(--navy);line-height:1}
+.hf-lbl{font-size:11px;color:var(--gray);margin-top:2px}
+.hero-img-badge{position:absolute;top:32px;left:-20px;background:linear-gradient(135deg,var(--teal),var(--teal3));border-radius:12px;padding:12px 16px;text-align:center;box-shadow:0 8px 28px rgba(0,198,178,.4)}
+.hib-num{font-family:"Fraunces",serif;font-size:28px;font-weight:900;color:#fff;line-height:1}
+.hib-txt{font-size:10.5px;font-weight:700;color:rgba(255,255,255,.8);text-transform:uppercase;letter-spacing:.5px;margin-top:2px}
+
+/* ══ TICKER ══ */
+.ticker{background:var(--teal);padding:11px 0;overflow:hidden;white-space:nowrap}
+.ticker-track{display:inline-flex;animation:scroll 32s linear infinite}
+.ticker-track:hover{animation-play-state:paused}
+.tick-item{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:700;color:#fff;text-transform:uppercase;letter-spacing:.4px;padding:0 28px}
+.tick-sep{color:rgba(255,255,255,.4);font-size:15px}
+@keyframes scroll{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+
+/* ══ SECTIONS ══ */
+.section{padding:90px 40px}
+.wrap{max-width:1280px;margin:0 auto}
+.sec-eyebrow{font-size:11.5px;font-weight:800;text-transform:uppercase;letter-spacing:2.5px;color:var(--teal);margin-bottom:10px}
+.sec-title{font-family:"Fraunces",serif;font-size:clamp(24px,3.8vw,46px);color:var(--navy);line-height:1.15;font-weight:700}
+.sec-title em{color:var(--teal);font-style:italic}
+.sec-sub{font-size:15.5px;color:var(--gray);line-height:1.8;max-width:510px;margin-top:12px;font-weight:300}
+.bg-off{background:var(--off)}
+
+/* ══ SERVICES – 3 per row ══ */
+.srv-head{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:50px;flex-wrap:wrap;gap:20px}
+.srv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.srv-card{background:#fff;border-radius:18px;padding:30px 24px 26px;border:1px solid var(--border);transition:all .35s;position:relative;overflow:hidden}
+.srv-card::before{content:"";position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--teal),var(--teal3));transform:scaleX(0);transform-origin:left;transition:transform .35s}
+.srv-card:hover{transform:translateY(-7px);box-shadow:0 26px 66px rgba(0,0,0,.1);border-color:rgba(0,198,178,.18)}
+.srv-card:hover::before{transform:scaleX(1)}
+.srv-num{position:absolute;top:16px;right:16px;width:34px;height:34px;border-radius:50%;background:linear-gradient(135deg,var(--teal),var(--teal3));color:#fff;font-family:"Fraunces",serif;font-size:13px;font-weight:900;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 14px rgba(0,198,178,.38);transition:all .35s}
+.srv-card:hover .srv-num{transform:scale(1.12)}
+.srv-ico{width:56px;height:56px;background:linear-gradient(135deg,rgba(0,198,178,.13),rgba(0,198,178,.06));border-radius:14px;display:flex;align-items:center;justify-content:center;margin-bottom:16px;transition:all .35s;color:var(--teal)}
+.srv-card:hover .srv-ico{background:linear-gradient(135deg,var(--teal),var(--teal3));box-shadow:0 8px 26px rgba(0,198,178,.32);color:#fff}
+.srv-ico svg{width:28px;height:28px;transition:all .35s}
+.srv-card h3{font-size:15.5px;font-weight:800;color:var(--navy);margin-bottom:4px;line-height:1.3}
+.srv-card p{font-size:13px;color:var(--gray);line-height:1.75;margin-bottom:14px}
+.srv-tags{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:16px}
+.srv-tag{font-size:10.5px;font-weight:600;background:rgba(0,198,178,.08);color:var(--teal);padding:3px 9px;border-radius:100px}
+.srv-btn{display:inline-flex;align-items:center;gap:7px;font-size:13px;font-weight:700;color:#fff;background:linear-gradient(135deg,#10b981,#059669);border:2px solid #059669;padding:10px 18px;border-radius:8px;transition:all .25s;box-shadow:0 3px 10px rgba(16,185,129,.25)}
+.srv-btn:hover{background:linear-gradient(135deg,#059669,#047857);box-shadow:0 5px 16px rgba(16,185,129,.4);transform:translateY(-2px)}
+.srv-btn svg{width:13px;height:13px;fill:#fff;transition:all .22s}
+.srv-btn:hover svg{transform:translateX(3px)}
+
+/* ══ STATS ══ */
+.stats-strip{background:var(--navy2)}
+.stats-row{max-width:1280px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr)}
+.stat-col{padding:50px 30px;text-align:center;border-right:1px solid rgba(255,255,255,.07);transition:background .3s}
+.stat-col:last-child{border-right:none}
+.stat-col:hover{background:rgba(0,198,178,.07)}
+.stat-num{font-family:"Fraunces",serif;font-size:52px;font-weight:900;line-height:1;background:linear-gradient(135deg,var(--teal),#7ffff4);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.stat-num sup{font-size:20px}
+.stat-lbl{font-size:13px;color:rgba(255,255,255,.42);margin-top:9px;line-height:1.55}
+
+/* ══ PROCESS ══ */
+.process-bg{background:linear-gradient(160deg,var(--navy),var(--navy2));padding:90px 40px}
+.process-head{text-align:center;margin-bottom:56px}
+.process-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;max-width:1280px;margin:0 auto}
+.step{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.07);border-radius:18px;padding:38px 24px;text-align:center;transition:all .3s}
+.step:hover{background:rgba(0,198,178,.07);border-color:rgba(0,198,178,.22);transform:translateY(-6px)}
+.step-num{width:56px;height:56px;background:linear-gradient(135deg,var(--teal),var(--teal3));border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:"Fraunces",serif;font-size:22px;font-weight:900;color:#fff;margin:0 auto 18px;box-shadow:0 8px 24px rgba(0,198,178,.3)}
+.step h4{font-size:15.5px;font-weight:800;color:#fff;margin-bottom:4px}
+.step p{font-size:13px;color:rgba(255,255,255,.48);line-height:1.72}
+
+/* ══ WHY CHOOSE US ══ */
+.why-grid{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:center}
+.why-visual{position:relative}
+.why-video-container{position:relative;width:100%;max-width:380px;margin:0 auto;aspect-ratio:9/16;border-radius:20px;overflow:hidden;background:#000;box-shadow:0 40px 80px rgba(0,0,0,.25)}
+.why-video-container video{width:100%;height:100%;object-fit:cover;display:block}
+.why-video-poster{position:absolute;inset:0;background:url("https://images.unsplash.com/photo-1585771724684-38269d6639fd?auto=format&fit=crop&w=800&q=88") center/cover no-repeat;transition:opacity .45s}
+.why-video-poster.hidden{opacity:0;pointer-events:none}
+.why-play-overlay{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:background.3s}
+.why-play-overlay:hover{background:rgba(0,0,0,.12)}
+.why-play-overlay.hidden{display:none}
+.why-play-btn-circle{width:76px;height:76px;background:linear-gradient(135deg,#f5a623,#e07b0f);border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 0 0 18px rgba(245,166,35,.18),0 12px 36px rgba(245,166,35,.4);transition:transform .3s}
+.why-play-overlay:hover .why-play-btn-circle{transform:scale(1.1)}
+.why-play-btn-circle svg{width:28px;height:28px;fill:#fff;margin-left:5px}
+.why-float{position:absolute;bottom:28px;left:50%;transform:translateX(-50%);background:#fff;border-radius:14px;padding:16px 20px;box-shadow:0 12px 40px rgba(0,0,0,.13);display:flex;align-items:center;gap:13px;z-index:5}
+.wf-ico{width:40px;height:40px;background:var(--tealgl);border-radius:10px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.wf-ico svg{width:19px;height:19px;fill:var(--teal)}
+.wf-num{font-family:"Fraunces",serif;font-size:21px;font-weight:900;color:var(--navy);line-height:1}
+.wf-lbl{font-size:11.5px;color:var(--gray);margin-top:2px}
+.why-pts{display:flex;flex-direction:column;gap:16px;margin-top:30px}
+.why-pt{display:flex;gap:14px;padding:18px;border-radius:14px;border:1.5px solid var(--border);background:#fff;transition:all .3s}
+.why-pt:hover{border-color:rgba(0,198,178,.25);box-shadow:0 8px 28px rgba(0,0,0,.06);transform:translateX(4px)}
+.wp-ico{width:40px;height:40px;border-radius:10px;background:var(--tealgl);display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:background .3s}
+.why-pt:hover .wp-ico{background:linear-gradient(135deg,var(--teal),var(--teal3))}
+.wp-ico svg{width:18px;height:18px;fill:var(--teal);transition:fill .3s}
+.why-pt:hover .wp-ico svg{fill:#fff}
+.wp-title{font-size:14.5px;font-weight:800;color:var(--navy);margin-bottom:3px}
+.wp-desc{font-size:13px;color:var(--gray);line-height:1.65}
+
+/* ══ GALLERY ══ */
+.gal-head{text-align:center;margin-bottom:48px}
+.gal-mosaic{display:grid;grid-template-columns:repeat(12,1fr);grid-template-rows:240px 240px;gap:6px}
+.gal-item{overflow:hidden;border-radius:12px;cursor:pointer;position:relative}
+.gal-item:nth-child(1){grid-column:span 5;grid-row:span 2}
+.gal-item:nth-child(2){grid-column:span 4}
+.gal-item:nth-child(3){grid-column:span 3}
+.gal-item:nth-child(4){grid-column:span 3}
+.gal-item:nth-child(5){grid-column:span 4}
+.gal-item img{width:100%;height:100%;object-fit:cover;transition:transform .55s}
+.gal-item:hover img{transform:scale(1.07)}
+.gal-over{position:absolute;inset:0;background:linear-gradient(to top,rgba(8,20,31,.7),transparent);opacity:0;transition:opacity .3s;display:flex;align-items:flex-end;padding:18px}
+.gal-item:hover .gal-over{opacity:1}
+.gal-lbl{font-size:12.5px;font-weight:700;color:#fff}
+
+/* ══ TESTIMONIALS ══ */
+.test-bg{background:linear-gradient(160deg,var(--navy),var(--navy2));overflow:hidden}
+.test-head{text-align:center;margin-bottom:54px}
+.test-scroll-container{overflow:hidden;position:relative;padding:20px 0}
+.test-grid{display:flex;gap:20px;animation:scrollReviews 40s linear infinite;width:max-content}
+.test-grid:hover{animation-play-state:paused}
+@keyframes scrollReviews{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+.test-card{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:18px;padding:24px 22px;transition:all .3s;position:relative;overflow:hidden;display:flex;flex-direction:column;min-height:280px;width:380px;flex-shrink:0}
+.test-card::before{content:"";position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--teal),transparent);opacity:0;transition:opacity .3s}
+.test-card:hover{background:rgba(255,255,255,.07);border-color:rgba(0,198,178,.2);transform:translateY(-5px)}
+.test-card:hover::before{opacity:1}
+.test-stars{color:#f5a623;font-size:14px;letter-spacing:1px;margin-bottom:12px}
+.test-q{font-family:"Fraunces",serif;font-size:42px;color:var(--teal);opacity:.18;line-height:.7;margin-bottom:12px;font-weight:900}
+.test-card p{
+font-size:13px;
+color:rgba(255,255,255,.68);
+line-height:1.7;
+margin-bottom:auto;
+white-space:normal;
+word-break:break-word;
+}
+
+.ar-review-text{font-family:"Tajawal",sans-serif!important;direction:rtl;text-align:right;font-size:14.5px!important;line-height:1.8!important;font-weight:500}
+.test-author{display:flex;align-items:center;gap:12px;margin-top:20px;padding-top:16px;border-top:1px solid rgba(255,255,255,.06)}
+.test-author-ar{flex-direction:row-reverse}
+.test-av{width:42px;height:42px;border-radius:50%;object-fit:cover;border:2.5px solid rgba(0,198,178,.3);flex-shrink:0}
+.test-av-ar{width:42px;height:42px;border-radius:50%;background:linear-gradient(135deg,var(--teal),var(--teal3));display:flex;align-items:center;justify-content:center;font-family:"Tajawal",sans-serif;font-size:15px;font-weight:800;color:#fff;border:2.5px solid rgba(0,198,178,.4);flex-shrink:0}
+.test-name{font-size:13.5px;font-weight:800;color:#fff;line-height:1.3}
+.test-name-ar{font-family:"Tajawal",sans-serif;direction:rtl;font-size:16px;font-weight:700}
+.test-loc{font-size:10.5px;color:rgba(255,255,255,.38);margin-top:3px;line-height:1.3}
+.test-loc-ar{font-family:"Tajawal",sans-serif;direction:rtl;font-size:12.5px;text-align:right}
+.test-badge{display:inline-flex;align-items:center;gap:4px;font-size:10px;color:var(--teal);margin-top:4px;font-weight:600}
+.test-badge svg{width:10px;height:10px;fill:var(--teal)}
+.test-badge-ar{font-family:"Tajawal",sans-serif;direction:rtl;justify-content:flex-end}
+
+/* ══ FORM ══ */
+.estimate-bg{background:var(--off)}
+.estimate-head{text-align:center;margin-bottom:44px}
+.form-card{background:#fff;border-radius:22px;padding:52px 48px;box-shadow:0 24px 80px rgba(0,0,0,.09);border:1px solid var(--border);max-width:840px;margin:0 auto}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.ff{display:flex;flex-direction:column;gap:6px}
+.ff.full{grid-column:span 2}
+.ff label{font-size:12.5px;font-weight:700;color:var(--navy)}
+.fc{background:var(--off);border:1.5px solid var(--border);border-radius:8px;padding:12px 15px;font-size:14px;font-family:"Plus Jakarta Sans",sans-serif;color:#1e293b;outline:none;transition:border-color .2s,box-shadow .2s;width:100%}
+.fc:focus{border-color:var(--teal);box-shadow:0 0 0 3px rgba(0,198,178,.1)}
+.fc::placeholder{color:var(--light)}
+textarea.fc{resize:vertical;min-height:100px}
+.fsr{grid-column:span 2;display:flex;flex-direction:column;gap:12px;margin-top:4px}
+.fbadges{display:flex;align-items:center;justify-content:center;gap:22px;flex-wrap:wrap}
+.fbadge-item{display:flex;align-items:center;gap:6px;font-size:12px;color:var(--gray)}
+.fbadge-item svg{width:13px;height:13px;fill:var(--teal)}
+
+/* ══ CTA BAND ══ */
+.cta-outer{padding:60px 0;background:#fff}
+.cta-band{position:relative;overflow:hidden;border-radius:0;background:linear-gradient(135deg,var(--navy2),var(--navy3))}
+.cta-band::before{content:"";position:absolute;inset:0;background:url("https://images.unsplash.com/photo-1621905252507-b35492cc74b4?auto=format&fit=crop&w=1400&q=80") center/cover;opacity:.1}
+.cta-glow{position:absolute;width:500px;height:500px;border-radius:50%;background:rgba(0,198,178,.08);filter:blur(80px);top:-100px;right:-60px}
+.cta-glow2{position:absolute;width:300px;height:300px;border-radius:50%;background:rgba(245,166,35,.06);filter:blur(60px);bottom:-50px;left:20%}
+.cta-inner{position:relative;z-index:1;padding:72px 68px;display:flex;align-items:center;justify-content:space-between;gap:44px;flex-wrap:wrap;max-width:1280px;margin:0 auto}
+.cta-left h2{font-family:"Fraunces",serif;font-size:clamp(26px,3.8vw,44px);color:#fff;line-height:1.18;max-width:520px;font-weight:700}
+.cta-left h2 em{color:var(--teal);font-style:italic}
+.cta-left p{font-size:15.5px;color:rgba(255,255,255,.52);margin-top:12px;max-width:440px;line-height:1.78;font-weight:300}
+.cta-right-btns{display:flex;flex-direction:column;gap:12px;align-items:flex-end}
+.cta-right-btns .btn{min-width:240px;justify-content:center}
+.cta-call{display:flex;align-items:center;gap:8px;color:rgba(255,255,255,.5);font-size:13px;font-weight:600;justify-content:center}
+.cta-call svg{width:13px;height:13px;fill:var(--teal)}
+
+/* ══ CONTACT BAR ══ */
+.cbar{background:linear-gradient(135deg,var(--teal),var(--teal3));padding:0}
+.cbar-inner{max-width:100%;margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr)}
+.ci{display:flex;align-items:center;gap:16px;padding:30px 24px;border-right:1px solid rgba(255,255,255,.18)}
+.ci:last-child{border-right:none}
+.ci-ico{width:46px;height:46px;background:rgba(255,255,255,.2);border-radius:12px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.ci-ico svg{width:21px;height:21px;fill:#fff}
+.ci-lbl{font-size:11px;text-transform:uppercase;letter-spacing:1px;color:rgba(255,255,255,.7);font-weight:700;margin-bottom:3px}
+.ci-val{font-size:14px;font-weight:800;color:#fff;line-height:1.4}
+
+/* ══ FOOTER ══ */
+.footer{background:var(--navy);padding:76px 0 0}
+.footer-wrap{max-width:100%;margin:0 auto}
+.footer-grid{display:grid;grid-template-columns:2.2fr 1fr 1fr 1fr;gap:50px;padding:0 40px 60px;max-width:1280px;margin:0 auto}
+.footer-brand{display:flex;align-items:center;gap:10px;margin-bottom:16px}
+.footer-brand img{height:56px;width:auto;object-fit:contain;filter:brightness(0) invert(1)}
+.footer-brand-text .fn{font-family:"Fraunces",serif;font-size:16px;font-weight:900;color:#fff;white-space:nowrap}
+.footer-brand-text .fn span{color:var(--teal)}
+.footer-brand-text .far-sub{font-family:"Tajawal",sans-serif;font-size:15px;color:rgba(255,255,255,.45);direction:rtl;margin-top:2px;font-weight:500}
+.footer-about p{font-size:13px;color:rgba(255,255,255,.4);line-height:1.85;max-width:280px}
+.footer-contact-info{margin-top:20px;display:flex;flex-direction:column;gap:10px}
+.fci{display:flex;align-items:flex-start;gap:8px;font-size:13px;color:rgba(255,255,255,.5)}
+.fci svg{width:14px;height:14px;fill:var(--teal);flex-shrink:0;margin-top:2px}
+.fci a{color:rgba(255,255,255,.7);transition:color .2s}
+.fci a:hover{color:var(--teal)}
+.nl-wrap{margin-top:20px}
+.nl-wrap p{font-size:12px;color:rgba(255,255,255,.45);margin-bottom:8px;font-weight:500}
+.nl-row{display:flex;gap:8px}
+.nl-input{flex:1;min-width:0;background:rgba(255,255,255,.06);border:1.5px solid rgba(255,255,255,.1);border-radius:var(--r);padding:10px 13px;color:#fff;font-size:13px;font-family:"Plus Jakarta Sans",sans-serif;outline:none;transition:border-color .2s}
+.nl-input::placeholder{color:rgba(255,255,255,.25)}
+.nl-input:focus{border-color:var(--teal)}
+.nl-btn{background:var(--teal);color:#fff;border:none;padding:10px 14px;border-radius:var(--r);cursor:pointer;font-weight:700;font-size:13px;white-space:nowrap;transition:background .2s}
+.nl-btn:hover{background:var(--teal2)}
+.socials{display:flex;gap:8px;margin-top:18px}
+.soc{width:35px;height:35px;border:1.5px solid rgba(255,255,255,.1);border-radius:8px;display:flex;align-items:center;justify-content:center;transition:all .2s;cursor:pointer}
+.soc:hover{background:var(--teal);border-color:var(--teal);transform:translateY(-2px)}
+.soc svg{width:14px;height:14px;fill:rgba(255,255,255,.45)}
+.soc:hover svg{fill:#fff}
+.fcol h4{font-size:12px;font-weight:800;color:#fff;margin-bottom:18px;text-transform:uppercase;letter-spacing:1px}
+.fcol li{margin-bottom:10px}
+.fcol li a{font-size:13px;color:rgba(255,255,255,.4);transition:color .2s}
+.fcol li a:hover{color:var(--teal)}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.07);padding:22px 40px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px}
+.footer-bottom p{font-size:12px;color:rgba(255,255,255,.24)}
+.ftm-links{display:flex;gap:20px}
+.ftm-links a{font-size:12px;color:rgba(255,255,255,.24);transition:color .2s}
+.ftm-links a:hover{color:var(--teal)}
+.ftm-badges{display:flex;gap:8px}
+.fbd{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.07);border-radius:5px;padding:4px 10px;font-size:10px;font-weight:700;color:rgba(255,255,255,.3);text-transform:uppercase;letter-spacing:.4px}
+
+/* ══ FLOATERS ══ */
+.float-wa{position:fixed;bottom:20px;left:20px;z-index:900;background:#25D366;color:#fff;border-radius:8px;padding:14px 24px;display:flex;align-items:center;gap:10px;font-size:15px;font-weight:700;box-shadow:0 6px 24px rgba(37,211,102,.5);text-decoration:none;transition:all .3s;opacity:0;transform:scale(0.8);border:none;animation:floatPulse 2s ease-in-out infinite}
+.float-wa.show{opacity:1;transform:scale(1)}
+.float-wa:hover{box-shadow:0 12px 40px rgba(37,211,102,.8);transform:scale(1.05) translateY(-3px)}
+.float-wa svg{width:20px;height:20px;fill:#fff;flex-shrink:0}
+
+@keyframes floatPulse{
+  0%,100%{box-shadow:0 6px 24px rgba(37,211,102,.5)}
+  50%{box-shadow:0 8px 32px rgba(37,211,102,.7)}
+}
+
+/* ══ ANIMATIONS ══ */
+.fade{opacity:0;transform:translateY(26px);transition:opacity .7s cubic-bezier(.25,.46,.45,.94),transform .7s}
+.fade.in{opacity:1;transform:none}
+.fade-l{opacity:0;transform:translateX(-26px);transition:opacity .7s,transform .7s}
+.fade-l.in{opacity:1;transform:none}
+.fade-r{opacity:0;transform:translateX(26px);transition:opacity .7s,transform .7s}
+.fade-r.in{opacity:1;transform:none}
+
+/* ══════════════════════════════════════
+   RESPONSIVE BREAKPOINTS
+══════════════════════════════════════ */
+
+/* 1100px */
+@media(max-width:1100px){
+  .hero-main-img{max-width:350px}
+  .stats-row{grid-template-columns:repeat(2,1fr)}
+  .process-grid{grid-template-columns:repeat(2,1fr)}
+  .test-grid{grid-template-columns:repeat(2,1fr)}
+  .why-grid{grid-template-columns:1fr;gap:48px}
+  .footer-grid{grid-template-columns:1fr 1fr;gap:36px}
+  .cta-inner{padding:56px 40px;flex-direction:column;text-align:center}
+  .cta-right-btns{align-items:center;width:100%}
+  .cta-right-btns .btn{width:100%;max-width:360px;min-width:unset}
+}
+
+/* 960px – services 2-col */
+@media(max-width:960px){
+  .srv-grid{grid-template-columns:repeat(2,1fr)}
+}
+
+/* 900px – mobile layout */
+@media(max-width:900px){
+  /* ── Topbar: 2 static rows ── */
+  .topbar{
+    padding:7px 14px;
+    flex-direction:column;
+    align-items:center;
+    gap:5px;
+    overflow:visible;
+  }
+  .topbar-addr{
+    justify-content:center;
+    text-align:center;
+    font-size:10.5px;
+    white-space:normal;
+    text-align:center;
+    line-height:1.4;
+  }
+  .topbar-row2{
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:center;
+    gap:14px;
+    flex-wrap:wrap;
+  }
+  .topbar-row2 .tdiv{display:flex}
+  .topbar-emergency{display:none}
+  .topbar > .tdiv{display:none}
+  .ti{font-size:11px;gap:5px}
+
+  /* ── Nav ── */
+  nav{padding:0 16px;height:70px}
+  .nav-links{display:none}
+  .nav-right .btn{display:none}
+  .hamburger{display:flex}
+  .logo-wrap img{height:48px}
+  .logo-company{font-size:16px}
+  .logo-sub{font-size:14px}
+
+  /* ── Hero ── */
+  .hero-inner{grid-template-columns:1fr;min-height:auto;padding:20px 20px 30px;gap:28px}
+  .hero-right{display:flex;padding:0}
+  .hero-img-wrap{max-width:100%;margin:0 auto;max-width:280px}
+  .hero-main-img{height:auto;max-height:400px;width:100%;object-fit:cover}
+  .hero-fc1,.hero-fc2,.hero-img-badge{display:none}
+  .hero-left{padding:0;text-align:center;align-items:center}
+  .hero-pill{margin:0 auto 26px}
+  .hero h1{text-align:center}
+  .hero-ar-title{text-align:center}
+  .hero-desc{text-align:center;margin:0 auto 34px}
+  .hero-btns{justify-content:center;flex-direction:column;width:100%}
+  .hero-btns .btn{width:100%}
+  .hero-trust{justify-content:center;flex-wrap:wrap}
+  .hero-badges{justify-content:center}
+
+  /* ── Sections ── */
+  .section{padding:60px 20px}
+  .process-bg{padding:60px 20px}
+  .srv-head{flex-direction:column;align-items:flex-start}
+  .srv-head .btn-green{width:100%;justify-content:center}
+  .stats-row{grid-template-columns:repeat(2,1fr)}
+  .stat-col{padding:32px 16px}
+  .stat-num{font-size:40px}
+
+  /* ── Why video ── */
+  .why-video-container{max-width:300px}
+
+  /* ── Gallery ── */
+  .gal-mosaic{grid-template-columns:1fr 1fr;grid-template-rows:repeat(3,200px);gap:8px}
+  .gal-item{grid-column:auto!important;grid-row:auto!important}
+  .gal-item:nth-child(1){grid-column:span 2!important;height:200px}
+
+  /* ── Reviews ── */
+  .test-grid{animation:scrollReviews 30s linear infinite}
+  .test-card{width:320px;min-height:240px}
+
+  /* ── CTA ── */
+  .cta-outer{padding:40px 0}
+  .cta-inner{padding:40px 24px}
+
+  /* ── Contact bar ── */
+  .cbar-inner{grid-template-columns:1fr;padding:0 20px}
+  .ci{border-right:none;border-bottom:1px solid rgba(255,255,255,.15);padding:18px 14px}
+  .ci:last-child{border-bottom:none}
+
+  /* ── Footer ── */
+  .footer-grid{grid-template-columns:1fr 1fr;gap:28px;padding:0 20px 48px}
+  .footer-grid > .footer-about{grid-column:1 / -1}
+  .footer-about p{max-width:100%}
+  .footer-contact-info{flex-direction:row;flex-wrap:wrap;gap:12px}
+  .footer-bottom{flex-direction:column;text-align:center;gap:10px;padding:22px 20px}
+  .ftm-links,.ftm-badges{justify-content:center}
+
+  /* ── Form ── */
+  .form-card{padding:28px 18px}
+  .form-grid{grid-template-columns:1fr}
+  .ff.full{grid-column:span 1}
+  .fsr{grid-column:span 1}
+
+  /* ── Floaters ── */
+  .float-wa{bottom:20px;left:20px;padding:16px;font-size:0;gap:0;width:56px;height:56px;border-radius:50%;justify-content:center;align-items:center;box-shadow:0 8px 28px rgba(37,211,102,.6)}
+  .float-wa:hover{box-shadow:0 12px 40px rgba(37,211,102,.9)}
+  .float-wa svg{width:28px;height:28px}
+}
+
+/* 600px */
+@media(max-width:600px){
+  .topbar{padding:7px 10px;gap:4px}
+  .topbar-addr{font-size:10px}
+  .topbar-row2{gap:10px}
+  .topbar-row2 .ti{font-size:10.5px}
+  .ti{font-size:10.5px}
+
+  nav{height:60px;padding:0 12px}
+  .logo-wrap img{height:44px}
+  .logo-company{font-size:14px}
+  .logo-sub{font-size:13px}
+
+  /* Services 1-col */
+  .srv-grid{grid-template-columns:1fr}
+  .process-grid{grid-template-columns:1fr 1fr;gap:12px}
+  .step{padding:26px 16px}
+
+  /* Reviews */
+  .test-grid{animation:scrollReviews 25s linear infinite}
+  .test-card{width:280px;min-height:220px;padding:18px 16px}
+
+  /* Hero */
+  .hero-inner{padding:15px 16px}
+  .hero-img-wrap{max-width:240px}
+  .hero-main-img{max-height:340px}
+  .hero h1{font-size:26px}
+  .hero-ar-title{font-size:18px}
+  .hero-desc{font-size:14px}
+
+  /* Stats */
+  .stats-row{grid-template-columns:1fr 1fr}
+  .stat-num{font-size:30px}
+  .stat-col{padding:24px 12px}
+
+  /* Gallery */
+  .gal-mosaic{grid-template-columns:1fr 1fr;grid-template-rows:auto;gap:8px}
+  .gal-item:nth-child(1){grid-column:span 2!important;height:180px}
+  .gal-item{height:180px}
+
+  /* CTA */
+  .cta-inner{padding:32px 18px}
+  .cta-right-btns .btn{width:100%;min-width:unset}
+
+  /* Footer */
+  .footer-grid{grid-template-columns:1fr;gap:28px}
+  .footer-contact-info{flex-direction:column}
+
+  /* Form */
+  .nl-row{flex-direction:column}
+  .nl-btn{width:100%}
+  .why-float{display:none}
+}
+</style>
+</head>
+<body>
+
+<!-- ══ TOPBAR ══ -->
+<div class="topbar">
+  <div class="ti topbar-addr">
+    <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+    Al Quds District, Muhammad bin Faisal bin Turkey, Riyadh, Saudi Arabia
+  </div>
+  <div class="tdiv"></div>
+  <div class="topbar-row2">
+    <div class="ti">
+      <svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
+      <a href="tel:+966507884372">+966 50 788 4372</a>
+    </div>
+    <div class="tdiv"></div>
+    <div class="ti">
+      <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+      <a href="mailto:info@airconditioningsa.com">info@airconditioningsa.com</a>
+    </div>
+    <div class="tdiv"></div>
+    <div class="ti topbar-emergency">
+      <svg viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23L13 11.33V7z"/></svg>
+      Emergency 24/7
+    </div>
+  </div>
+</div>
+
+<!-- ══ NAV ══ -->
+<header id="hdr">
+  <nav>
+    <a href="index.html" class="logo-wrap">
+      <img src="Removal-849.png" alt="Air Conditioning" onerror="this.style.display='none'"/>
+      <div class="logo-text-block">
+        <div class="logo-company">Air <span>Conditioning</span></div>
+        <div class="logo-sub">للتبريد والتكييف</div>
+      </div>
+    </a>
+    <div class="nav-links">
+      <a href="index.html" class="active">Home</a>
+      <a href="services.html">Services</a>
+      <a href="aboutus.html">About Us</a>
+      <a href="contact.html">Contact Us</a>
+    </div>
+    <div class="nav-right">
+      <a href="https://wa.me/966591136834" target="_blank" class="btn btn-wa-nav">
+        <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.121 1.532 5.853L0 24l6.335-1.51A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.774 9.774 0 01-5.02-1.38l-.36-.214-3.762.897.937-3.668-.235-.375A9.778 9.778 0 012.182 12C2.182 6.579 6.579 2.182 12 2.182S21.818 6.579 21.818 12 17.421 21.818 12 21.818z"/></svg>
+        Book Service
+      </a>
+    </div>
+    <button class="hamburger" id="hambBtn" onclick="toggleMenu()" aria-label="Open Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+</header>
+
+<!-- ══ MOBILE DRAWER ══ -->
+<div class="mob-menu" id="mobMenu">
+  <button class="mob-close" onclick="toggleMenu()">✕</button>
+  <a href="index.html" class="mob-link" onclick="toggleMenu()">Home</a>
+  <a href="services.html" class="mob-link" onclick="toggleMenu()">Services</a>
+  <a href="aboutus.html" class="mob-link" onclick="toggleMenu()">About Us</a>
+  <a href="contact.html" class="mob-link" onclick="toggleMenu()">Contact Us</a>
+  <a href="https://wa.me/966591136834" target="_blank" class="mob-wa-btn">
+    <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.121 1.532 5.853L0 24l6.335-1.51A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.774 9.774 0 01-5.02-1.38l-.36-.214-3.762.897.937-3.668-.235-.375A9.778 9.778 0 012.182 12C2.182 6.579 6.579 2.182 12 2.182S21.818 6.579 21.818 12 17.421 21.818 12 21.818z"/></svg>
+    Book on WhatsApp
+  </a>
+</div>
+
+<!-- ══ HERO ══ -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-grad"></div>
+  <div class="hero-orb1"></div>
+  <div class="hero-orb2"></div>
+  <div class="hero-inner">
+    <div class="hero-left fade-l">
+      <div class="hero-pill"><div class="hero-pill-dot"></div>Riyadh's #1 AC &amp; Appliance Services</div>
+      <h1>Professional <span class="accent">Air Conditioning</span></h1>
+      <div class="hero-ar-title">خدمات التبريد والتكييف الاحترافية</div>
+      <p class="hero-desc">Fast, reliable AC cleaning, HVAC repair, washing machine, refrigerator, and home appliance maintenance across Riyadh and Saudi Arabia. Licensed technicians available 24/7.</p>
+      <div class="hero-btns">
+        <a href="https://wa.me/966591136834" target="_blank" class="btn btn-wa btn-lg">
+          <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.121 1.532 5.853L0 24l6.335-1.51A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.774 9.774 0 01-5.02-1.38l-.36-.214-3.762.897.937-3.668-.235-.375A9.778 9.778 0 012.182 12C2.182 6.579 6.579 2.182 12 2.182S21.818 6.579 21.818 12 17.421 21.818 12 21.818z"/></svg>
+          Book on WhatsApp
+        </a>
+        <a href="tel:+966507884372" class="btn btn-ghost btn-lg">
+          <svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
+          Call Now
+        </a>
+      </div>
+      <div class="hero-trust">
+        <div class="hero-avatars">
+          <img src="https://randomuser.me/api/portraits/men/32.jpg" alt=""/>
+          <img src="https://randomuser.me/api/portraits/women/44.jpg" alt=""/>
+          <img src="https://randomuser.me/api/portraits/men/67.jpg" alt=""/>
+          <img src="https://randomuser.me/api/portraits/women/55.jpg" alt=""/>
+        </div>
+        <div>
+          <div class="trust-stars">★★★★★</div>
+          <div class="trust-lbl">Trusted by 3,500+ Customers &nbsp;·&nbsp; 4.9★ Rating</div>
+        </div>
+      </div>
+      <div class="hero-badges">
+        <span class="hbadge"><svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg>Licensed &amp; Insured</span>
+        <span class="hbadge"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>NATE Certified</span>
+        <span class="hbadge"><svg viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23L13 11.33V7z"/></svg>24/7 Emergency</span>
+        <span class="hbadge"><svg viewBox="0 0 24 24"><path d="M17 12h-5v5h5v-5zM16 1v2H8V1H6v2H5C3.89 3 3.01 3.9 3.01 5L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2h-1V1h-2zm3 18H5V8h14v11z"/></svg>Same-Day Service</span>
+      </div>
+    </div>
+    <div class="hero-right fade-r">
+      <div class="hero-img-wrap">
+        <img class="hero-main-img" src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4?auto=format&fit=crop&w=900&q=88" alt="AC Service Technician"/>
+        <div class="hero-img-badge"><div class="hib-num">18+</div><div class="hib-txt">Years of<br>Experience</div></div>
+        <div class="hero-fc hero-fc1">
+          <div class="hf-ico"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></div>
+          <div><div class="hf-val">3,500+</div><div class="hf-lbl">Happy Customers</div></div>
+        </div>
+        <div class="hero-fc hero-fc2">
+          <div class="hf-ico"><svg viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zm4.24 16L12 15.45 7.77 18l1.12-4.81-3.73-3.23 4.92-.42L12 5l1.92 4.53 4.92.42-3.73 3.23L16.23 18z"/></svg></div>
+          <div><div class="hf-val">4.9 ★</div><div class="hf-lbl">Google Rating</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ TICKER ══ -->
+<div class="ticker">
+  <div class="ticker-track">
+    <span class="tick-item">❄ AC Cleaning &amp; Installation <span class="tick-sep">·</span></span>
+    <span class="tick-item">🔥 Heating System Services <span class="tick-sep">·</span></span>
+    <span class="tick-item">🫧 Washing Machine Repair <span class="tick-sep">·</span></span>
+    <span class="tick-item">🧊 Refrigerator Services <span class="tick-sep">·</span></span>
+    <span class="tick-item">⚡ 24/7 Emergency Response <span class="tick-sep">·</span></span>
+    <span class="tick-item">✅ Licensed &amp; Insured <span class="tick-sep">·</span></span>
+    <span class="tick-item">🏠 Residential &amp; Commercial <span class="tick-sep">·</span></span>
+    <span class="tick-item">⭐ 4.9 Google Rating <span class="tick-sep">·</span></span>
+    <span class="tick-item">❄ AC Cleaning &amp; Installation <span class="tick-sep">·</span></span>
+    <span class="tick-item">🔥 Heating System Services <span class="tick-sep">·</span></span>
+    <span class="tick-item">🫧 Washing Machine Repair <span class="tick-sep">·</span></span>
+    <span class="tick-item">🧊 Refrigerator Services <span class="tick-sep">·</span></span>
+    <span class="tick-item">⚡ 24/7 Emergency Response <span class="tick-sep">·</span></span>
+    <span class="tick-item">✅ Licensed &amp; Insured <span class="tick-sep">·</span></span>
+    <span class="tick-item">🏠 Residential &amp; Commercial <span class="tick-sep">·</span></span>
+    <span class="tick-item">⭐ 4.9 Google Rating <span class="tick-sep">·</span></span>
+  </div>
+</div>
+
+<!-- ══ SERVICES ══ -->
+<section class="section bg-off" id="services">
+  <div class="wrap">
+    <div class="srv-head fade">
+      <div>
+        <div class="sec-eyebrow">What We Offer · ما نقدمه</div>
+        <h2 class="sec-title">Expert Home Appliance <em>Services</em><span class="ar">خدمات الأجهزة المنزلية والتكييف</span></h2>
+        <p class="sec-sub">From AC cleaning to washing machines and refrigerators — our certified technicians deliver fast, reliable repairs and maintenance.</p>
+      </div>
+      <a href="https://wa.me/966591136834" target="_blank" class="btn btn-green">
+        <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.121 1.532 5.853L0 24l6.335-1.51A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.774 9.774 0 01-5.02-1.38l-.36-.214-3.762.897.937-3.668-.235-.375A9.778 9.778 0 012.182 12C2.182 6.579 6.579 2.182 12 2.182S21.818 6.579 21.818 12 17.421 21.818 12 21.818z"/></svg>
+        Book Service
+      </a>
+    </div>
+    <div class="srv-grid">
+
+      <div class="srv-card fade">
+        <div class="srv-num">01</div>
+        <div class="srv-ico"><svg viewBox="0 0 48 48" fill="none"><rect x="4" y="13" width="40" height="22" rx="5" stroke="currentColor" stroke-width="2.5"/><rect x="4" y="13" width="40" height="9" rx="5" fill="currentColor" opacity=".15"/><circle cx="36" cy="17.5" r="2" fill="currentColor"/><circle cx="30" cy="17.5" r="2" fill="currentColor"/><line x1="10" y1="27" x2="28" y2="27" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="10" y1="31" x2="22" y2="31" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="19" y1="35" x2="19" y2="40" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="29" y1="35" x2="29" y2="40" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div>
+        <h3>AC Services<span class="ar">خدمات التكييف</span></h3>
+        <p>Complete AC cleaning, installation, repair and maintenance for all major brands. Deep-clean coils, filters and internal components.</p>
+        <div class="srv-tags"><span class="srv-tag">Deep Cleaning</span><span class="srv-tag">Installation</span><span class="srv-tag">Repair</span><span class="srv-tag">24/7 Emergency</span></div>
+        <a href="https://wa.me/966591136834" target="_blank" class="srv-btn">Learn More <svg viewBox="0 0 24 24"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6z"/></svg></a>
+      </div>
+
+      <div class="srv-card fade" style="transition-delay:.07s">
+        <div class="srv-num">02</div>
+        <div class="srv-ico"><svg viewBox="0 0 48 48" fill="none"><rect x="8" y="6" width="32" height="38" rx="5" stroke="currentColor" stroke-width="2.5"/><circle cx="24" cy="28" r="9" stroke="currentColor" stroke-width="2.5" fill="none"/><circle cx="24" cy="28" r="4" fill="currentColor" opacity=".2"/><line x1="14" y1="13" x2="20" y2="13" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="32" cy="13" r="2" fill="currentColor" opacity=".6"/></svg></div>
+        <h3>Washing Machine Services<span class="ar">خدمات الغسالات</span></h3>
+        <p>Professional repair, installation and maintenance for all brands. We fix drum issues, water leaks, motor problems and electronic faults.</p>
+        <div class="srv-tags"><span class="srv-tag">All Brands</span><span class="srv-tag">Repair</span><span class="srv-tag">Installation</span><span class="srv-tag">Same Day</span></div>
+        <a href="https://wa.me/966591136834" target="_blank" class="srv-btn">Learn More <svg viewBox="0 0 24 24"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6z"/></svg></a>
+      </div>
+
+      <div class="srv-card fade" style="transition-delay:.14s">
+        <div class="srv-num">03</div>
+        <div class="srv-ico"><svg viewBox="0 0 48 48" fill="none"><rect x="6" y="8" width="36" height="34" rx="5" stroke="currentColor" stroke-width="2.5"/><rect x="6" y="8" width="36" height="12" rx="5" fill="currentColor" opacity=".12"/><line x1="6" y1="20" x2="42" y2="20" stroke="currentColor" stroke-width="2"/><circle cx="14" cy="14" r="2" fill="currentColor" opacity=".5"/><circle cx="21" cy="14" r="2" fill="currentColor" opacity=".5"/><path d="M14 30 Q24 26 34 30 Q24 34 14 30z" fill="currentColor" opacity=".2"/><path d="M14 30 Q24 26 34 30 Q24 34 14 30z" stroke="currentColor" stroke-width="1.5" fill="none"/></svg></div>
+        <h3>Refrigerator Services<span class="ar">خدمات الثلاجات</span></h3>
+        <p>Expert repair and maintenance — cooling problems, compressor failure, gas recharge, thermostat issues, door seals for all models.</p>
+        <div class="srv-tags"><span class="srv-tag">Cooling Repair</span><span class="srv-tag">Gas Recharge</span><span class="srv-tag">Compressor</span><span class="srv-tag">All Models</span></div>
+        <a href="https://wa.me/966591136834" target="_blank" class="srv-btn">Learn More <svg viewBox="0 0 24 24"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6z"/></svg></a>
+      </div>
+
+      <div class="srv-card fade" style="transition-delay:.21s">
+        <div class="srv-num">04</div>
+        <div class="srv-ico"><svg viewBox="0 0 48 48" fill="none"><rect x="8" y="10" width="32" height="20" rx="4" stroke="currentColor" stroke-width="2.5"/><rect x="8" y="10" width="32" height="20" rx="4" fill="currentColor" opacity=".08"/><path d="M16 30v6M32 30v6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><line x1="10" y1="36" x2="38" y2="36" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><circle cx="24" cy="20" r="5" stroke="currentColor" stroke-width="2" fill="none"/><path d="M21 20l2 2 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <h3>Microwave Oven Services<span class="ar">خدمات أفران الميكروويف</span></h3>
+        <p>Fast microwave repair for all brands — not heating, turntable issues, door problems, electrical faults and full testing after every repair.</p>
+        <div class="srv-tags"><span class="srv-tag">All Brands</span><span class="srv-tag">Fast Repair</span><span class="srv-tag">Parts Supplied</span><span class="srv-tag">Warranty</span></div>
+        <a href="https://wa.me/966591136834" target="_blank" class="srv-btn">Learn More <svg viewBox="0 0 24 24"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6z"/></svg></a>
+      </div>
+
+      <div class="srv-card fade" style="transition-delay:.28s">
+        <div class="srv-num">05</div>
+        <div class="srv-ico"><svg viewBox="0 0 48 48" fill="none"><path d="M10 8h28a4 4 0 0 1 4 4v20a4 4 0 0 1-4 4H10a4 4 0 0 1-4-4V12a4 4 0 0 1 4-4z" stroke="currentColor" stroke-width="2.5" fill="none"/><path d="M10 8h28a4 4 0 0 1 4 4v6H6v-6a4 4 0 0 1 4-4z" fill="currentColor" opacity=".12"/><line x1="16" y1="28" x2="32" y2="28" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="20" y1="33" x2="28" y2="33" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="14" cy="13" r="2" fill="currentColor" opacity=".5"/><circle cx="21" cy="13" r="2" fill="currentColor" opacity=".5"/></svg></div>
+        <h3>Home Appliance Maintenance<span class="ar">صيانة الأجهزة المنزلية</span></h3>
+        <p>Comprehensive preventive maintenance plans for all your home appliances. Regular servicing, cleaning, part inspection and priority coverage.</p>
+        <div class="srv-tags"><span class="srv-tag">All Appliances</span><span class="srv-tag">Annual Plan</span><span class="srv-tag">Priority Service</span><span class="srv-tag">Discounts</span></div>
+        <a href="https://wa.me/966591136834" target="_blank" class="srv-btn">Learn More <svg viewBox="0 0 24 24"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6z"/></svg></a>
+      </div>
+
+      <div class="srv-card fade" style="transition-delay:.35s">
+        <div class="srv-num">06</div>
+        <div class="srv-ico"><svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="18" stroke="currentColor" stroke-width="2.5"/><circle cx="24" cy="24" r="18" fill="currentColor" opacity=".05"/><line x1="24" y1="12" x2="24" y2="24" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><line x1="24" y1="24" x2="33" y2="30" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><circle cx="24" cy="24" r="2.5" fill="currentColor"/><path d="M10 9l2.5 2.5M38 9l-2.5 2.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div>
+        <h3>24/7 Emergency Response<span class="ar">استجابة طوارئ على مدار الساعة</span></h3>
+        <p>AC or appliance emergencies don't wait for business hours — neither do we. We'll be at your door within 2 hours, guaranteed.</p>
+        <div class="srv-tags"><span class="srv-tag">2-Hr Response</span><span class="srv-tag">Weekends</span><span class="srv-tag">Holidays</span><span class="srv-tag">All Appliances</span></div>
+        <a href="https://wa.me/966591136834" target="_blank" class="srv-btn">Learn More <svg viewBox="0 0 24 24"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6z"/></svg></a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══ STATS ══ -->
+<div class="stats-strip">
+  <div class="stats-row">
+    <div class="stat-col fade"><div class="stat-num" data-target="3500" data-suf="+">0<sup>+</sup></div><p class="stat-lbl">Satisfied Customers<br>Across Saudi Arabia</p></div>
+    <div class="stat-col fade" style="transition-delay:.1s"><div class="stat-num" data-target="98" data-suf="%">0<sup>%</sup></div><p class="stat-lbl">5-Star Reviews<br>on Google &amp; Social</p></div>
+    <div class="stat-col fade" style="transition-delay:.2s"><div class="stat-num" data-target="18" data-suf="+">0<sup>+</sup></div><p class="stat-lbl">Years Serving<br>Riyadh &amp; KSA</p></div>
+    <div class="stat-col fade" style="transition-delay:.3s"><div class="stat-num" data-target="2" data-suf="hr">0<sup>hr</sup></div><p class="stat-lbl">Emergency Response<br>Time Guaranteed</p></div>
+  </div>
+</div>
+
+<!-- ══ PROCESS ══ -->
+<section class="process-bg">
+  <div class="process-head fade">
+    <div class="sec-eyebrow" style="color:var(--teal)">How It Works · كيف نعمل</div>
+    <h2 class="sec-title" style="color:#fff">Simple. Fast. <em>Reliable.</em><span class="ar ar-white">بسيط، سريع، موثوق</span></h2>
+    <p class="sec-sub" style="color:rgba(255,255,255,.5);margin:12px auto 0;text-align:center">Getting your AC or appliance repaired has never been easier. Our proven 4-step process.</p>
+  </div>
+  <div class="process-grid">
+    <div class="step fade"><div class="step-num">1</div><h4>Call or Book Online<span class="ar ar-white">اتصل أو احجز عبر الإنترنت</span></h4><p>Contact us by phone or WhatsApp. We respond within 30 minutes during business hours.</p></div>
+    <div class="step fade" style="transition-delay:.1s"><div class="step-num">2</div><h4>Free In-Home Assessment<span class="ar ar-white">تقييم مجاني في المنزل</span></h4><p>A certified technician visits, inspects your appliance, and provides a full written quote — free of charge.</p></div>
+    <div class="step fade" style="transition-delay:.2s"><div class="step-num">3</div><h4>Expert Service Performed<span class="ar ar-white">تنفيذ الخدمة باحترافية</span></h4><p>Our certified technician completes the work neatly, professionally, and on time — always.</p></div>
+    <div class="step fade" style="transition-delay:.3s"><div class="step-num">4</div><h4>Satisfaction Guaranteed<span class="ar ar-white">ضمان الرضا التام</span></h4><p>We don't leave until you're 100% satisfied. All work is backed by our 2-year workmanship warranty.</p></div>
+  </div>
+</section>
+
+<!-- ══ WHY CHOOSE US ══ -->
+<section class="section" id="why">
+  <div class="wrap">
+    <div class="why-grid">
+      <div class="why-visual fade-l">
+        <div class="why-video-container">
+          <video id="whyVideo" playsinline preload="metadata">
+           <source src="video work.mp4" type="video/mp4">
+          </video>
+          <div class="why-video-poster" id="whyPoster"></div>
+          <div class="why-play-overlay" id="whyPlayOverlay" onclick="playWhyVideo()">
+            <div class="why-play-btn-circle"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+          </div>
+        </div>
+        <div class="why-float">
+          <div class="wf-ico"><svg viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zm4.24 16L12 15.45 7.77 18l1.12-4.81-3.73-3.23 4.92-.42L12 5l1.92 4.53 4.92.42-3.73 3.23L16.23 18z"/></svg></div>
+          <div><div class="wf-num">4.9★</div><div class="wf-lbl">Verified Rating</div></div>
+        </div>
+      </div>
+      <div class="fade-r">
+        <div class="sec-eyebrow">Why Choose Us · لماذا تختارنا</div>
+        <h2 class="sec-title">We Don't Just Fix It —<br>We <em>Get It Right</em><span class="ar">نحن لا نصلح فقط — نضمن الجودة</span></h2>
+        <p class="sec-sub">Other companies rush the job. We take time to understand your appliance needs and deliver lasting solutions.</p>
+        <div class="why-pts">
+          <div class="why-pt">
+            <div class="wp-ico"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></div>
+            <div><div class="wp-title">Free In-Home Assessment<span class="ar">تقييم مجاني في المنزل</span></div><div class="wp-desc">A technician evaluates your appliance and recommends the most cost-effective solution — at no charge.</div></div>
+          </div>
+          <div class="why-pt">
+            <div class="wp-ico"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg></div>
+            <div><div class="wp-title">Certified Technicians<span class="ar">فنيون معتمدون ومتخصصون</span></div><div class="wp-desc">Every technician is certified, background-checked, and factory-trained on major brands.</div></div>
+          </div>
+          <div class="why-pt">
+            <div class="wp-ico"><svg viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23L13 11.33V7z"/></svg></div>
+            <div><div class="wp-title">Same-Day Service Available<span class="ar">خدمة في نفس اليوم</span></div><div class="wp-desc">In most cases we dispatch a technician the same day — even on weekends and holidays.</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ GALLERY ══ -->
+<section class="section bg-off" id="gallery" style="padding-top:0">
+  <div class="wrap">
+    <div class="gal-head fade" style="padding-top:90px">
+      <div class="sec-eyebrow">Our Work · أعمالنا</div>
+      <h2 class="sec-title">See the <em>Quality</em> We Deliver<span class="ar">شاهد جودة عملنا</span></h2>
+    </div>
+    <div class="gal-mosaic">
+      <div class="gal-item fade"><img src="Ac Service.jpg" alt="AC Installation"/><div class="gal-over"><span class="gal-lbl">AC Installation · Riyadh</span></div></div>
+      <div class="gal-item fade" style="transition-delay:.08s"><img src="residential.jpg" alt=""/><div class="gal-over"><span class="gal-lbl">Residential Repair</span></div></div>
+      <div class="gal-item fade" style="transition-delay:.12s"><img src="residential.jpg" alt=""/><div class="gal-over"><span class="gal-lbl">Commercial Unit</span></div></div>
+      <div class="gal-item fade" style="transition-delay:.16s"><img src="pics services.jpg" alt=""/><div class="gal-over"><span class="gal-lbl">Refrigerator Service</span></div></div>
+      <div class="gal-item fade" style="transition-delay:.2s"><img src="pics services.jpg" alt=""/><div class="gal-over"><span class="gal-lbl">Home Appliance Maintenance</span></div></div>
+    </div>
+    <div style="text-align:center;margin-top:36px" class="fade">
+      <a href="https://wa.me/966591136834" target="_blank" class="btn btn-green btn-lg">
+        <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.121 1.532 5.853L0 24l6.335-1.51A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.774 9.774 0 01-5.02-1.38l-.36-.214-3.762.897.937-3.668-.235-.375A9.778 9.778 0 012.182 12C2.182 6.579 6.579 2.182 12 2.182S21.818 6.579 21.818 12 17.421 21.818 12 21.818z"/></svg>
+        Book a Service Visit
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ══ TESTIMONIALS ══ -->
+<section class="section test-bg" id="reviews">
+  <div class="wrap">
+    <div class="test-head fade">
+      <div class="sec-eyebrow" style="color:var(--teal)">Customer Reviews · آراء العملاء</div>
+      <h2 class="sec-title" style="color:#fff">Real Stories from <em>Real Customers</em><span class="ar ar-white">تجارب حقيقية من عملائنا</span></h2>
+      <p class="sec-sub" style="color:rgba(255,255,255,.48);margin:12px auto 0;text-align:center">Don't take our word for it — here's what our customers say after every visit.</p>
+    </div>
+    <div class="test-scroll-container">
+    <div class="test-grid">
+      <div class="test-card">
+        <div class="test-stars">★★★★★</div>
+        <div class="test-q">"</div>
+        <p>My AC died at 11pm on the hottest night of summer. Air Conditioning picked up immediately and had a technician at my door in 90 minutes. Fixed on the spot.</p>
+        <div class="test-author">
+          <img class="test-av" src="https://randomuser.me/api/portraits/men/32.jpg" alt="Marcus"/>
+          <div><div class="test-name">Marcus Thompson</div><div class="test-loc">Homeowner · Riyadh</div><div class="test-badge"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>Verified Review</div></div>
+        </div>
+      </div>
+      <div class="test-card">
+        <div class="test-stars">★★★★★</div>
+        <div class="test-q">"</div>
+        <p>They repaired our washing machine and refrigerator the same day. Professional, tidy and the quote matched the final invoice exactly.</p>
+        <div class="test-author">
+          <img class="test-av" src="https://randomuser.me/api/portraits/women/44.jpg" alt="Melissa"/>
+          <div><div class="test-name">Melissa Okafor</div><div class="test-loc">Homeowner · Al Quds</div><div class="test-badge"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>Verified Review</div></div>
+        </div>
+      </div>
+      <div class="test-card">
+        <div class="test-stars">★★★★★</div>
+        <div class="test-q">"</div>
+        <p>We've trusted them with our restaurant's appliance maintenance for 4 years. Always on time, always professional.</p>
+        <div class="test-author">
+          <img class="test-av" src="https://randomuser.me/api/portraits/men/67.jpg" alt="David"/>
+          <div><div class="test-name">David Fernandez</div><div class="test-loc">Restaurant Owner</div><div class="test-badge"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>Verified Review</div></div>
+        </div>
+      </div>
+      <div class="test-card">
+        <div class="test-stars" style="text-align:right">★★★★★</div>
+        <div class="test-q" style="text-align:right">"</div>
+        <p class="ar-review-text">خدمة ممتازة وسريعة! جاء الفني خلال ساعة. أسعار معقولة وعمل احترافي.</p>
+        <div class="test-author test-author-ar">
+          <div class="test-av-ar">أح</div>
+          <div style="text-align:right">
+            <div class="test-name test-name-ar">أحمد الحسيني</div>
+            <div class="test-loc test-loc-ar">صاحب منزل · الرياض</div>
+            <div class="test-badge test-badge-ar"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>تقييم موثّق</div>
+          </div>
+        </div>
+      </div>
+      <div class="test-card">
+        <div class="test-stars" style="text-align:right">★★★★★</div>
+        <div class="test-q" style="text-align:right">"</div>
+        <p class="ar-review-text">أنصح بهذه الشركة بشدة! صيانة ممتازة بسعر مناسب. فنيون محترمون ونظيفون.</p>
+        <div class="test-author test-author-ar">
+          <div class="test-av-ar">فا</div>
+          <div style="text-align:right">
+            <div class="test-name test-name-ar">فاطمة المنصوري</div>
+            <div class="test-loc test-loc-ar">ربة منزل · الرياض</div>
+            <div class="test-badge test-badge-ar"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>تقييم موثّق</div>
+          </div>
+        </div>
+      </div>
+      <!-- Duplicate for infinite scroll -->
+      <div class="test-card">
+        <div class="test-stars">★★★★★</div>
+        <div class="test-q">"</div>
+        <p>My AC died at 11pm on the hottest night of summer. Air Conditioning picked up immediately and had a technician at my door in 90 minutes. Fixed on the spot.</p>
+        <div class="test-author">
+          <img class="test-av" src="https://randomuser.me/api/portraits/men/32.jpg" alt="Marcus"/>
+          <div><div class="test-name">Marcus Thompson</div><div class="test-loc">Homeowner · Riyadh</div><div class="test-badge"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>Verified Review</div></div>
+        </div>
+      </div>
+      <div class="test-card">
+        <div class="test-stars">★★★★★</div>
+        <div class="test-q">"</div>
+        <p>They repaired our washing machine and refrigerator the same day. Professional, tidy and the quote matched the final invoice exactly.</p>
+        <div class="test-author">
+          <img class="test-av" src="https://randomuser.me/api/portraits/women/44.jpg" alt="Melissa"/>
+          <div><div class="test-name">Melissa Okafor</div><div class="test-loc">Homeowner · Al Quds</div><div class="test-badge"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>Verified Review</div></div>
+        </div>
+      </div>
+      <div class="test-card">
+        <div class="test-stars">★★★★★</div>
+        <div class="test-q">"</div>
+        <p>We've trusted them with our restaurant's appliance maintenance for 4 years. Always on time, always professional.</p>
+        <div class="test-author">
+          <img class="test-av" src="https://randomuser.me/api/portraits/men/67.jpg" alt="David"/>
+          <div><div class="test-name">David Fernandez</div><div class="test-loc">Restaurant Owner</div><div class="test-badge"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>Verified Review</div></div>
+        </div>
+      </div>
+      <div class="test-card">
+        <div class="test-stars" style="text-align:right">★★★★★</div>
+        <div class="test-q" style="text-align:right">"</div>
+        <p class="ar-review-text">خدمة ممتازة وسريعة! جاء الفني خلال ساعة. أسعار معقولة وعمل احترافي.</p>
+        <div class="test-author test-author-ar">
+          <div class="test-av-ar">أح</div>
+          <div style="text-align:right">
+            <div class="test-name test-name-ar">أحمد الحسيني</div>
+            <div class="test-loc test-loc-ar">صاحب منزل · الرياض</div>
+            <div class="test-badge test-badge-ar"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>تقييم موثّق</div>
+          </div>
+        </div>
+      </div>
+      <div class="test-card">
+        <div class="test-stars" style="text-align:right">★★★★★</div>
+        <div class="test-q" style="text-align:right">"</div>
+        <p class="ar-review-text">أنصح بهذه الشركة بشدة! صيانة ممتازة بسعر مناسب. فنيون محترمون ونظيفون.</p>
+        <div class="test-author test-author-ar">
+          <div class="test-av-ar">فا</div>
+          <div style="text-align:right">
+            <div class="test-name test-name-ar">فاطمة المنصوري</div>
+            <div class="test-loc test-loc-ar">ربة منزل · الرياض</div>
+            <div class="test-badge test-badge-ar"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>تقييم موثّق</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ CTA BAND ══ -->
+<div class="cta-outer">
+  <div class="cta-band fade">
+    <div class="cta-glow"></div><div class="cta-glow2"></div>
+    <div class="cta-inner">
+      <div class="cta-left">
+        <h2>Ready for Year-Round <em>Comfort?</em><span class="ar ar-white">هل أنت مستعد للراحة على مدار العام؟</span></h2>
+        <p>Book your free in-home assessment today. Same-day appointments available across Riyadh and all major Saudi cities for AC and all home appliances.</p>
+      </div>
+      <div class="cta-right-btns">
+        <a href="https://wa.me/966591136834" target="_blank" class="btn btn-wa btn-xl">
+          <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.121 1.532 5.853L0 24l6.335-1.51A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.774 9.774 0 01-5.02-1.38l-.36-.214-3.762.897.937-3.668-.235-.375A9.778 9.778 0 012.182 12C2.182 6.579 6.579 2.182 12 2.182S21.818 6.579 21.818 12 17.421 21.818 12 21.818z"/></svg>
+          Book on WhatsApp
+        </a>
+        <a href="tel:+966507884372" class="btn btn-ghost btn-xl">
+          <svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
+          Call Us Now
+        </a>
+        <div class="cta-call"><svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>Or call: +966 50 788 4372</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══ FORM ══ -->
+<section class="section estimate-bg" id="contact">
+  <div class="wrap">
+    <div class="estimate-head fade">
+      <div class="sec-eyebrow">Get In Touch · تواصل معنا</div>
+      <h2 class="sec-title">Book <em>Your Service</em> Today<span class="ar">احجز خدمتك اليوم</span></h2>
+      <p class="sec-sub" style="margin:12px auto 0;text-align:center">No hidden fees. No pressure. We respond within 30 minutes during business hours.</p>
+    </div>
+    <div class="form-card fade">
+      <div class="form-grid">
+        <div class="ff"><label>First Name *</label><input type="text" class="fc" placeholder="Ahmad"/></div>
+        <div class="ff"><label>Last Name *</label><input type="text" class="fc" placeholder="Al Rashidi"/></div>
+        <div class="ff"><label>Phone Number *</label><input type="tel" class="fc" placeholder="+966 5x xxx xxxx"/></div>
+        <div class="ff"><label>Email Address</label><input type="email" class="fc" placeholder="ahmad@example.com"/></div>
+        <div class="ff full"><label>Service Required *</label>
+          <select class="fc">
+            <option value="" disabled selected>Select a Service</option>
+            <option>AC Services (Cleaning / Repair / Installation)</option>
+            <option>Washing Machine Services</option>
+            <option>Refrigerator Services</option>
+            <option>Microwave Oven Services</option>
+            <option>Home Appliance Maintenance Plan</option>
+            <option>24/7 Emergency Service</option>
+          </select>
+        </div>
+        <div class="ff"><label>District / Area</label><input type="text" class="fc" placeholder="Al Quds District, Riyadh"/></div>
+        <div class="ff"><label>Best Time to Call</label>
+          <select class="fc">
+            <option>Morning (8am – 12pm)</option>
+            <option>Afternoon (12pm – 5pm)</option>
+            <option>Evening (5pm – 9pm)</option>
+            <option>Anytime</option>
+          </select>
+        </div>
+        <div class="ff full"><label>Additional Details</label><textarea class="fc" placeholder="Describe your issue or any additional information..."></textarea></div>
+        <div class="fsr">
+          <a href="https://wa.me/966591136834" target="_blank" class="btn btn-wa" style="width:100%;justify-content:center;padding:16px;font-size:16px;border-radius:8px;font-weight:800;text-decoration:none">
+            <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.121 1.532 5.853L0 24l6.335-1.51A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.774 9.774 0 01-5.02-1.38l-.36-.214-3.762.897.937-3.668-.235-.375A9.778 9.778 0 012.182 12C2.182 6.579 6.579 2.182 12 2.182S21.818 6.579 21.818 12 17.421 21.818 12 21.818z"/></svg>
+            Send via WhatsApp
+          </a>
+          <div class="fbadges">
+            <span class="fbadge-item"><svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg>100% Private</span>
+            <span class="fbadge-item"><svg viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23L13 11.33V7z"/></svg>30 Min Response</span>
+            <span class="fbadge-item"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>No Obligation</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ CONTACT BAR ══ -->
+<div class="cbar">
+  <div class="cbar-inner">
+    <div class="ci">
+      <div class="ci-ico"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></div>
+      <div><div class="ci-lbl">Our Location</div><div class="ci-val">Al Quds District, Riyadh</div></div>
+    </div>
+    <div class="ci">
+      <div class="ci-ico"><svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg></div>
+      <div><div class="ci-lbl">Call Us</div><div class="ci-val">+966 50 788 4372</div></div>
+    </div>
+    <div class="ci">
+      <div class="ci-ico"><svg viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23L13 11.33V7z"/></svg></div>
+      <div><div class="ci-lbl">Hours</div><div class="ci-val">Sun–Thu 8am–10pm · 24/7</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- ══ FOOTER ══ -->
+<footer class="footer">
+  <div class="footer-wrap">
+    <div class="footer-grid">
+
+      <div class="footer-about">
+        <div class="footer-brand">
+          <img src="Removal-849.png" alt="Air Conditioning" onerror="this.style.display='none'"/>
+          <div class="footer-brand-text">
+            <div class="fn">Air <span>Conditioning</span></div>
+            <div class="far-sub">للتبريد والتكييف</div>
+          </div>
+        </div>
+        <p>Professional AC cleaning and home appliance service company serving Riyadh and Saudi Arabia. Fast, honest, high-quality work — licensed, insured, and available 365 days a year.</p>
+
+        <div class="footer-contact-info">
+          <div class="fci">
+            <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+            Al Quds District, Riyadh
+          </div>
+          <div class="fci">
+            <svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
+            <a href="tel:+966507884372">+966 50 788 4372</a>
+          </div>
+          <div class="fci">
+            <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            <a href="mailto:info@airconditioningsa.com">info@airconditioningsa.com</a>
+          </div>
+        </div>
+
+        <div class="nl-wrap">
+          <p>Get seasonal tips &amp; exclusive deals:</p>
+          <div class="nl-row">
+            <input class="nl-input" type="email" placeholder="Your email address"/>
+            <button class="nl-btn">Subscribe</button>
+          </div>
+        </div>
+        <div class="socials">
+          <a href="#" class="soc"><svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+          <a href="https://www.instagram.com/ac_repairing_center00?igsh=dGZ6dHY2a2h6bTVm" target="_blank" class="soc"><svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a>
+          <a href="https://wa.me/966591136834" target="_blank" class="soc"><svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.121 1.532 5.853L0 24l6.335-1.51A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.774 9.774 0 01-5.02-1.38l-.36-.214-3.762.897.937-3.668-.235-.375A9.778 9.778 0 012.182 12C2.182 6.579 6.579 2.182 12 2.182S21.818 6.579 21.818 12 17.421 21.818 12 21.818z"/></svg></a>
+          <a href="https://vm.tiktok.com/ZS9dnbXLP8cP6-6bfP0/" target="_blank" class="soc"><svg viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.27 8.27 0 004.84 1.56V6.79a4.85 4.85 0 01-1.07-.1z"/></svg></a>
+        </div>
+      </div>
+
+      <!-- Col 2: Services -->
+      <div class="fcol">
+        <h4>Our Services</h4>
+        <ul>
+          <li><a href="#services">AC Services</a></li>
+          <li><a href="#services">Washing Machine Repair</a></li>
+          <li><a href="#services">Refrigerator Services</a></li>
+          <li><a href="#services">Microwave Oven Repair</a></li>
+          <li><a href="#services">Appliance Maintenance</a></li>
+          <li><a href="#services">Emergency Service 24/7</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 3: Company -->
+      <div class="fcol">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 4: Service Areas -->
+      <div class="fcol">
+        <h4>Service Areas · مناطق الخدمة</h4>
+        <ul>
+          <li><a href="#">Al Quds District · حي القدس</a></li>
+          <li><a href="#">North Riyadh · شمال الرياض</a></li>
+          <li><a href="#">South Riyadh · جنوب الرياض</a></li>
+          <li><a href="#">East Riyadh · شرق الرياض</a></li>
+          <li><a href="#">Al Olaya · العليا</a></li>
+          <li><a href="#">Al Malaz · الملز</a></li>
+          <li><a href="#">Jeddah · جدة</a></li>
+          <li><a href="#">Dammam · الدمام</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2024 Air Conditioning · للتبريد والتكييف · Al Quds District, Riyadh, Saudi Arabia</p>
+      <div class="ftm-badges"><span class="fbd">Licensed</span><span class="fbd">Insured</span><span class="fbd">Certified</span></div>
+      <div class="ftm-links"><a href="#">Privacy</a><a href="#">Terms</a><a href="#">Sitemap</a></div>
+    </div>
+  </div>
+</footer>
+
+<!-- ══ FLOATING WHATSAPP ══ -->
+<a href="https://wa.me/966591136834" target="_blank" class="float-wa" id="floatWa">
+  <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.121 1.532 5.853L0 24l6.335-1.51A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.774 9.774 0 01-5.02-1.38l-.36-.214-3.762.897.937-3.668-.235-.375A9.778 9.778 0 012.182 12C2.182 6.579 6.579 2.182 12 2.182S21.818 6.579 21.818 12 17.421 21.818 12 21.818z"/></svg>
+  Chat on WhatsApp
+</a>
+
+<script>
+// ── Scroll events
+const hdr = document.getElementById('hdr');
+const wa  = document.getElementById('floatWa');
+window.addEventListener('scroll', function() {
+  hdr.classList.toggle('scrolled', scrollY > 20);
+  wa.classList.toggle('show',  scrollY > 400);
+});
+
+// ── Fade-in on scroll
+const io = new IntersectionObserver(function(entries) {
+  entries.forEach(function(e) { if (e.isIntersecting) e.target.classList.add('in'); });
+}, { threshold: 0.1 });
+document.querySelectorAll('.fade,.fade-l,.fade-r').forEach(function(el) { io.observe(el); });
+
+// ── Stat counters
+function animCount(el, target, suf) {
+  var steps = 70, cur = 0;
+  function tick() {
+    cur = Math.min(cur + target / steps, target);
+    el.innerHTML = (target >= 1000 ? Math.round(cur).toLocaleString() : Math.round(cur)) + '<sup>' + suf + '</sup>';
+    if (cur < target) requestAnimationFrame(tick);
+  }
+  tick();
+}
+var cio = new IntersectionObserver(function(entries) {
+  entries.forEach(function(e) {
+    if (e.isIntersecting) {
+      animCount(e.target, +e.target.dataset.target, e.target.dataset.suf);
+      cio.unobserve(e.target);
+    }
+  });
+}, { threshold: 0.5 });
+document.querySelectorAll('[data-target]').forEach(function(el) { cio.observe(el); });
+
+// ── Active nav link
+var sects = Array.from(document.querySelectorAll('section[id]'));
+var links = Array.from(document.querySelectorAll('.nav-links a'));
+window.addEventListener('scroll', function() {
+  var cur = '';
+  sects.forEach(function(s) { if (scrollY >= s.offsetTop - 100) cur = s.id; });
+  links.forEach(function(a) {
+    a.classList.remove('active');
+    if (a.getAttribute('href') === 'index.html' && cur === '') a.classList.add('active');
+    else if (a.getAttribute('href') === '#' + cur) a.classList.add('active');
+  });
+});
+
+// ── Hamburger menu
+function toggleMenu() {
+  var menu = document.getElementById('mobMenu');
+  var btn  = document.getElementById('hambBtn');
+  menu.classList.toggle('open');
+  btn.classList.toggle('open');
+  document.body.style.overflow = menu.classList.contains('open') ? 'hidden' : '';
+}
+
+// ── Video player (Why Choose Us)
+function playWhyVideo() {
+  var video   = document.getElementById('whyVideo');
+  var poster  = document.getElementById('whyPoster');
+  var overlay = document.getElementById('whyPlayOverlay');
+  if (!video.querySelector('source') && !video.src) {
+    alert('Add your video: put <source src="your-video.mp4" type="video/mp4"> inside the <video id="whyVideo"> tag.');
+    return;
+  }
+  poster.classList.add('hidden');
+  overlay.classList.add('hidden');
+  video.play().catch(function(){});
+}
+document.getElementById('whyVideo').addEventListener('ended', function() {
+  document.getElementById('whyPoster').classList.remove('hidden');
+  document.getElementById('whyPlayOverlay').classList.remove('hidden');
+});
+</script>
+</body>
+</html>
