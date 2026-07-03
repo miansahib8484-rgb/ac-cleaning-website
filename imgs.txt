@@ -1,0 +1,40 @@
+<img src="Removal-849.png" alt="Hafiz Air Conditioning - Best AC Repair Company Riyadh" width="240" height="320"
+          fetchpriority="high" onerror="this.style.display='none'" />
+<img src="https://randomuser.me/api/portraits/men/32.jpg" alt="AC repair customer review Riyadh" width="48"
+              height="48" loading="lazy" />
+<img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Satisfied customer testimonial Riyadh"
+              width="48" height="48" loading="lazy" />
+<img src="https://randomuser.me/api/portraits/men/67.jpg" alt="Happy customer AC service Riyadh" width="48"
+              height="48" loading="lazy" />
+<img src="https://randomuser.me/api/portraits/women/55.jpg" alt="Customer review appliance repair Riyadh"
+              width="48" height="48" loading="lazy" />
+<img class="hero-main-img"
+            src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4?auto=format&fit=crop&w=900&q=88"
+            alt="فني صيانة مكيفات الرياض اثناء العمل" />
+<img src="Ac Service.jpg"
+            alt="تركيب مكيفات سبليت الرياض – فني حافظ للتكييف يركب مكيف جديد بالرياض" />
+<img src="residential.jpg"
+            alt="صيانة مكيفات سبليت الرياض – فني مكيفات معتمد يصلح وحدة داخلية في منزل بالرياض" width="600" height="400"
+            loading="lazy" />
+<img src="residential.jpg"
+            alt="تنظيف مكيفات بالرياض – غسيل مكيف سبليت من شركة حافظ للتكييف الرياض" width="600" height="400"
+            loading="lazy" />
+<img src="pics services.jpg"
+            alt="إصلاح ثلاجة الرياض – فني صيانة ثلاجة من شركة حافظ للتكييف الرياض" width="600" height="400"
+            loading="lazy" />
+<img src="pics services.jpg"
+            alt="إصلاح غسالة اوتوماتيك الرياض – صيانة غسالة من شركة حافظ للأجهزة المنزلية الرياض" width="600"
+            height="400" loading="lazy" />
+<img class="test-av" src="https://randomuser.me/api/portraits/men/32.jpg"
+                alt="AC repair customer Riyadh Al Olaya" />
+<img class="test-av" src="https://randomuser.me/api/portraits/women/44.jpg"
+                alt="Washing machine repair customer Riyadh" />
+<img class="test-av" src="https://randomuser.me/api/portraits/men/67.jpg"
+                alt="Restaurant AC maintenance Riyadh" />
+<img class="test-av" src="https://randomuser.me/api/portraits/men/32.jpg"
+                alt="AC repair customer Riyadh Al Olaya" />
+<img class="test-av" src="https://randomuser.me/api/portraits/women/44.jpg"
+                alt="Washing machine repair customer Riyadh" />
+<img class="test-av" src="https://randomuser.me/api/portraits/men/67.jpg"
+                alt="عميل صيانة أجهزة منزلية الرياض" />
+<img src="Removal-849.png" alt="Air Conditioning" onerror="this.style.display='none'" />

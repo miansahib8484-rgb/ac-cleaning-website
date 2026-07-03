@@ -1,0 +1,381 @@
+<script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-NR6BH5MH');</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://www.hafizairconditioning.com/#business",
+      "name": "Hafiz Air Conditioning",
+      "alternateName": ["حافظ للتكييف", "حافظ للتكييف الرياض", "Hafiz AC Riyadh", "شركة صيانة مكيفات الرياض", "أفضل شركة تكييف الرياض"],
+      "description": "شركة حافظ للتكييف – أفضل شركة صيانة مكيفات في الرياض. تصليح مكيفات سبليت ومركزية، تنظيف مكيفات، تركيب مكيفات، فك وتركيب مكيفات، إصلاح غسالات وثلاجات. فني مكيفات معتمد في جميع أحياء الرياض، خدمة طوارئ 24 ساعة. Hafiz Air Conditioning is Riyadh's #1 AC repair, washing machine, and refrigerator service company — certified, same-day, 24/7 emergency across all Riyadh districts.",
+      "url": "https://www.hafizairconditioning.com/",
+      "logo": "https://www.hafizairconditioning.com/Removal-849.png",
+      "image": "https://www.hafizairconditioning.com/og-image.jpg",
+      "telephone": "+966591136834",
+      
+      "foundingDate": "2006",
+      "priceRange": "$$",
+      "currenciesAccepted": "SAR",
+      "paymentAccepted": "Cash, Bank Transfer, Online Payment",
+      "areaServed": [
+        {"@type": "City", "name": "Riyadh", "sameAs": "https://www.wikidata.org/wiki/Q3703"},
+        {"@type": "AdministrativeArea", "name": "Al Quds District, Riyadh"},
+        {"@type": "AdministrativeArea", "name": "North Riyadh"},
+        {"@type": "AdministrativeArea", "name": "South Riyadh"},
+        {"@type": "AdministrativeArea", "name": "East Riyadh"},
+        {"@type": "AdministrativeArea", "name": "Al Olaya, Riyadh"},
+        {"@type": "AdministrativeArea", "name": "Al Malaz, Riyadh"},
+        {"@type": "AdministrativeArea", "name": "Al Nakheel, Riyadh"},
+        {"@type": "AdministrativeArea", "name": "Al Rawdah, Riyadh"},
+        {"@type": "Country", "name": "Saudi Arabia"}
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Muhammad Ibn Faisal Ibn Turki, Al Quds",
+        "addressLocality": "Riyadh",
+        "addressRegion": "Riyadh Province",
+        "postalCode": "13214",
+        "addressCountry": "SA"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 24.7136,
+        "longitude": 46.6753
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Sunday","Monday","Tuesday","Wednesday","Thursday"],
+          "opens": "08:00",
+          "closes": "22:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Friday","Saturday"],
+          "opens": "00:00",
+          "closes": "23:59",
+          "description": "24/7 Emergency Service Available"
+        }
+      ],
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "reviewCount": "47",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "sameAs": [
+        "https://www.instagram.com/ac_repairing_center00",
+        "https://vm.tiktok.com/ZS9dnbXLP8cP6-6bfP0/",
+        "https://wa.me/966591136834",
+        "https://www.google.com/maps?cid=hafizairconditioning",
+        "https://www.yelp.com/biz/hafiz-air-conditioning-riyadh",
+        "https://foursquare.com/v/hafiz-air-conditioning",
+        "https://www.hotfrog.com.sa/company/hafiz-air-conditioning",
+        "https://sa.zoominfo.com/c/hafiz-air-conditioning",
+        "https://www.kompass.com/c/hafiz-air-conditioning",
+        "https://www.cylex-saudi.com/hafiz-airconditioning",
+        "https://www.brownbook.net/business/hafiz-air-conditioning",
+        "https://www.n49.com/biz/hafiz-air-conditioning",
+        "https://www.tuugo.biz/Companies/hafiz-air-conditioning",
+        "https://www.businesslist.com.sa/company/hafiz-air-conditioning",
+        "https://www.yellosa.co.za/hafiz-air-conditioning",
+        "https://www.expressbusinessdirectory.com/Companies/hafiz-air-conditioning",
+        "https://www.findbizinfo.com/hafiz-air-conditioning",
+        "https://www.lacartes.com/business/hafiz-air-conditioning",
+        "https://www.storeboard.com/hafizairconditioning",
+        "https://www.manta.com/c/hafiz-air-conditioning",
+        "https://www.cybo.com/SA-biz/hafiz-air-conditioning",
+        "https://www.wamda.com/company/hafiz-air-conditioning",
+        "https://www.enrollbusiness.com/BusinessProfile/hafiz-air-conditioning",
+        "https://www.bizvibe.com/s/saudi-arabia/hvac/hafiz-air-conditioning",
+        "https://www.golocal247.com/biz/hafiz-air-conditioning",
+        "https://www.find-us-here.com/businesses/hafiz-air-conditioning",
+        "https://www.2findlocal.com/b/hafiz-air-conditioning",
+        "https://www.superpages.com/bp/hafiz-air-conditioning",
+        "https://www.ezlocal.com/sa/riyadh/hvac/hafiz-air-conditioning",
+        "https://www.local.com/business/hafiz-air-conditioning",
+        "https://www.spoke.com/companies/hafiz-air-conditioning",
+        "https://www.infoisinfo.com.sa/hafiz-air-conditioning",
+        "https://www.cityfos.com/company/Hafiz-Air-Conditioning",
+        "https://www.localbd.com.sa/hafiz-air-conditioning",
+        "https://www.soukr.com/hafiz-air-conditioning",
+        "https://www.yalwa.com.sa/hafiz-air-conditioning",
+        "https://www.sallamah.com/hafiz-air-conditioning",
+        "https://sa.enrollbusiness.com/BusinessProfile/hafiz-air-conditioning",
+        "https://www.businessmagnet.net/company/hafiz-air-conditioning",
+        "https://www.dastelephone.com/hafiz-air-conditioning",
+        "https://www.dealerbaba.com/suppliers/industrial-electrical/hafiz-air-conditioning",
+        "https://www.fyple.com/company/hafiz-air-conditioning",
+        "https://www.whatclinic.com/hafiz-air-conditioning",
+        "https://www.openstreetmap.org/node/hafiz-air-conditioning",
+        "https://www.wikimapia.org/hafiz-air-conditioning",
+        "https://www.free-ads.com.sa/hafiz-air-conditioning",
+        "https://gust.com/companies/hafiz-air-conditioning",
+        "https://www.crunchbase.com/organization/hafiz-air-conditioning",
+        "https://www.zoominfo.com/c/hafiz-air-conditioning"
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "AC & Appliance Repair Services Riyadh",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "صيانة مكيفات الرياض – AC Repair Riyadh",
+              "description": "تصليح مكيفات سبليت ومركزية وشباك في الرياض – شحن غاز، إصلاح كهربائي، تنظيف داخلي وخارجي. خدمة في نفس اليوم لجميع أحياء الرياض. Same-day split, central and window AC repair Riyadh — all brands.",
+              "provider": {"@id": "https://www.hafizairconditioning.com/#business"},
+              "areaServed": "Riyadh, Saudi Arabia"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "تنظيف مكيفات الرياض – AC Cleaning Riyadh",
+              "description": "غسيل وتنظيف مكيفات سبليت بالرياض – تنظيف عميق للفلاتر والملفات، تعقيم، وضمان كفاءة عالية. تنظيف مكيفات 24 ساعة الرياض.",
+              "provider": {"@id": "https://www.hafizairconditioning.com/#business"},
+              "areaServed": "Riyadh, Saudi Arabia"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "تركيب مكيفات سبليت الرياض – AC Installation Riyadh",
+              "description": "تركيب وفك وتركيب مكيفات سبليت ومركزية بالرياض – جميع الماركات، أسعار تنافسية، فنيون معتمدون.",
+              "provider": {"@id": "https://www.hafizairconditioning.com/#business"},
+              "areaServed": "Riyadh, Saudi Arabia"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "إصلاح غسالة اوتوماتيك الرياض – Washing Machine Repair Riyadh",
+              "description": "صيانة وإصلاح غسالة اوتوماتيك فول وشبه اوتوماتيك في الرياض – طبل، محرك، تسريب ماء، الكترونيات. جميع الماركات، خدمة يوم نفسه.",
+              "provider": {"@id": "https://www.hafizairconditioning.com/#business"},
+              "areaServed": "Riyadh, Saudi Arabia"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "إصلاح ثلاجة الرياض – Refrigerator Repair Riyadh",
+              "description": "صيانة وإصلاح ثلاجات في الرياض – كمبريسور، شحن غاز، ثرموستات، أبواب. جميع الموديلات والماركات.",
+              "provider": {"@id": "https://www.hafizairconditioning.com/#business"},
+              "areaServed": "Riyadh, Saudi Arabia"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "صيانة مكيفات طوارئ 24 ساعة الرياض – Emergency AC Repair Riyadh",
+              "description": "خدمة طوارئ مكيفات على مدار الساعة في الرياض – استجابة خلال ساعتين في جميع أحياء الرياض. 24/7 emergency AC repair Riyadh guaranteed 2-hour response.",
+              "provider": {"@id": "https://www.hafizairconditioning.com/#business"},
+              "areaServed": "Riyadh, Saudi Arabia"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://www.hafizairconditioning.com/#faq",
+      "mainEntity": [
+        {"@type": "Question","name": "ما هي أفضل شركة صيانة مكيفات في الرياض؟","acceptedAnswer": {"@type": "Answer","text": "شركة حافظ للتكييف هي أفضل شركة صيانة مكيفات في الرياض — خبرة 18 عامًا، أكثر من 3500 عميل راضٍ، تقييم 4.9 نجوم، فنيون معتمدون، خدمة طوارئ 24 ساعة. اتصل: 966591136834+"}},
+        {"@type": "Question","name": "كم تكلفة صيانة المكيف في الرياض؟","acceptedAnswer": {"@type": "Answer","text": "حافظ للتكييف يقدم فحصًا مجانيًا في المنزل بالرياض. يزور فني المكيفات منزلك ويقدم عرض سعر شفافًا مكتوبًا قبل بدء العمل. لا رسوم خفية."}},
+        {"@type": "Question","name": "كيف أجد فني مكيفات قريب مني في الرياض؟","acceptedAnswer": {"@type": "Answer","text": "اتصل بـ 966591136834+ وسنرسل أقرب فني مكيفات في الرياض خلال 60-120 دقيقة. نغطي جميع أحياء الرياض."}},
+        {"@type": "Question","name": "هل تعملون 24 ساعة في الرياض؟","acceptedAnswer": {"@type": "Answer","text": "نعم — خدمة طوارئ مكيفات 24 ساعة في الرياض بما في ذلك الجمعة والعطل الرسمية. استجابة مضمونة خلال ساعتين في أي حي بالرياض."}},
+        {"@type": "Question","name": "هل تصلحون غسالات اوتوماتيك في الرياض؟","acceptedAnswer": {"@type": "Answer","text": "نعم. نصلح جميع أنواع الغسالات الاوتوماتيك في الرياض — فول أوتوماتيك وشبه أوتوماتيك، جميع الماركات: سامسونج، LG، بوش، سيمنس. خدمة في نفس اليوم."}},
+        {"@type": "Question","name": "هل تصلحون ثلاجات في الرياض؟","acceptedAnswer": {"@type": "Answer","text": "نعم. إصلاح ثلاجات في الرياض في نفس اليوم — كمبريسور، شحن غاز، ثرموستات. جميع الإصلاحات بضمان سنتين."}},
+        {"@type": "Question","name": "ما هي مناطق الرياض التي تخدمها حافظ للتكييف؟","acceptedAnswer": {"@type": "Answer","text": "نخدم جميع أحياء الرياض: القدس، العليا، الملز، المروج، الروضة، النخيل، الياسمين، الصحافة، حطين، شمال الرياض، جنوب الرياض، شرق الرياض، وجميع المناطق المحيطة."}},
+        {"@type": "Question","name": "Who is the best AC technician in Riyadh?","acceptedAnswer": {"@type": "Answer","text": "Hafiz Air Conditioning provides Riyadh's highest-rated AC technician service — 18+ years certified, 3,500+ repairs, 4.9 Google rating. Call +966 59 113 6834."}},
+        {"@type": "Question","name": "Do you offer automatic washing machine repair in Riyadh?","acceptedAnswer": {"@type": "Answer","text": "Yes. We fix all automatic washing machines same-day in Riyadh — front-load, top-load, all brands including Samsung, LG, Bosch, Siemens and Whirlpool."}},
+        {"@type": "Question","name": "Which areas of Riyadh does Hafiz AC service?","acceptedAnswer": {"@type": "Answer","text": "All Riyadh districts: Al Quds, Al Olaya, Al Malaz, Al Muruj, Al Rawdah, Al Nakheel, Al Yasmin, Al Sahafa, Hittin, North Riyadh, South Riyadh, East Riyadh, and all surrounding areas."}}
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://www.hafizairconditioning.com/#website",
+      "url": "https://www.hafizairconditioning.com/",
+      "name": "حافظ للتكييف – صيانة مكيفات الرياض",
+      "description": "شركة حافظ للتكييف – فني مكيفات معتمد في الرياض، صيانة وتصليح مكيفات سبليت ومركزية، إصلاح غسالات وثلاجات، خدمة 24 ساعة.",
+      "inLanguage": ["ar-SA", "en-SA"],
+      "publisher": {"@id": "https://www.hafizairconditioning.com/#business"}
+    },
+    {
+      "@type": "BreadcrumbList",
+     "itemListElement": [
+  {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.hafizairconditioning.com/"},
+        {"@type": "ListItem", "position": 2, "name": "خدمات صيانة مكيفات الرياض", "item": "https://www.hafizairconditioning.com/services"},
+        {"@type": "ListItem", "position": 3, "name": "عن حافظ للتكييف الرياض", "item": "https://www.hafizairconditioning.com/aboutus"},
+        {"@type": "ListItem", "position": 4, "name": "رقم فني تكييف الرياض – تواصل معنا", "item": "https://www.hafizairconditioning.com/contactus"},
+        {"@type": "ListItem", "position": 5, "name": "نصائح صيانة مكيفات الرياض", "item": "https://www.hafizairconditioning.com/blog"}
+]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.hafizairconditioning.com/",
+      "url": "https://www.hafizairconditioning.com/",
+      "name": "فني مكيفات الرياض – صيانة وتصليح 24/7 | حافظ للتكييف",
+      "description": "حافظ للتكييف – صيانة مكيفات الرياض. تصليح مكيفات سبليت ومركزية، تنظيف مكيفات، تركيب، إصلاح غسالة اوتوماتيك، صيانة ثلاجة. فني معتمد، طوارئ 24 ساعة.",
+      "isPartOf": {"@id": "https://www.hafizairconditioning.com/#business"},
+      "inLanguage": ["ar-SA", "en-SA"],
+      "lastReviewed": "2026-06-10"
+    }
+  ]
+}
+</script>
+<script>
+    // ── Wait for DOM
+    document.addEventListener('DOMContentLoaded', function () {
+
+      // ── Elements
+      var hdr = document.getElementById('hdr');
+      var floatWaEl = document.getElementById('floatWa');
+
+      // ── Scroll handler
+      var scrollTicking = false;
+      window.addEventListener('scroll', function () {
+        if (!scrollTicking) {
+          window.requestAnimationFrame(function () {
+            var sY = window.scrollY;
+            updateActiveTabs(sY);
+            if (hdr) hdr.classList.toggle('scrolled', sY > 20);
+            if (floatWaEl) floatWaEl.classList.toggle('show', sY > 300);
+            scrollTicking = false;
+          });
+          scrollTicking = true;
+        }
+      });
+
+      // ── Show float-wa after delay
+      setTimeout(function () { if (floatWaEl) floatWaEl.classList.add('show'); }, 1500);
+
+      // ── Fade-in on scroll
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) {
+          if (e && e.isIntersecting && e.target) e.target.classList.add('in');
+        });
+      }, { threshold: 0.08 });
+      document.querySelectorAll('.fade,.fade-l,.fade-r,.visible').forEach(function (el) {
+        if (el) io.observe(el);
+      });
+
+      // ── Counter animation
+      function animateCounter(el, target, suffix, duration) {
+        var step = target / (duration / 16);
+        var current = 0;
+        var timer = setInterval(function () {
+          current += step;
+          if (current >= target) { current = target; clearInterval(timer); }
+          el.innerHTML = Math.floor(current).toLocaleString() + '<sup>' + suffix + '</sup>';
+        }, 16);
+      }
+      var counterObserver = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) {
+          if (e.isIntersecting && !e.target.dataset.counted) {
+            e.target.dataset.counted = '1';
+            var target = parseInt(e.target.dataset.target);
+            var suf = e.target.dataset.suf || '';
+            animateCounter(e.target, target, suf, 1800);
+          }
+        });
+      }, { threshold: 0.3 });
+      document.querySelectorAll('.stat-num[data-target]').forEach(function (el) {
+        counterObserver.observe(el);
+      });
+
+      // ── Hamburger
+      window.toggleMenu = function () {
+        var menu = document.getElementById('mobMenu');
+        var btn = document.getElementById('hambBtn');
+        if (!menu || !btn) return;
+        menu.classList.toggle('open');
+        btn.classList.toggle('open');
+        document.body.style.overflow = menu.classList.contains('open') ? 'hidden' : '';
+      };
+
+      // ── FAQ accordion
+      window.toggleFaq = function (btn) {
+        if (!btn) return;
+        var item = btn.parentElement;
+        if (!item) return;
+        var isOpen = item.classList.contains('open');
+        document.querySelectorAll('.faq-item.open').forEach(function (i) { if (i) i.classList.remove('open'); });
+        if (!isOpen) item.classList.add('open');
+      };
+      window.toggleFaqHome = function (item) {
+        if (!item) return;
+        var isOpen = item.classList.contains('open');
+        document.querySelectorAll('#faq .faq-item.open').forEach(function (i) { if (i) i.classList.remove('open'); });
+        if (!isOpen) item.classList.add('open');
+      };
+
+      // ── Service tabs active on scroll
+      var sections = ['ac-services', 'washing-machine', 'refrigerator', 'microwave', 'maintenance', 'emergency'];
+      var tabs = document.querySelectorAll('.srv-tab');
+      function updateActiveTabs(sY) {
+        if (!tabs || !tabs.length) return;
+        var current = '';
+        var currentY = sY !== undefined ? sY : window.scrollY;
+        sections.forEach(function (id) {
+          var el = document.getElementById(id);
+          if (el && currentY >= el.offsetTop - 160) current = id;
+        });
+        tabs.forEach(function (tab) {
+          if (!tab) return;
+          var isActive = tab.getAttribute('href') === '#' + current;
+          if (isActive !== tab.classList.contains('active')) {
+            if (isActive) tab.classList.add('active');
+            else tab.classList.remove('active');
+          }
+        });
+      }
+
+      // ── Video controls
+      window.playWhyVideo = function () {
+        var v = document.getElementById('whyVideo');
+        var overlay = document.getElementById('whyPlayOverlay');
+        var poster = document.getElementById('whyPoster');
+        var stopBtn = document.getElementById('whyStopBtn');
+        if (v) v.play();
+        if (overlay) overlay.classList.add('hidden');
+        if (poster) poster.classList.add('hidden');
+        if (stopBtn) stopBtn.classList.add('visible');
+      };
+      window.stopWhyVideo = function () {
+        var v = document.getElementById('whyVideo');
+        var overlay = document.getElementById('whyPlayOverlay');
+        var poster = document.getElementById('whyPoster');
+        var stopBtn = document.getElementById('whyStopBtn');
+        if (v) { v.pause(); v.currentTime = 0; }
+        if (overlay) overlay.classList.remove('hidden');
+        if (poster) poster.classList.remove('hidden');
+        if (stopBtn) stopBtn.classList.remove('visible');
+      };
+
+      // ── Smooth scroll
+      document.querySelectorAll('a[href^="#"]').forEach(function (a) {
+        a.addEventListener('click', function (e) {
+          var href = this.getAttribute('href');
+          if (href === '#') return;
+          var target = document.querySelector(href);
+          if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+        });
+      });
+
+    }); // end DOMContentLoaded
+  </script>
