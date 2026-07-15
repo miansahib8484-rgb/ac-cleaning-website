@@ -37,6 +37,56 @@
       "source": "/blog.html",
       "destination": "/blog",
       "permanent": true
+    },
+    {
+      "source": "/ac-gas-refill-riyadh.html",
+      "destination": "/ac-gas-refill-riyadh",
+      "permanent": true
+    },
+    {
+      "source": "/ac-not-cooling-riyadh.html",
+      "destination": "/ac-not-cooling-riyadh",
+      "permanent": true
+    },
+    {
+      "source": "/ac-summer-maintenance-riyadh.html",
+      "destination": "/ac-summer-maintenance-riyadh",
+      "permanent": true
+    },
+    {
+      "source": "/ac-washing-machine-fridge-repair-riyadh-all-neighborhoods.html",
+      "destination": "/ac-washing-machine-fridge-repair-riyadh-all-neighborhoods",
+      "permanent": true
+    },
+    {
+      "source": "/annual-maintenance-contract-riyadh.html",
+      "destination": "/annual-maintenance-contract-riyadh",
+      "permanent": true
+    },
+    {
+      "source": "/emergency-ac-repair-riyadh.html",
+      "destination": "/emergency-ac-repair-riyadh",
+      "permanent": true
+    },
+    {
+      "source": "/fridge-repair-riyadh.html",
+      "destination": "/fridge-repair-riyadh",
+      "permanent": true
+    },
+    {
+      "source": "/reduce-ac-electricity-bill-riyadh.html",
+      "destination": "/reduce-ac-electricity-bill-riyadh",
+      "permanent": true
+    },
+    {
+      "source": "/washing-machine-error-codes-samsung-lg.html",
+      "destination": "/washing-machine-error-codes-samsung-lg",
+      "permanent": true
+    },
+    {
+      "source": "/washing-machine-smell-riyadh.html",
+      "destination": "/washing-machine-smell-riyadh",
+      "permanent": true
     }
   ],
   "headers": [
