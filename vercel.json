@@ -87,6 +87,31 @@
       "source": "/washing-machine-smell-riyadh.html",
       "destination": "/washing-machine-smell-riyadh",
       "permanent": true
+    },
+    {
+      "source": "/ac-lifespan-dusty-climate-riyadh.html",
+      "destination": "/ac-lifespan-dusty-climate-riyadh",
+      "permanent": true
+    },
+    {
+      "source": "/ac-water-leak-causes-riyadh.html",
+      "destination": "/ac-water-leak-causes-riyadh",
+      "permanent": true
+    },
+    {
+      "source": "/best-ac-temperature-riyadh.html",
+      "destination": "/best-ac-temperature-riyadh",
+      "permanent": true
+    },
+    {
+      "source": "/inverter-vs-regular-ac-riyadh.html",
+      "destination": "/inverter-vs-regular-ac-riyadh",
+      "permanent": true
+    },
+    {
+      "source": "/refrigerant-gas-types-riyadh.html",
+      "destination": "/refrigerant-gas-types-riyadh",
+      "permanent": true
     }
   ],
   "headers": [

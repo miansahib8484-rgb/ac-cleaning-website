@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ar-SA" dir="rtl">
+<html lang="ar-SA" dir="ltr">
 <head>
 <!-- Google Tag Manager -->
 <script>let gtmLoaded=false;function loadGTM(){if(gtmLoaded)return;gtmLoaded=true;(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-NR6BH5MH');}
@@ -35,7 +35,7 @@
 .nav-dropdown{position:relative;display:flex;align-items:center}
 .nav-drop-trigger{font-size:13.5px;font-weight:600;color:#475569;padding:7px 13px;border-radius:var(--r);transition:all .2s;white-space:nowrap;cursor:pointer;user-select:none}
 .nav-dropdown:hover .nav-drop-trigger{color:var(--teal);background:var(--tealgl)}
-.nav-drop-panel{display:none;position:absolute;top:100%;left:0;background:#fff;border:1px solid var(--border);border-radius:14px;padding:8px;min-width:240px;box-shadow:0 16px 48px rgba(0,0,0,.12);z-index:9999;flex-direction:column;gap:2px}
+.nav-drop-panel{display:none;position:absolute;top:calc(100% + 8px);left:0;background:#fff;border:1px solid var(--border);border-radius:14px;padding:8px;min-width:240px;box-shadow:0 16px 48px rgba(0,0,0,.12);z-index:9999;flex-direction:column;gap:2px}.nav-dropdown::after{content:"";position:absolute;top:100%;left:0;right:0;height:12px}
 .nav-dropdown:hover .nav-drop-panel{display:flex}
 .nav-drop-panel a{font-size:13px;font-weight:600;color:#475569;padding:9px 14px;border-radius:8px;transition:all .2s;white-space:nowrap;display:block}
 .nav-drop-panel a:hover{color:var(--teal);background:var(--tealgl)}
@@ -47,6 +47,92 @@
 .kw-pill{display:inline-flex;padding:7px 16px;background:#fff;border:1.5px solid var(--border);border-radius:100px;font-size:13px;font-weight:600;color:var(--navy);transition:all .2s;text-decoration:none}
 .kw-pill:hover{border-color:var(--teal);color:var(--teal);background:var(--tealgl);transform:translateY(-2px)}
 .kw-pill[href*="arabic"]{font-family:"Tajawal",sans-serif;direction:rtl}
+
+/* === PROFESSIONAL ARTICLE TEMPLATE (added) === */
+.article-layout{display:grid;grid-template-columns:1fr 300px;gap:44px;align-items:start;max-width:1180px;margin:0 auto}
+.article-main{min-width:0}
+.article-sidebar{position:sticky;top:104px;display:flex;flex-direction:column;gap:18px}
+.side-card{background:#fff;border:1.5px solid var(--border);border-radius:16px;padding:22px 20px}
+.side-card.side-cta{background:linear-gradient(160deg,var(--navy),var(--navy2));border-color:rgba(0,198,178,.2)}
+.side-cta h4{color:#fff;font-family:"Fraunces",serif;font-size:17px;font-weight:800;margin-bottom:6px}
+.side-cta p{color:rgba(255,255,255,.55);font-size:12.5px;line-height:1.7;margin-bottom:16px}
+.side-cta .btn{width:100%;justify-content:center;margin-bottom:10px}
+.side-title{font-family:"Fraunces",serif;font-size:15px;font-weight:800;color:var(--navy);margin-bottom:14px}
+.side-contact-row{display:flex;align-items:flex-start;gap:10px;font-size:13px;color:var(--gray);margin-bottom:13px}
+.side-contact-row:last-child{margin-bottom:0}
+.side-contact-row svg{width:15px;height:15px;fill:var(--teal);flex-shrink:0;margin-top:2px}
+.side-contact-row a{color:var(--navy);font-weight:700}
+.side-links{display:flex;flex-direction:column;gap:2px}
+.side-links a{font-size:13px;color:var(--gray);font-weight:600;padding:9px 0;border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between}
+.side-links a:last-child{border-bottom:0}
+.side-links a:hover{color:var(--teal)}
+.side-badge-row{display:flex;align-items:center;gap:8px;font-size:12px;color:var(--gray);margin-bottom:10px}
+.side-badge-row:last-child{margin-bottom:0}
+.side-badge-row svg{width:14px;height:14px;fill:var(--teal);flex-shrink:0}
+@media(max-width:1000px){
+  .article-layout{grid-template-columns:1fr}
+  .article-sidebar{position:static;flex-direction:row;flex-wrap:wrap}
+  .article-sidebar .side-card{flex:1;min-width:240px}
+}
+@media(max-width:600px){.article-sidebar{flex-direction:column}}
+
+.article-meta{display:flex;align-items:center;gap:14px;flex-wrap:wrap;padding:16px 0;margin:22px 0 4px;border-top:1px solid var(--border);border-bottom:1px solid var(--border);font-size:13px;color:var(--gray)}
+.am-badge{background:var(--tealgl);color:var(--teal);font-weight:800;font-size:11px;padding:5px 13px;border-radius:100px;text-transform:uppercase;letter-spacing:.4px;direction:rtl}
+
+.article-body{margin-top:28px;font-size:16px;line-height:1.9;color:#334155}
+.article-body h2{font-family:"Fraunces",serif;font-size:clamp(20px,2.6vw,27px);font-weight:800;color:var(--navy);margin:38px 0 15px;line-height:1.35}
+.article-body h2:first-child{margin-top:0}
+.article-body h3{font-family:"Fraunces",serif;font-size:18px;font-weight:800;color:var(--navy);margin:26px 0 12px}
+.article-body p{margin-bottom:17px}
+.article-body ul,.article-body ol{margin:0 0 20px;padding-inline-start:22px}
+.article-body li{margin-bottom:8px}
+.article-body p a,.article-body li a{color:var(--teal);font-weight:700;text-decoration:underline;text-decoration-color:rgba(0,198,178,.3);text-underline-offset:3px}.article-body .btn{text-decoration:none}
+.article-body a:hover{text-decoration-color:var(--teal)}
+.article-body strong{color:var(--navy);font-weight:800}
+.article-body img{border-radius:14px;margin:22px 0}
+
+.step-list{display:flex;flex-direction:column;gap:12px;margin:26px 0}
+.step-item{display:flex;gap:15px;align-items:flex-start;background:var(--off);border:1.5px solid var(--border);border-radius:14px;padding:16px 18px}
+.step-num{flex-shrink:0;width:32px;height:32px;border-radius:50%;background:linear-gradient(135deg,var(--teal),var(--teal3));color:#fff;display:flex;align-items:center;justify-content:center;font-family:"Fraunces",serif;font-weight:900;font-size:13.5px}
+.step-text{font-size:14.5px;line-height:1.8;color:#334155;padding-top:4px}
+
+.pull-cta{background:linear-gradient(135deg,rgba(0,198,178,.08),rgba(0,198,178,.03));border:1.5px solid rgba(0,198,178,.25);border-radius:16px;padding:24px 26px;margin:30px 0;display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap}
+.pull-cta p{margin:0;font-size:15px;font-weight:700;color:var(--navy);flex:1;min-width:200px}
+
+.related-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin:16px 0 6px}
+.related-card{display:block;background:#fff;border:1.5px solid var(--border);border-radius:14px;padding:17px 19px;transition:all .25s}
+.related-card:hover{border-color:rgba(0,198,178,.35);box-shadow:0 12px 32px rgba(0,0,0,.08);transform:translateY(-3px)}
+.rc-title{font-size:14px;font-weight:700;color:var(--navy);direction:rtl;text-align:right;line-height:1.5}
+
+.sec-head{max-width:780px}
+.faq-list{display:flex;flex-direction:column;gap:12px}
+.faq-arrow{flex-shrink:0;transition:transform .3s}
+.faq-item.open .faq-arrow{transform:rotate(180deg)}
+.faq-a{direction:rtl;text-align:right}
+
+.btn-call{display:inline-flex;align-items:center;gap:8px;background:var(--navy);color:#fff;padding:12px 24px;border-radius:8px;font-weight:700;font-size:14px;transition:all .25s}
+.btn-call:hover{background:var(--navy2);transform:translateY(-2px)}
+
+.symptoms-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.symptom-card{background:#fff;border:1.5px solid var(--border);border-radius:16px;padding:24px 20px;transition:all .3s}
+.symptom-card:hover{border-color:rgba(0,198,178,.3);box-shadow:0 16px 40px rgba(0,0,0,.08);transform:translateY(-4px)}
+.symptom-icon{font-size:30px;margin-bottom:12px}
+.symptom-title{font-size:14.5px;font-weight:800;color:var(--navy);margin-bottom:6px;line-height:1.35}
+.symptom-desc{font-size:12.5px;color:var(--gray);line-height:1.65}
+
+.why-card{background:#fff;border:1.5px solid var(--border);border-radius:16px;padding:26px 22px;transition:all .3s}
+.why-card:hover{border-color:rgba(0,198,178,.3);box-shadow:0 16px 40px rgba(0,0,0,.08);transform:translateY(-4px)}
+.why-icon{font-size:28px;margin-bottom:10px}
+.why-title{font-size:15px;font-weight:800;color:var(--navy);margin-bottom:6px}
+.why-desc{font-size:13px;color:var(--gray);line-height:1.7}
+
+.areas-grid{display:flex;flex-wrap:wrap;gap:9px;justify-content:center}
+.area-tag{font-size:12.5px;font-weight:700;background:var(--off);border:1.5px solid var(--border);color:var(--navy);padding:7px 15px;border-radius:100px;direction:rtl}
+
+@media(max-width:900px){.symptoms-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:700px){.related-grid{grid-template-columns:1fr}}
+@media(max-width:600px){.symptoms-grid{grid-template-columns:1fr}}
+
 </style>
 <script type="application/ld+json">
   {
@@ -105,7 +191,6 @@
     },
     "geo": {"@type":"GeoCoordinates","latitude":24.7136,"longitude":46.6753},"hasMap":"https://maps.app.goo.gl/qtYJqEZL9MRGP5KN6",
     "aggregateRating": {"@type":"AggregateRating","ratingValue":"4.8","reviewCount":"500","bestRating":"5"},
-    "hasMap": "https://maps.google.com/?q=24.7136,46.6753",
     "areaServed":[{"@type":"City","name":"Riyadh","sameAs":"https://www.wikidata.org/wiki/Q3692"},{"@type":"Place","name":"Al Olaya, Riyadh"},{"@type":"Place","name":"Al Malaz, Riyadh"},{"@type":"Place","name":"Al Yasmin, Riyadh"},{"@type":"Place","name":"Al Nakheel, Riyadh"},{"@type":"Place","name":"Al Rawdah, Riyadh"},{"@type":"Place","name":"Al Quds, Riyadh"},{"@type":"Place","name":"Al Shifa, Riyadh"},{"@type":"Place","name":"As Suwaidi, Riyadh"},{"@type":"Place","name":"Al Naseem, Riyadh"},{"@type":"Place","name":"Hittin, Riyadh"}]
   }
   </script>
@@ -218,8 +303,13 @@
             <a href="/ac-washing-machine-fridge-repair-riyadh-all-neighborhoods">📍 All Neighborhoods</a>
             <a href="/ac-summer-maintenance-riyadh">☀️ AC Summer Prep Guide</a>
             <a href="/reduce-ac-electricity-bill-riyadh">💡 Lower Electricity Bill</a>
-            <a href="/washing-machine-smell-riyadh">👃 Washing Machine Smell</a>
+            <a href="/washing-machine-smell-riyadh" class="active">👃 Washing Machine Smell</a>
             <a href="/annual-maintenance-contract-riyadh">📋 Annual Maintenance Contract</a>
+            <a href="/inverter-vs-regular-ac-riyadh">⚡ Inverter vs Regular AC</a>
+            <a href="/ac-water-leak-causes-riyadh">💧 AC Water Leak Causes</a>
+            <a href="/best-ac-temperature-riyadh">🌡️ Best AC Temperature</a>
+            <a href="/refrigerant-gas-types-riyadh">🧪 R22 vs R410A Gas Guide</a>
+            <a href="/ac-lifespan-dusty-climate-riyadh">⏳ AC Lifespan in Riyadh Dust</a>
           </div>
         </div>
         <a href="/aboutus">About Us</a>
@@ -260,10 +350,15 @@
     <a href="/ac-not-cooling-riyadh" class="mob-link mob-sub" onclick="toggleMenu()">  ❄️ AC Not Cooling? Fix</a>
     <a href="/washing-machine-error-codes-samsung-lg" class="mob-link mob-sub" onclick="toggleMenu()">  🔧 Washing Machine Errors</a>
     <a href="/ac-washing-machine-fridge-repair-riyadh-all-neighborhoods" class="mob-link mob-sub" onclick="toggleMenu()">  📍 All Neighborhoods</a>
-    <a href="/ac-summer-maintenance-riyadh" class="mob-link mob-sub" onclick="toggleMenu()">  ☀️ AC Summer Prep</a>
+    <a href="/ac-summer-maintenance-riyadh" class="mob-link mob-sub" onclick="toggleMenu()">  ☀️ AC Summer Prep Guide</a>
     <a href="/reduce-ac-electricity-bill-riyadh" class="mob-link mob-sub" onclick="toggleMenu()">  💡 Lower Electricity Bill</a>
-    <a href="/washing-machine-smell-riyadh" class="mob-link mob-sub" onclick="toggleMenu()">  👃 Washing Machine Smell</a>
-    <a href="/annual-maintenance-contract-riyadh" class="mob-link mob-sub" onclick="toggleMenu()">  📋 Annual Maintenance</a>
+    <a href="/washing-machine-smell-riyadh" class="mob-link mob-sub active" onclick="toggleMenu()">  👃 Washing Machine Smell</a>
+    <a href="/annual-maintenance-contract-riyadh" class="mob-link mob-sub" onclick="toggleMenu()">  📋 Annual Maintenance Contract</a>
+    <a href="/inverter-vs-regular-ac-riyadh" class="mob-link mob-sub" onclick="toggleMenu()">  ⚡ Inverter vs Regular AC</a>
+    <a href="/ac-water-leak-causes-riyadh" class="mob-link mob-sub" onclick="toggleMenu()">  💧 AC Water Leak Causes</a>
+    <a href="/best-ac-temperature-riyadh" class="mob-link mob-sub" onclick="toggleMenu()">  🌡️ Best AC Temperature</a>
+    <a href="/refrigerant-gas-types-riyadh" class="mob-link mob-sub" onclick="toggleMenu()">  🧪 R22 vs R410A Gas Guide</a>
+    <a href="/ac-lifespan-dusty-climate-riyadh" class="mob-link mob-sub" onclick="toggleMenu()">  ⏳ AC Lifespan in Riyadh Dust</a>
     <a href="/aboutus" class="mob-link" onclick="toggleMenu()">ℹ️ About Us</a>
     <a href="/contactus" class="mob-link" onclick="toggleMenu()">📞 Contact Us</a>
     <a href="https://wa.me/966591136834" target="_blank" rel="noopener" class="mob-wa-btn">
@@ -292,7 +387,9 @@
     <div class="fade" style="max-width:720px;margin:0 auto 8px;border-radius:16px;overflow:hidden;box-shadow:0 20px 50px rgba(0,0,0,.12)">
       <img src="fridge-washing-machine-repair-riyadh.jpg" alt="فني ينظف غسالة برائحة كريهة في الرياض" width="1280" height="1280" loading="lazy" style="width:100%;height:auto;display:block;object-fit:cover;max-height:360px" />
     </div>
-    <div class="article-meta">
+    <div class="article-layout">
+<div class="article-main">
+<div class="article-meta">
       <span class="am-badge">غسالات · عناية منزلية</span>
       <span>حافظ للتكييف · Hafiz Air Conditioning</span>
       <span>18 يونيو 2026</span>
@@ -314,13 +411,40 @@
       <div class="pull-cta">
         <p class="ar">لا تزال الرائحة موجودة بعد التنظيف؟ فحص مجاني يحدد السبب الحقيقي</p>
         <a href="https://wa.me/966591136834" target="_blank" rel="noopener" class="btn btn-wa">احجز فحص مجاني الآن</a>
+      </div>
       <h2 class="ar" style="margin-top:40px">مقالات ذات صلة</h2>
       <div class="related-grid">
         <a href="/washing-machine-error-codes-samsung-lg" class="related-card"><div class="rc-title">رموز أخطاء غسالة سامسونج وال جي</div></a>
         <a href="/annual-maintenance-contract-riyadh" class="related-card"><div class="rc-title">عقد الصيانة السنوي — هل يستحق التكلفة؟</div></a>
       </div>
-      </div>
+      
     </div>
+</div>
+    <aside class="article-sidebar">
+        <div class="side-card side-cta">
+          <h4>Need Help Now?</h4>
+          <p>فحص مجاني في نفس اليوم — فني يوصلك خلال ساعتين في كل الرياض</p>
+          <a href="https://wa.me/966591136834" target="_blank" rel="noopener" class="btn btn-wa btn-lg"><svg viewBox="0 0 24 24"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21 5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2z"/></svg>WhatsApp Us</a>
+          <a href="tel:+966591136834" class="btn btn-ghost btn-lg">Call: 966591136834+</a>
+        </div>
+        <div class="side-card">
+          <div class="side-title">Quick Links</div>
+          <div class="side-links">
+            <a href="/services">Our Services</a>
+            <a href="/emergency-ac-repair-riyadh">Emergency AC Repair</a>
+            <a href="/ac-gas-refill-riyadh">AC Gas Refill</a>
+            <a href="/annual-maintenance-contract-riyadh">Maintenance Contracts</a>
+            <a href="/contactus">Contact Us</a>
+          </div>
+        </div>
+        <div class="side-card">
+          <div class="side-title">Why Hafiz A/C</div>
+          <div class="side-badge-row"><svg viewBox="0 0 24 24"><path d="M12 2l8 4v6c0 5-3.4 8.7-8 10-4.6-1.3-8-5-8-10V6l8-4z"/></svg>18+ years experience</div>
+          <div class="side-badge-row"><svg viewBox="0 0 24 24"><path d="M12 2l8 4v6c0 5-3.4 8.7-8 10-4.6-1.3-8-5-8-10V6l8-4z"/></svg>2-hour response, any district</div>
+          <div class="side-badge-row"><svg viewBox="0 0 24 24"><path d="M12 2l8 4v6c0 5-3.4 8.7-8 10-4.6-1.3-8-5-8-10V6l8-4z"/></svg>2-year workmanship warranty</div>
+        </div>
+    </aside>
+</div>
   </div>
 </section>
 
